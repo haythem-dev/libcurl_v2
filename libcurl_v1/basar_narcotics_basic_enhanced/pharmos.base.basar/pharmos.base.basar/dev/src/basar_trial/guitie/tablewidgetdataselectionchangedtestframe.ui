@@ -1,0 +1,137 @@
+<ui version="4.0" >
+ <class>TableWidgetdataSelectionChangedTestFrameClass</class>
+ <widget class="QWidget" name="TableWidgetdataSelectionChangedTestFrameClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>399</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>TableWidgetdataSelectionChangedTestFrame</string>
+  </property>
+  <widget class="BasarTableWidget" name="tableWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>641</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="rowCount" >
+    <number>3</number>
+   </property>
+   <property name="columnCount" >
+    <number>10</number>
+   </property>
+   <row/>
+   <row/>
+   <row/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+  </widget>
+  <widget class="QTextEdit" name="textEdit" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>641</width>
+     <height>121</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>360</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>select</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2" >
+   <property name="geometry" >
+    <rect>
+     <x>130</x>
+     <y>360</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>clear</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox" >
+   <property name="geometry" >
+    <rect>
+     <x>230</x>
+     <y>360</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3" >
+   <property name="geometry" >
+    <rect>
+     <x>360</x>
+     <y>360</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>fatal</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2" >
+   <property name="geometry" >
+    <rect>
+     <x>460</x>
+     <y>360</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox" >
+   <property name="geometry" >
+    <rect>
+     <x>580</x>
+     <y>360</y>
+     <width>131</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Remove Exceptions</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>BasarTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>libbasarqtwidget_tablewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

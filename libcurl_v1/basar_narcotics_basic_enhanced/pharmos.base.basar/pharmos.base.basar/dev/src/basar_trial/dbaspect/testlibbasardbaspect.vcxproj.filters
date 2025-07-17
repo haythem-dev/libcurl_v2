@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{d678b1d8-6882-46cd-a998-fbccb4c913ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbx.cmd">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="testdbaspect.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="check_accessor.cpp" />
+    <ClCompile Include="check_basar_any.cpp" />
+    <ClCompile Include="check_boostany_union.cpp" />
+    <ClCompile Include="check_const.cpp" />
+    <ClCompile Include="check_filtered_iteration_erase.cpp" />
+    <ClCompile Include="check_filtered_step.cpp" />
+    <ClCompile Include="check_inserts.cpp" />
+    <ClCompile Include="check_policies.cpp" />
+    <ClCompile Include="check_praepost_indecrement.cpp" />
+    <ClCompile Include="check_states.cpp" />
+    <ClCompile Include="check_transaction.cpp" />
+    <ClCompile Include="check_yiterator_xiterator.cpp" />
+    <ClCompile Include="cicsoldvoucheracc.cpp" />
+    <ClCompile Include="classdefinition.cpp" />
+    <ClCompile Include="connect_mem.cpp" />
+    <ClCompile Include="datetime.cpp" />
+    <ClCompile Include="measure_cics.cpp" />
+    <ClCompile Include="testlibbasardbaspect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cicsoldvoucheracc.h" />
+    <ClInclude Include="cicsoldvoucherdm_definitions.h" />
+    <ClInclude Include="classdefinition.h" />
+    <ClInclude Include="cmnaccessor.h" />
+    <ClInclude Include="usings.h" />
+  </ItemGroup>
+</Project>

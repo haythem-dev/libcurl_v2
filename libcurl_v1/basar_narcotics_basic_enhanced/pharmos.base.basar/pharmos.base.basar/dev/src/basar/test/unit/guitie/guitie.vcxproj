@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>utguitie</ProjectName>
+    <ProjectGuid>{E6149D73-5809-4965-8ED7-2B6645CCE48A}</ProjectGuid>
+    <RootNamespace>guitie</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\unittestpp.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\unittestpp.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\unittestpp.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\unittestpp.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)test\libbasarmock;$(ProjectDir)GeneratedFiles\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>libbasar$(RootNamespace).h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <Optimization>Disabled</Optimization>
+      <EnablePREfast>false</EnablePREfast>
+      <SDLCheck>true</SDLCheck>
+      <StringPooling>true</StringPooling>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasardebug.lib;libbasarcmnutil.lib;libbasarappl.lib;libbasardbsql.lib;libbasardbaspect.lib;libbasarproperty.lib;libbasarqtwidget.lib;libbasarguitie.lib;libbasarmock.lib;qtmaind.lib;Qt5Widgetsd.lib;Qt5Guid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(ProjectDir)data\$(TargetName).cfg %MARATHON_LOG_CONFIGDIR%\
+REM $(SolutionDir)proc\run.cmd $(SolutionDir)..\sharedlib\$(OutDir) $(TargetPath) -short
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)test\libbasarmock;$(ProjectDir)GeneratedFiles\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>libbasar$(RootNamespace).h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MinimalRebuild>false</MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <EnablePREfast>false</EnablePREfast>
+      <SDLCheck>true</SDLCheck>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasardebug.lib;libbasarcmnutil.lib;libbasarappl.lib;libbasardbsql.lib;libbasardbaspect.lib;libbasarproperty.lib;libbasarqtwidget.lib;libbasarguitie.lib;libbasarmock.lib;qtmaind.lib;Qt5Widgetsd.lib;Qt5Guid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(ProjectDir)data\$(TargetName).cfg %MARATHON_LOG_CONFIGDIR%\
+REM $(SolutionDir)proc\run.cmd $(SolutionDir)..\sharedlib\$(OutDir) $(TargetPath) -short
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)test\libbasarmock;$(ProjectDir)GeneratedFiles\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>libbasar$(RootNamespace).h</PrecompiledHeaderFile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasardebug.lib;libbasarcmnutil.lib;libbasarappl.lib;libbasardbsql.lib;libbasardbaspect.lib;libbasarproperty.lib;libbasarqtwidget.lib;libbasarguitie.lib;libbasarmock.lib;qtmain.lib;Qt5Widgets.lib;Qt5Gui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(ProjectDir)data\$(TargetName).cfg %MARATHON_LOG_CONFIGDIR%\
+REM $(SolutionDir)proc\run.cmd $(SolutionDir)..\sharedlib\$(OutDir) $(TargetPath) -short
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)test\libbasarmock;$(ProjectDir)GeneratedFiles\$(Configuration);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>libbasar$(RootNamespace).h</PrecompiledHeaderFile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasardebug.lib;libbasarcmnutil.lib;libbasarappl.lib;libbasardbsql.lib;libbasardbaspect.lib;libbasarproperty.lib;libbasarqtwidget.lib;libbasarguitie.lib;libbasarmock.lib;qtmain.lib;Qt5Widgets.lib;Qt5Gui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D $(ProjectDir)data\$(TargetName).cfg %MARATHON_LOG_CONFIGDIR%\
+REM $(SolutionDir)proc\run.cmd $(SolutionDir)..\sharedlib\$(OutDir) $(TargetPath) -short
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="basardatetimemockcessor.cpp" />
+    <ClCompile Include="basarderived.cpp" />
+    <ClCompile Include="converttostringmockcessor.cpp" />
+    <ClCompile Include="loggerpool.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="matcherint64.cpp" />
+    <ClCompile Include="matcherstringonelinemockcessor.cpp" />
+    <ClCompile Include="matcherstringonelinestringsreversemockcessor.cpp" />
+    <ClCompile Include="matcherstringsmorelinestwostringsmockcessor.cpp" />
+    <ClCompile Include="matcherstringsmorelinesstringsreversemockcessor.cpp" />
+    <ClCompile Include="matcherstringonelinetwostringsreversemockcessor.cpp" />
+    <ClCompile Include="matcherstringsmorelinestwostringsreversemockcessor.cpp" />
+    <ClCompile Include="qtderived.cpp" />
+    <ClCompile Include="selectstringsmockcessor.cpp" />
+    <ClCompile Include="testconnection.cpp" />
+    <ClCompile Include="selects.cpp" />
+    <ClCompile Include="basematcherholder.cpp" />
+    <ClCompile Include="basematcherholdertestszenario.cpp" />
+    <ClCompile Include="basematcherholdertestszenariolist.cpp" />
+    <ClCompile Include="indexcountholder.cpp" />
+    <ClCompile Include="stringmatcherholdermorelines.cpp" />
+    <ClCompile Include="tablewidgetmatcherholder.cpp" />
+    <ClCompile Include="test1avc.cpp" />
+    <ClCompile Include="test1vc.cpp" />
+    <ClCompile Include="test2vc.cpp" />
+    <ClCompile Include="testexceptionhandler.cpp" />
+    <ClCompile Include="testexceptionthrower.cpp" />
+    <ClCompile Include="exceptionhandler.cpp" />
+    <ClCompile Include="iterator.cpp" />
+    <ClCompile Include="timespantransformer.cpp" />
+    <ClCompile Include="viewconnptr.cpp" />
+    <ClCompile Include="matcher.cpp" />
+    <ClCompile Include="matcherbasardatetime.cpp" />
+    <ClCompile Include="matcherbasardatetimederived.cpp" />
+    <ClCompile Include="matchercombobox.cpp" />
+    <ClCompile Include="matcherconverttostring.cpp" />
+    <ClCompile Include="matcherdatetime.cpp" />
+    <ClCompile Include="matcherdatetimederived.cpp" />
+    <ClCompile Include="matcherintdatetime.cpp" />
+    <ClCompile Include="matchersqldatetime.cpp" />
+    <ClCompile Include="matcherstringmorelines.cpp" />
+    <ClCompile Include="matcherstringmorelinesevents.cpp" />
+    <ClCompile Include="matcherstringoneline.cpp" />
+    <ClCompile Include="checkboxtransformer.cpp" />
+    <ClCompile Include="currentlisttransformer.cpp" />
+    <ClCompile Include="propertynametransformer.cpp" />
+    <ClCompile Include="radiobuttontransformer.cpp" />
+    <ClCompile Include="statetransformer.cpp" />
+    <ClCompile Include="datetimetransformer.cpp" />
+    <ClCompile Include="datetransformer.cpp" />
+    <ClCompile Include="timetransformer.cpp" />
+    <ClCompile Include="decimaltransformer.cpp" />
+    <ClCompile Include="inttransformer.cpp" />
+    <ClCompile Include="GeneratedFiles\debug\moc_basarderived.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_basarderived.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_qtderived.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_qtderived.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="basarderived.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -DWIN32 -D_DEBUG -D_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_MBCS "-I$(LIBRARY_DIR)\include" "-I$(BOOST_ROOT)\include" "-I$(LOG4CPLUS_DIR)\include" "-I$(UNITTESTPP_DIR)\include" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)" "-flibbasar$(RootNamespace).h" "-f../../%(Filename)%(Extension)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -DWIN32 -D_DEBUG -D_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_MBCS "-I$(LIBRARY_DIR)\include" "-I$(BOOST_ROOT)\include" "-I$(LOG4CPLUS_DIR)\include" "-I$(UNITTESTPP_DIR)\include" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)" "-flibbasar$(RootNamespace).h" "-f../../%(Filename)%(Extension)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -DWIN32 -DNDEBUG -D_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_MBCS "-I$(LIBRARY_DIR)\include" "-I$(BOOST_ROOT)\include" "-I$(LOG4CPLUS_DIR)\include" "-I$(UNITTESTPP_DIR)\include" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)" "-flibbasar$(RootNamespace).h" "-f../../%(Filename)%(Extension)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -DWIN32 -DNDEBUG -D_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_MBCS "-I$(LIBRARY_DIR)\include" "-I$(BOOST_ROOT)\include" "-I$(LOG4CPLUS_DIR)\include" "-I$(UNITTESTPP_DIR)\include" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)" "-flibbasar$(RootNamespace).h" "-f../../%(Filename)%(Extension)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="converttostringmockcessor.h" />
+    <ClInclude Include="loggerpool.h" />
+    <CustomBuild Include="qtderived.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -DWIN32 -D_DEBUG -D_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_MBCS "-I$(LIBRARY_DIR)\include" "-I$(BOOST_ROOT)\include" "-I$(LOG4CPLUS_DIR)\include" "-I$(UNITTESTPP_DIR)\include" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)" "-flibbasar$(RootNamespace).h" "-f../../%(Filename)%(Extension)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -DWIN32 -D_DEBUG -D_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_MBCS "-I$(LIBRARY_DIR)\include" "-I$(BOOST_ROOT)\include" "-I$(LOG4CPLUS_DIR)\include" "-I$(UNITTESTPP_DIR)\include" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)" "-flibbasar$(RootNamespace).h" "-f../../%(Filename)%(Extension)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -DWIN32 -DNDEBUG -D_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_MBCS "-I$(LIBRARY_DIR)\include" "-I$(BOOST_ROOT)\include" "-I$(LOG4CPLUS_DIR)\include" "-I$(UNITTESTPP_DIR)\include" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)" "-flibbasar$(RootNamespace).h" "-f../../%(Filename)%(Extension)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp" -DWIN32 -DNDEBUG -D_CONSOLE -D_CRT_SECURE_NO_WARNINGS -D_MBCS "-I$(LIBRARY_DIR)\include" "-I$(BOOST_ROOT)\include" "-I$(LOG4CPLUS_DIR)\include" "-I$(UNITTESTPP_DIR)\include" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)" "-flibbasar$(RootNamespace).h" "-f../../%(Filename)%(Extension)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="basardatetimemockcessor.h" />
+    <ClInclude Include="matcherstringonelinemockcessor.h" />
+    <ClInclude Include="matcherstringonelinestringsreversemockcessor.h" />
+    <ClInclude Include="matcherstringsmorelinestwostringsmockcessor.h" />
+    <ClInclude Include="matcherstringsmorelinesstringsreversemockcessor.h" />
+    <ClInclude Include="matcherstringonelinetwostringsreversemockcessor.h" />
+    <ClInclude Include="matcherstringsmorelinestwostringsreversemockcessor.h" />
+    <ClInclude Include="selectstringsmockcessor.h" />
+    <ClInclude Include="testconnection.h" />
+    <ClInclude Include="accessornames.h" />
+    <ClInclude Include="buttablepropertydescriptions.h" />
+    <ClInclude Include="buttablepropertydescriptionvectors.h" />
+    <ClInclude Include="selects.h" />
+    <ClInclude Include="basematcherholder.h" />
+    <ClInclude Include="basematcherholdertestszenario.h" />
+    <ClInclude Include="basematcherholdertestszenariolist.h" />
+    <ClInclude Include="direction.h" />
+    <ClInclude Include="indexcountholder.h" />
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="matcherholderlist.h" />
+    <ClInclude Include="stringmatcherholdermorelines.h" />
+    <ClInclude Include="tablewidgetmatcherholder.h" />
+    <ClInclude Include="test1avc.h" />
+    <ClInclude Include="test1vc.h" />
+    <ClInclude Include="test2vc.h" />
+    <ClInclude Include="testexceptionhandler.h" />
+    <ClInclude Include="testexceptionthrower.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\utguitie.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\libbasarappl\libbasarappl.vcxproj">
+      <Project>{eaddc340-9a8e-4757-8d67-8a89b2e286c8}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libbasarcmnutil\libbasarcmnutil.vcxproj">
+      <Project>{bab32f85-55de-4e0b-b22c-303302184b98}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libbasardbaspect\libbasardbaspect.vcxproj">
+      <Project>{e2c3ec7b-9f7f-4a88-babc-8c48efe302bc}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libbasardbsql\libbasardbsql.vcxproj">
+      <Project>{a5077620-ad24-4189-911e-27e8dfa16c77}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libbasardebug\libbasardebug.vcxproj">
+      <Project>{bab32f85-55de-4e0b-b22c-303302184b99}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libbasarguitie\libbasarguitie.vcxproj">
+      <Project>{eaddc340-9a8e-4757-8d67-8a89b2e286b7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libbasarproperty\libbasarproperty.vcxproj">
+      <Project>{91042289-327f-49fa-95f3-a5fe3e98256a}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\libbasarqtwidget\libbasarqtwidget.vcxproj">
+      <Project>{53e0e057-2d75-4090-875e-7d3bc6a6ea9a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference Include="..\..\libbasarmock\libbasarmock.vcxproj">
+      <Project>{29166057-8b4f-429d-b4ba-3c658c50660b}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

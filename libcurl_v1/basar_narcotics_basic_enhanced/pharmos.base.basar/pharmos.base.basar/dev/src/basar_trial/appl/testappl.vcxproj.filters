@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{de9b59cb-d4ec-4baa-ade7-164869d89f89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbx.cmd">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="testappl.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sysevents.cpp" />
+    <ClCompile Include="testappl.cpp" />
+    <ClCompile Include="ucmain.cpp" />
+    <ClCompile Include="ucsub.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="testappl.h" />
+    <ClInclude Include="ucmain.h" />
+    <ClInclude Include="ucsub.h" />
+  </ItemGroup>
+</Project>

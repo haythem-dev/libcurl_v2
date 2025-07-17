@@ -1,0 +1,999 @@
+Notice: Output directory `./codedocu/customer' does not exist. I have created it for you.
+Searching for include files...
+Searching for example files...
+Searching for files in directory C:/GIT/pharmos.outbound.narcotics/dev/src/doc
+Searching for files in directory C:/GIT/pharmos.outbound.narcotics/dev/src/doc/codedocu
+Searching for files in directory C:/GIT/pharmos.outbound.narcotics/dev/src/doc/codedocu/customer
+Searching for files in directory C:/GIT/pharmos.outbound.narcotics/dev/src/doc/codedocu/customer/html
+Searching for files in directory C:/GIT/pharmos.outbound.narcotics/dev/src/doc/codedocu/internal
+Searching for files in directory C:/GIT/pharmos.outbound.narcotics/dev/src/doc/codedocu/internal/html
+Searching for images...
+Searching for dot files...
+Searching for msc files...
+Searching for dia files...
+Searching for files to exclude
+Searching for files in directory C:/Qt/5.2.0/include
+Searching for files in directory C:/Qt/5.2.0/include/ActiveQt
+Searching for files in directory C:/Qt/5.2.0/include/ActiveQt/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/ActiveQt/5.2.0/ActiveQt
+Searching for files in directory C:/Qt/5.2.0/include/ActiveQt/5.2.0/ActiveQt/private
+Searching for files in directory C:/Qt/5.2.0/include/QtANGLE
+Searching for files in directory C:/Qt/5.2.0/include/QtANGLE/EGL
+Searching for files in directory C:/Qt/5.2.0/include/QtANGLE/GLES2
+Searching for files in directory C:/Qt/5.2.0/include/QtANGLE/KHR
+Searching for files in directory C:/Qt/5.2.0/include/QtBluetooth
+Searching for files in directory C:/Qt/5.2.0/include/QtBluetooth/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtBluetooth/5.2.0/QtBluetooth
+Searching for files in directory C:/Qt/5.2.0/include/QtBluetooth/5.2.0/QtBluetooth/private
+Searching for files in directory C:/Qt/5.2.0/include/QtCLucene
+Searching for files in directory C:/Qt/5.2.0/include/QtCLucene/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtCLucene/5.2.0/QtCLucene
+Searching for files in directory C:/Qt/5.2.0/include/QtCLucene/5.2.0/QtCLucene/private
+Searching for files in directory C:/Qt/5.2.0/include/QtConcurrent
+Searching for files in directory C:/Qt/5.2.0/include/QtCore
+Searching for files in directory C:/Qt/5.2.0/include/QtCore/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtCore/5.2.0/QtCore
+Searching for files in directory C:/Qt/5.2.0/include/QtCore/5.2.0/QtCore/private
+Searching for files in directory C:/Qt/5.2.0/include/QtDeclarative
+Searching for files in directory C:/Qt/5.2.0/include/QtDeclarative/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtDeclarative/5.2.0/QtDeclarative
+Searching for files in directory C:/Qt/5.2.0/include/QtDeclarative/5.2.0/QtDeclarative/private
+Searching for files in directory C:/Qt/5.2.0/include/QtDesigner
+Searching for files in directory C:/Qt/5.2.0/include/QtDesigner/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtDesigner/5.2.0/QtDesigner
+Searching for files in directory C:/Qt/5.2.0/include/QtDesigner/5.2.0/QtDesigner/private
+Searching for files in directory C:/Qt/5.2.0/include/QtDesignerComponents
+Searching for files in directory C:/Qt/5.2.0/include/QtDesignerComponents/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtDesignerComponents/5.2.0/QtDesignerComponents
+Searching for files in directory C:/Qt/5.2.0/include/QtDesignerComponents/5.2.0/QtDesignerComponents/private
+Searching for files in directory C:/Qt/5.2.0/include/QtFtp
+Searching for files in directory C:/Qt/5.2.0/include/QtGui
+Searching for files in directory C:/Qt/5.2.0/include/QtGui/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtGui/5.2.0/QtGui
+Searching for files in directory C:/Qt/5.2.0/include/QtGui/5.2.0/QtGui/private
+Searching for files in directory C:/Qt/5.2.0/include/QtGui/5.2.0/QtGui/qpa
+Searching for files in directory C:/Qt/5.2.0/include/QtHelp
+Searching for files in directory C:/Qt/5.2.0/include/QtHelp/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtHelp/5.2.0/QtHelp
+Searching for files in directory C:/Qt/5.2.0/include/QtHelp/5.2.0/QtHelp/private
+Searching for files in directory C:/Qt/5.2.0/include/QtMultimedia
+Searching for files in directory C:/Qt/5.2.0/include/QtMultimedia/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtMultimedia/5.2.0/QtMultimedia
+Searching for files in directory C:/Qt/5.2.0/include/QtMultimedia/5.2.0/QtMultimedia/private
+Searching for files in directory C:/Qt/5.2.0/include/QtMultimediaQuick_p
+Searching for files in directory C:/Qt/5.2.0/include/QtMultimediaWidgets
+Searching for files in directory C:/Qt/5.2.0/include/QtMultimediaWidgets/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtMultimediaWidgets/5.2.0/QtMultimediaWidgets
+Searching for files in directory C:/Qt/5.2.0/include/QtMultimediaWidgets/5.2.0/QtMultimediaWidgets/private
+Searching for files in directory C:/Qt/5.2.0/include/QtNetwork
+Searching for files in directory C:/Qt/5.2.0/include/QtNetwork/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtNetwork/5.2.0/QtNetwork
+Searching for files in directory C:/Qt/5.2.0/include/QtNetwork/5.2.0/QtNetwork/private
+Searching for files in directory C:/Qt/5.2.0/include/QtNfc
+Searching for files in directory C:/Qt/5.2.0/include/QtNfc/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtNfc/5.2.0/QtNfc
+Searching for files in directory C:/Qt/5.2.0/include/QtNfc/5.2.0/QtNfc/private
+Searching for files in directory C:/Qt/5.2.0/include/QtOpenGL
+Searching for files in directory C:/Qt/5.2.0/include/QtOpenGL/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtOpenGL/5.2.0/QtOpenGL
+Searching for files in directory C:/Qt/5.2.0/include/QtOpenGL/5.2.0/QtOpenGL/private
+Searching for files in directory C:/Qt/5.2.0/include/QtOpenGLExtensions
+Searching for files in directory C:/Qt/5.2.0/include/QtPlatformSupport
+Searching for files in directory C:/Qt/5.2.0/include/QtPlatformSupport/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtPlatformSupport/5.2.0/QtPlatformSupport
+Searching for files in directory C:/Qt/5.2.0/include/QtPlatformSupport/5.2.0/QtPlatformSupport/private
+Searching for files in directory C:/Qt/5.2.0/include/QtPositioning
+Searching for files in directory C:/Qt/5.2.0/include/QtPositioning/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtPositioning/5.2.0/QtPositioning
+Searching for files in directory C:/Qt/5.2.0/include/QtPositioning/5.2.0/QtPositioning/private
+Searching for files in directory C:/Qt/5.2.0/include/QtPrintSupport
+Searching for files in directory C:/Qt/5.2.0/include/QtPrintSupport/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtPrintSupport/5.2.0/QtPrintSupport
+Searching for files in directory C:/Qt/5.2.0/include/QtPrintSupport/5.2.0/QtPrintSupport/private
+Searching for files in directory C:/Qt/5.2.0/include/QtPrintSupport/5.2.0/QtPrintSupport/qpa
+Searching for files in directory C:/Qt/5.2.0/include/QtQml
+Searching for files in directory C:/Qt/5.2.0/include/QtQml/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtQml/5.2.0/QtQml
+Searching for files in directory C:/Qt/5.2.0/include/QtQml/5.2.0/QtQml/private
+Searching for files in directory C:/Qt/5.2.0/include/QtQuick
+Searching for files in directory C:/Qt/5.2.0/include/QtQuick/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtQuick/5.2.0/QtQuick
+Searching for files in directory C:/Qt/5.2.0/include/QtQuick/5.2.0/QtQuick/private
+Searching for files in directory C:/Qt/5.2.0/include/QtQuickParticles
+Searching for files in directory C:/Qt/5.2.0/include/QtQuickParticles/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtQuickParticles/5.2.0/QtQuickParticles
+Searching for files in directory C:/Qt/5.2.0/include/QtQuickParticles/5.2.0/QtQuickParticles/private
+Searching for files in directory C:/Qt/5.2.0/include/QtQuickTest
+Searching for files in directory C:/Qt/5.2.0/include/QtQuickTest/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtQuickTest/5.2.0/QtQuickTest
+Searching for files in directory C:/Qt/5.2.0/include/QtQuickTest/5.2.0/QtQuickTest/private
+Searching for files in directory C:/Qt/5.2.0/include/QtScript
+Searching for files in directory C:/Qt/5.2.0/include/QtScript/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtScript/5.2.0/QtScript
+Searching for files in directory C:/Qt/5.2.0/include/QtScript/5.2.0/QtScript/private
+Searching for files in directory C:/Qt/5.2.0/include/QtScriptTools
+Searching for files in directory C:/Qt/5.2.0/include/QtScriptTools/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtScriptTools/5.2.0/QtScriptTools
+Searching for files in directory C:/Qt/5.2.0/include/QtScriptTools/5.2.0/QtScriptTools/private
+Searching for files in directory C:/Qt/5.2.0/include/QtSensors
+Searching for files in directory C:/Qt/5.2.0/include/QtSensors/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtSensors/5.2.0/QtSensors
+Searching for files in directory C:/Qt/5.2.0/include/QtSensors/5.2.0/QtSensors/private
+Searching for files in directory C:/Qt/5.2.0/include/QtSerialPort
+Searching for files in directory C:/Qt/5.2.0/include/QtSerialPort/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtSerialPort/5.2.0/QtSerialPort
+Searching for files in directory C:/Qt/5.2.0/include/QtSerialPort/5.2.0/QtSerialPort/private
+Searching for files in directory C:/Qt/5.2.0/include/QtSql
+Searching for files in directory C:/Qt/5.2.0/include/QtSql/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtSql/5.2.0/QtSql
+Searching for files in directory C:/Qt/5.2.0/include/QtSql/5.2.0/QtSql/private
+Searching for files in directory C:/Qt/5.2.0/include/QtSvg
+Searching for files in directory C:/Qt/5.2.0/include/QtSvg/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtSvg/5.2.0/QtSvg
+Searching for files in directory C:/Qt/5.2.0/include/QtSvg/5.2.0/QtSvg/private
+Searching for files in directory C:/Qt/5.2.0/include/QtTest
+Searching for files in directory C:/Qt/5.2.0/include/QtTest/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtTest/5.2.0/QtTest
+Searching for files in directory C:/Qt/5.2.0/include/QtTest/5.2.0/QtTest/private
+Searching for files in directory C:/Qt/5.2.0/include/QtUiTools
+Searching for files in directory C:/Qt/5.2.0/include/QtUiTools/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtUiTools/5.2.0/QtUiTools
+Searching for files in directory C:/Qt/5.2.0/include/QtUiTools/5.2.0/QtUiTools/private
+Searching for files in directory C:/Qt/5.2.0/include/QtWidgets
+Searching for files in directory C:/Qt/5.2.0/include/QtWidgets/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtWidgets/5.2.0/QtWidgets
+Searching for files in directory C:/Qt/5.2.0/include/QtWidgets/5.2.0/QtWidgets/private
+Searching for files in directory C:/Qt/5.2.0/include/QtWinExtras
+Searching for files in directory C:/Qt/5.2.0/include/QtWinExtras/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtWinExtras/5.2.0/QtWinExtras
+Searching for files in directory C:/Qt/5.2.0/include/QtWinExtras/5.2.0/QtWinExtras/private
+Searching for files in directory C:/Qt/5.2.0/include/QtXml
+Searching for files in directory C:/Qt/5.2.0/include/QtXmlPatterns
+Searching for files in directory C:/Qt/5.2.0/include/QtXmlPatterns/5.2.0
+Searching for files in directory C:/Qt/5.2.0/include/QtXmlPatterns/5.2.0/QtXmlPatterns
+Searching for files in directory C:/Qt/5.2.0/include/QtXmlPatterns/5.2.0/QtXmlPatterns/private
+Searching for files in directory C:/Qt/5.2.0/include/QtZlib
+Searching INPUT for files to process...
+Reading and parsing tag files
+Parsing files
+Preprocessing C:/GIT/pharmos.outbound.narcotics/dev/src/narcotic/version.h...
+Preprocessor output (size: 31651 bytes):
+---------
+00001 //---------------------------------------------------------------------------------------------------------//
+00002 /*! \file
+00003  *  \brief  definition narcotics version
+00004  *  \author Thomas Hörath
+00005  *  \date   10.02.2006
+00006  */
+00007 //---------------------------------------------------------------------------------------------------------//
+00008 
+00009 
+00010 
+00011 
+00012 //! major version number of narcotics
+00013 #define VERSION_MAJORNO
+00014 
+00015 //! minor version number of narcotics
+00016 #define VERSION_MINORNO
+00017 
+00018 //! extension version number of narcotics
+00019 #define VERSION_EXTENSION
+00020 
+00021 //! build version number of narcotics
+00022 #define VERSION_BUILDNO
+00023 
+00024 //! version number string of narcotics
+00025 #define VERSIONNO
+00026 
+00027 //! version number string of basar to check 
+00028 #define BASAR_VERSIONNO
+00029 
+00030 
+00031 
+00032 
+00033 
+00034 
+00035 //! version number string debug of narcotics
+00036 #define VERSION_NUMBER
+00037 
+00038 
+00039 //! narcotics name
+00040 #define PROGRAM_NAME
+00041 
+00042 
+00043 
+00044 /*******************************************************************************************/
+00045 /*!
+00046 \mainpage Narcotics
+00047 \include svntags
+00048 
+00049 
+00050 ________________________________________________________________________________________
+00051 \version	01.09.03.00
+00052 \date		26.02.2019
+00053 \internal
+00054 - SR-16060981 - blauer Balken verschwindet, wenn Druckprozess mittlerweile von einem anderen User gestartet wurde und somit auf dem eigenen Rechner nicht mehr arbeitet.
+00055 - SR-16088880 - Storno in NA12 auch für transactiontype "d"
+00056 - SR-16095617 - Bugfix NA12: korrekte Bestandsrechnung bei Abgängen und Änderung Zeitstempel
+00057 - SR-16104459 - Berücksichtigung customernomapping auch bei Nachdruck Lieferschein / Behebung Druckfehler
+00058 - SR-17004581 - Zurücksetzen des Übertragungsstatus bei Änderung auf Vernichtung, so dass keine fälschliche Übertragung eines Abgabebelegs mehr passieren kann.
+00059 - NA18 / LS- Doppel: Anzeige / Druck von PZN 8 statt interner Artikelnummer
+00060 - SR-18004790 - Wiederherstellen von transactiontype = 'd', acknowledgmentstatus = 5 ist erlaubt
+00061 - ssuk-01.12.01.01
+00062 \endinternal 
+00063 
+00064 ________________________________________________________________________________________
+00065 \version	01.09.02.01
+00066 \date		18.05.2016
+00067 \internal
+00068 - NA12: Abfangen, dass bei Positionsstorno mind. 1 Zeile angehakt sein muss.
+00069 \endinternal 
+00070 
+00071 ________________________________________________________________________________________
+00072 \version	01.09.02.00
+00073 \date		27.04.2016
+00074 \internal
+00075 - Nachdruck Abgabebeleg aus NA03 nicht nur bei Änderung TransactionType.
+00076 - SR-16028041: Anzeige PZN8 beim Beheben von Druckfehlern
+00077 - Protokollierung (narcprotocol) von Änderungen in NA12
+00078 \endinternal 
+00079 ________________________________________________________________________________________
+00080 \version	01.09.01.02
+00081 \date		11.03.2016
+00082 \internal
+00083 - INC-16008444: init BranchDM before printing destruction.
+00084 \endinternal 
+00085 ________________________________________________________________________________________
+00086 \version	01.09.01.01
+00087 \date		08.02.2016
+00088 \internal
+00089 - NA08: Bei Suche nach Vernichtung in der Ergebnisliste PZN (nicht Kunde) anzeigen.
+00090 \endinternal 
+00091 
+00092 ________________________________________________________________________________________
+00093 \version	01.09.01.00
+00094 \date		03.02.2016
+00095 \internal
+00096 - Vernichtungsbeleg nur noch über NA12 (= im Rahmen eines Auftrags) druckbar.
+00097 \endinternal 
+00098 
+00099 ________________________________________________________________________________________
+00100 \version	01.09.00.00
+00101 \date		19.01.2016
+00102 \internal
+00103 - SR-15032343: acknowledgementstatus auch nur für Teile eines Auftrags automatisch von 6 auf 1 zurücksetzen (bei contributionvoucherno = 0), wenn es keine anderen Positionen mit status=6 und contributionvoucherno != 0 gibt.
+00104 - SR-15047863: auch beim Beheben von Druckfehlern abfangen, ob das Übertragen der Datei geklappt hat!
+00105 - CR-15D047: Änderungen in NA12 (Auftragsübersicht) + Default- Button
+00106 - unnötige Buttons entfernt (NA03, NA12, NA17, Hauptmenü)
+00107 - NA17: Sortierung auch "nur nach Tour" (ohne Datum)
+00108 - Sortierung Vernichtungsbeleg nach Artikelname
+00109 - NA08: Suche nach Satzart
+00110 \endinternal 
+00111 
+00112 ________________________________________________________________________________________
+00113 \version	01.08.01.03
+00114 \date		05.03.2015
+00115 \internal
+00116 - I-15002671: qtytransaction=0 erlauben.
+00117 \endinternal 
+00118  
+00119 ________________________________________________________________________________________
+00120 \version	01.08.01.02
+00121 \date		16.02.2015
+00122 \internal
+00123 - SR-15004967: customersupplierlocation instead of customersuppliercity.
+00124 \endinternal 
+00125  
+00126 ________________________________________________________________________________________
+00127 \version	01.08.01.01
+00128 \date		02.01.2015
+00129 \internal
+00130 - SR-14034248: no default-text for theft / lost.
+00131 \endinternal 
+00132  
+00133 ________________________________________________________________________________________
+00134 \version	01.08.01.00
+00135 \date		15.12.2014
+00136 \internal
+00137 - new dialog NA22 for maintaining customernomapping.
+00138 \endinternal 
+00139  
+00140 ________________________________________________________________________________________
+00141 \version	01.08.00.02
+00142 \date		28.10.2014
+00143 \internal
+00144 - bugfix NA12 detected by RC.
+00145 \endinternal 
+00146  
+00147 ________________________________________________________________________________________
+00148 \version	01.08.00.01
+00149 \date		18.09.2014
+00150 \internal
+00151 - bugfix NA12 detected by testteam.
+00152 \endinternal 
+00153 
+00154 ________________________________________________________________________________________
+00155 \version	01.08.00.00
+00156 \date		18.08.2014
+00157 \internal
+00158 - Visual Studio 2010 + ssuk-01.10.00.00 (Qt5).
+00159 - BI server as UADM parameter.
+00160 \endinternal 
+00161  
+00162 ________________________________________________________________________________________
+00163 \version	01.07.00.03
+00164 \date		08.08.2014
+00165 \internal
+00166 - validators for orderno reset to length 7 (because of scanning of GI label).
+00167 - PZN8 bugfix in compare bookings.
+00168 \endinternal 
+00169 
+00170 ________________________________________________________________________________________
+00171 \version	01.07.00.02
+00172 \date		05.08.2014
+00173 \internal
+00174 - NA01 / NA02: validators.
+00175 - minor BugFixes detected by test team.
+00176 - NA12 button activation.
+00177 - NA01 When a different quantity is entered, the question message box defaults to "No" instead of "Yes" (SR-112299).
+00178 - NA17 It is now possible to select multiple lines and reprint delivery note / mark as received / unmark as received for those (CR13D090).
+00179 - NA03 initial stock only selected from not deleted transactions (I-14001194).
+00180 - NA17 New whorkflow during creation of delivery note copy (CR14D001).
+00181 \endinternal 
+00182  
+00183 ________________________________________________________________________________________
+00184 \version	01.07.00.01
+00185 \date		15.01.2014
+00186 \internal
+00187 - BugFixes detected by test team.
+00188 - INC-043940: Korrektur bei Berechnung der laufenden Wochennummer bei Jahreswechsel.
+00189 - INC-044028: Marathon Listendruck nicht möglich (NA03 - Problem mit führenden Nullen im Artikelcode).
+00190 - INC-044101: Ausdruck C4- Bericht für HJM - Select korrigiert.
+00191 \endinternal 
+00192  
+00193 ________________________________________________________________________________________
+00194 \version	01.07.00.00
+00195 \date		19.12.2013
+00196 \internal
+00197 - PrintThread: PrintedTime will be stored in the database and shown in NA17 & NA20.
+00198 - UnixFoundation: Linking against new SSUK 01.09.01.00.
+00199 - UnixFoundation: Linking against new SSUK 01.09.00.02.
+00200 - UnixFoundation: Linking against new SSUK 01.09.00.00.
+00201 - NA19: Show only contribution voucher numbers != 0 to resolve.
+00202 - NA01: Better visibility that the input focus is in the quantity column.
+00203 - NA07: article number validator corrected (NA07_TC05/07).
+00204 - minimum date for all date edits set to 01/01/2000.
+00205 - NA03: button activations corrected.
+00206 - NA10: button activations corrected.
+00207 - NA10: button activations corrected.
+00208 - BTM_RT_NA06_DEF01: No more unknown exception when a blank line is selected and the "x" button is pressed.
+00209 - SR-107444: also replace customer supplier street.
+00210 - CR-13D083: new button in NA17 to reset status from "received" to "printed".
+00211 - CR-13D109 (1st part): create delivery note copy in NA17 also if former status is "printed".
+00212 - CR-13D085: column order and headers changed in NA17.
+00213 - CR-13D089: cursor behaviour NA01.
+00214 - CR-13D087: NA13 displays additional article master data now.
+00215 - CR-13D109 (2nd part): disable changes of orders for which a delivery note copy was created before in NA03 + NA12.
+00216 - CR-13D086: search for / order by tour in NA17.
+00217 - CR-13D088: skip locked customers when searching from NA08.
+00218 - ssuk-01.09.01.00
+00219 \endinternal 
+00220 
+00221 ________________________________________________________________________________________
+00222 \version	01.06.11.00
+00223 \date		20.08.2013
+00224 \internal
+00225 - BTM_NA19_TC04: Added info message box to NA19 for button 'show details' 
+00226 - BTM_NA03_TC34: NA14 / NA15 removed at all.
+00227 - BTM_NA02_DEF03: Articleno size limit set on 8 digits. 
+00228 - NA06: narcotic group will be increased to 5 digits.
+00229 - BTM_NA08_DEF02: Search function will be not consider the date if it isn´t checked. INC-039728 
+00230 - NA21: INC-039728 Return or enter key will not close an error message box anymore (F1 or ESC closes the msg box), message box will blink to warn the user.
+00231 - NA19: SR-102524 Improved error handling (basar::exception instead of unknown exception).
+00232 - SR-102259: Kommentar für Lieferscheindoppel nun max. 150 Zeichen und ohne Zeilenumbruch. 
+00233 - SR-101952: keine MsgBox, wenn Nachdruck aus NA17 erfolgreich. 
+00234 - CR-12D139: Berechnung Bestandsdifferenzen. 
+00235 \endinternal 
+00236 
+00237 ________________________________________________________________________________________
+00238 \version	01.06.10.01
+00239 \date		10.07.2013
+00240 \internal
+00241 - BTM_NA21_TC06: Connect function for pressedEnter() deleted. 
+00242 - BTM_NA19_TC06: Connect functions will be called correctly now. 
+00243 - BTM_NA05_Delete_Option: Deleting causing negative qtyinstock fixed. 
+00244 - Print buttons on the mainwindow will be disabled correctly after user relog, if the user has no print permissions. 
+00245 \endinternal 
+00246  
+00247 ________________________________________________________________________________________
+00248 \version	01.06.10.00
+00249 \date		03.07.2013
+00250 \internal
+00251 - BTM_NA03_TC08: articleno size limit set on 8 digits. 
+00252 - BTM_NA03_TC20: implement date validator. from and to date can´t be greater then the current date. 
+00253 - BTM_NA03_TC26: error message shows correct articleno now, when the system don´t find any record. 
+00254 - BTM_NA03_TC32: cancellation is deactivated if transactiontype is customer order or supplier returns. 
+00255 - Bugfix INC-037819 - update customersupplierstreet.
+00256 - NA01 Search by ArticleNo: articleno size limit set on 8 digits. 
+00257 - BTM_NA08_TC08: articleno size limit set on 8 digits. 
+00258 - BTM_NA17_TC09: implement date validator. 
+00259 - BTM_NA17_TC13: implement date validator. 
+00260 - BTM_NA08_TC34: changed QIntValidator to QRegExpValidator for bgano 
+00261 - BTM_NA08_TC23: changed QIntValidator to QRegExpValidator for supplierno 
+00262 - BTM_NA05_TC09: changed QIntValidator to QRegExpValidator for articleno 
+00263 - BTM_NA05_TC09: implement date validator. 
+00264 - BTM_NA08_TC74, BTM_NA06_TC07, BTM_NA08_TC48, BTM_NA08_TC56, BTM_NA08_TC57: Take over button in NA13 is disabled now, when selected row is empty. 
+00265 - BTM_NA05_TC09: changed ARTICLENO to ARTICLECODE 
+00266 - Add maximum date to QDateEdit fields. (current date + one year) 
+00267 - BTM_NA21_TC06: alert for scanner input less than 16 signs.
+00268 - BTM_NA19_TC06: resolving of print errors only for transactiontypes a + d. Initialization of SupplierDM.
+00269 - BTM_NA03_TC31: reload table widget after deleting of an transaction.
+00270 - BTM_NA10_TC12: search in NA03 after coming back from NA10 only if search button is activated.
+00271 - BTM_NA07_TC09: attribute names can now be entered as database column names directly (e.g. qtytransaction) OR as translated attribute name (e.g. Menge).
+00272 - Add "- NAxx" to main menue shortcut names
+00273 - Qt auto connects deletet. Added wireEvent-functions and connect-functions to VCs.
+00274 - SR-098939: Tour-ID will be shown on NA17 acknowledgement list.
+00275 \endinternal 
+00276 
+00277 ________________________________________________________________________________________
+00278 \version	01.06.09.01
+00279 \date		14.06.2013
+00280 \internal
+00281 - INC-038370 + INC-038372: Nachdruck Lieferschein enthält nun wieder alle Artikel.
+00282 \endinternal 
+00283 
+00284 ________________________________________________________________________________________
+00285 \version	01.06.09.00
+00286 \date		24.05.2013
+00287 \internal
+00288  - SR-095421: new column tourid in NA17.
+00289  - SR-095834: column "status" also printed on NA17-list (pp5).
+00290  - SR-094300: Refactoring logging.
+00291  - Printthread does not open / close connection every 5 seconds anymore.
+00292  - INC-037437: 1st part = update narctransactioncatalog.customersupplierstreet.
+00293  - NA12: bugfix, when only time ist changed.
+00294  - INC-037437: 2nd part = add supplier select at customermodule
+00295  - fixed SelAcknowledgementsUnion's SQL query, it's using transactiontype to decode if customersupplier lookup should happen in customer or supplier table;
+00296  - it should not display two entries for one contributionvoucher when customer is also in suppliertable
+00297 \endinternal 
+00298  
+00299 ________________________________________________________________________________________
+00300 \version	01.06.08.11
+00301 \date		03.04.2013
+00302  \internal
+00303  - article locks are removed at the end of narcoticsDM's saveOrderChanges (business type: transfer_booking).
+00304  - added print list feature to NA17
+00305  - search fields in NA01 search also on pressing enterkey
+00306  - if results are found in NA01 first qty cell is selected for input - also after saves
+00307  \endinternal 
+00308  
+00309 ________________________________________________________________________________________
+00310 \version	01.06.08.10
+00311 \date		18.02.2013
+00312  \internal
+00313  - fixed mark received button
+00314  - possibility to unlock articles (business type: transfer_booking).
+00315  - removed typo in acc_bookingcatalog's UpdSupplier
+00316  \endinternal 
+00317  
+00318 ________________________________________________________________________________________
+00319 \version	01.06.08.09
+00320 \date		30.01.2013
+00321  \internal
+00322  - reset focus to NA21's line edit field
+00323  - dissolve receipt now uses basar::VarString for formating
+00324  \endinternal 
+00325  
+00326 ________________________________________________________________________________________
+00327 \version	01.06.08.08 29.01.2013
+00328  \internal
+00329  - button close in NA21 won't close frame on enter keypress anymore
+00330  \endinternal 
+00331  
+00332 ________________________________________________________________________________________
+00333 \version	01.06.08.07 22.01.2013
+00334  \internal
+00335  - finished adding Contribution Voucher Scan dialog
+00336  - finished redesigning NA17
+00337  - further changes to order states (see version 01.06.07.03 and 01.06.05.06)
+00338  \endinternal 
+00339  
+00340 ________________________________________________________________________________________
+00341 \version	01.06.08.06 04.01.2013
+00342  \internal
+00343  - more robust statements for supplier selection
+00344  \endinternal 
+00345  
+00346 ________________________________________________________________________________________
+00347 \version	01.06.08.05 03.01.2013
+00348  \internal
+00349  - dialog NA03 removes leading zero on search
+00350  - dialog NA03 allows printing narc book only for one PZN and in from-to date intervall again
+00351  - Bugfixes PZN8: Search for article number with leading zeros now possible (NA01, NA02).
+00352  - dialog NA12: upon changing transactiondate and/or transactiontime for whole order recalc of qty in stock is done
+00353  - made fast version of stockcountlist even faster
+00354  - fixed display issue in narcprintbook pdf with shorter than max article numbers, furthermore all articlenumbers are now 8 characters long
+00355  - fixed rare week calculation bug, if 31.12. is in first calendar week of next year, result was negative
+00356  \endinternal 
+00357  
+00358 ________________________________________________________________________________________
+00359 \version	01.06.08.04 21.12.2012
+00360  \internal
+00361  - restored sort order of positions in incominggoodsoverview
+00362  - fixed permissions of deliverynotecopy folder, defaulting to 777
+00363  \endinternal 
+00364 
+00365 ________________________________________________________________________________________
+00366 \version	01.06.08.03 18.12.2012
+00367  \internal
+00368  - fixed article locking issue in dialog NA10
+00369  \endinternal 
+00370 
+00371 ________________________________________________________________________________________
+00372 \version	01.06.08.02 17.12.2012
+00373  \internal
+00374  - resolveprinterrors dialog recolors all tablewidget rows, fixable rows should be displayed in black font
+00375  - fixed statement bug in acc_contributionvoucher, statement was not using preferred_flag
+00376  \endinternal 
+00377  
+00378 ________________________________________________________________________________________
+00379 \version	01.06.08.01 13.12.2012
+00380  \internal
+00381  - fixed dialog NA04 when used from booking catalog
+00382  \endinternal 
+00383 
+00384 ________________________________________________________________________________________
+00385 \version	01.06.08.00 13.12.2012
+00386  \internal
+00387  - merged in PZN8 changes
+00388  - added faster query for stock list generation
+00389  - changed orderoverview dialog to allow line code changes for all order positions
+00390  \endinternal 
+00391 
+00392 ________________________________________________________________________________________
+00393 \version	01.06.07.05 27.11.2012
+00394  \internal
+00395  - re-reverted union selection in contribution voucher dialog
+00396  \endinternal 
+00397 
+00398 ________________________________________________________________________________________
+00399 \version	01.06.07.05 27.11.2012
+00400  \internal
+00401  - re-reverted union selection in contribution voucher dialog
+00402  \endinternal 
+00403  
+00404 ________________________________________________________________________________________
+00405 \version	01.06.07.04 27.11.2012
+00406  \internal
+00407  - reverted union selection in contribution voucher dialog
+00408  \endinternal 
+00409 
+00410 ________________________________________________________________________________________
+00411 \version	01.06.07.03 22.11.2012
+00412  \internal
+00413  - changed orders state to INVALID (-1) for fixing NA03's and NA12's behaviour, see version 01.06.05.06
+00414  - setting an order to status IN_PRINT now observes the deletedflag, deleted positions will not be set to IN_PRINT
+00415  \endinternal 
+00416  
+00417 ________________________________________________________________________________________
+00418 \version	01.06.07.02 29.10.2012
+00419  \internal
+00420  - improved performance of robust printing
+00421  - added check if voucher is still IN_PRINT before voucher is fixed in resolveprintingerror dialog
+00422  - ensured that printthread is stopped on mainwindow close
+00423  - changed communtication between application and printthread to Qt Signals
+00424  \endinternal 
+00425 
+00426 ________________________________________________________________________________________
+00427 \version	01.06.07.00 19.10.2012
+00428  \internal
+00429  - added a more robust kind of printing:
+00430  - printthread checkes before printing if printlock is still held by logged in user
+00431  - printthread reads only one order from datebase
+00432  - printthread marks order as 'in_print' before printing
+00433  - printthread tries to restart failed prints (contributionvoucherno still 0)
+00434  - printthread notifies user if 'in_print' datasets are found
+00435  - added new dialog enabling user to fix 'in_print' orders
+00436  - fixing of 'in_print' orders observes transfer to bfarm, meaning no order before last sunday can be fixed
+00437  \endinternal 
+00438 
+00439 ________________________________________________________________________________________
+00440 \version	01.06.05.06 08.09.2012
+00441  \internal
+00442  - dialogs NA03 and NA12 now observe user's wish if no contributionvoucher has to be printed
+00443  \endinternal 
+00444  
+00445 ________________________________________________________________________________________
+00446 \version	01.06.05.04 10.09.2012
+00447  \internal
+00448  - reprint of contributionvoucher now uses customername from narctransactioncatalog instead of customername from table kunde, needed for reprint when customname has been changed - replacement takes place in accessor on usecase level
+00449  - fixed delivery note copies for contributionvouchers for suppliers, names were not set/empty
+00450  - delivery note copies also use names form narctransactioncatalog instead from table kunde (both customer and supplier)
+00451  \endinternal 
+00452  
+00453 ________________________________________________________________________________________
+00454 \version	01.06.05.03 06.09.2012
+00455  \internal
+00456  - fixed bug in inventroyprintdata
+00457  \endinternal 
+00458 
+00459 ________________________________________________________________________________________
+00460 \version	01.06.05.02 05.09.2012
+00461  \internal
+00462  - Removed (hopefully) all I18nString.formats from objects accessed by printthread due to threading issues. PrintThread does not use loginmanager any more, it get's it's params by narcotics appl
+00463  \endinternal 
+00464 
+00465 ________________________________________________________________________________________
+00466 \version	01.06.05.01 03.09.2012
+00467  \internal
+00468  - Removed I18nString.formats from object accessed by printthread due to threading issues. Objects use VarString.formats now.
+00469  - fixed check for messagebox return value in bookingcatalog.cpp line 410
+00470  \endinternal 
+00471  
+00472 ________________________________________________________________________________________
+00473 \version	01.06.05.00 22.08.2012
+00474  \internal
+00475  - When contribuitionvoucher is scanned, acknowledgement receiving button got the focus automatically 
+00476  - Application Controller is now initialized immediately after relogin. Otherwise Lockmanager crashes because of invalid connection 
+00477  \endinternal 
+00478  
+00479 ________________________________________________________________________________________
+00480 \version	01.06.04.00 16.08.2012
+00481  \internal
+00482  - reprinting adapted  			
+00483  \endinternal 
+00484  
+00485 ________________________________________________________________________________________
+00486 \version	01.06.03.00 14.08.2012
+00487  \internal
+00488  - transactiontyxpe d will be also printed 			
+00489  \endinternal 
+00490 
+00491 ________________________________________________________________________________________
+00492 \version	01.06.02.00 14.08.2012
+00493  \internal
+00494  - made cancelation and stock update more robust
+00495  - removed mismatching on narcunit
+00496  - fixed generation of contribution voucher - will contain only one position
+00497  \endinternal 
+00498  
+00499 ________________________________________________________________________________________
+00500 \version	01.06.01.00 08.08.2012
+00501  \internal
+00502  - bufixes
+00503  \endinternal 
+00504 
+00505 ________________________________________________________________________________________
+00506 \version	01.06.00.00 08.08.2012
+00507  \internal
+00508  - added cancelation of order with removing contributionvouchers, both whole order and any number of positions
+00509  \endinternal 
+00510 
+00511 ________________________________________________________________________________________
+00512 \version	01.05.07.00 01.08.2012
+00513  \internal
+00514  - changed sortorder of contributionvouchers from sorting by order to sorting by date
+00515  \endinternal 
+00516  
+00517 ________________________________________________________________________________________
+00518 \version	01.05.06.00 26.07.2012
+00519  \internal
+00520  - Bugfix when reprinting deliverynotes -> workaround call updatedata
+00521  \endinternal 
+00522 
+00523 ________________________________________________________________________________________
+00524 \version	01.05.05.00 26.07.2012
+00525  \internal
+00526  - Select row in contributionvouchervc adapted
+00527  \endinternal 
+00528  
+00529 ________________________________________________________________________________________
+00530 \version	01.05.04.00 26.07.2012
+00531  \internal
+00532  - Select row in contributionvouchervc adapted
+00533  \endinternal 
+00534  
+00535 ________________________________________________________________________________________
+00536 \version	01.05.03.00 26.07.2012
+00537  \internal
+00538  - select complete text in contributionvoucher
+00539  \endinternal 
+00540 
+00541 ________________________________________________________________________________________
+00542 \version	01.05.02.00 25.07.2012
+00543  \internal
+00544  - Bugfix in setting acknowledgementstatus
+00545  \endinternal 
+00546 
+00547 ________________________________________________________________________________________
+00548 \version	01.05.01.00 20.07.2012
+00549  \internal
+00550  - Printing of contributionvouchers is now cancelable
+00551  - Fixed bug in TimeChange-Diablog: Matcher used whole field instead of unit (e.g. "50 GR" instead of "GR")
+00552  - Added username and branchno to various log messages
+00553  \endinternal 
+00554  
+00555 ________________________________________________________________________________________
+00556 \version	01.05.00.00 10.07.2012
+00557  \internal
+00558  - New locking method for printing and locking of articles
+00559  - cleaned code of printthread.cpp
+00560  \endinternal 
+00561  
+00562 ________________________________________________________________________________________
+00563 \version	01.04.05.00 26.06.2012
+00564  \internal
+00565  - No "automatic enter" after scanning contributionvoucherno in contributionvouchervc, because no reprinting of deliverynote is possible otherwise
+00566  \endinternal 
+00567  
+00568 ________________________________________________________________________________________
+00569 \version	01.04.04.04 24.05.2012
+00570  \internal
+00571  - Cancellation of bookings in narcoticbook has been corrected. New contribution voucher is now created for the other (uncancelled) bookings.
+00572  - If print file doesn't contain user's signature, button start print in main dialog won't be enabled anymore.
+00573  - Progress bar in main dialog added in order to show user when printthread is active.
+00574  \endinternal 
+00575  
+00576 ________________________________________________________________________________________
+00577 \version	01.04.04.03 18.05.2012
+00578  \internal
+00579  - Cancellation of bookings in narcoticbook has been corrected. New contribution voucher is now created for the other (uncancelled) bookings.
+00580  - If print file doesn't contain user's signature, button start print in main dialog won't be enabled anymore.
+00581  - Progress bar in main dialog added in order to show user when printthread is active.
+00582  \endinternal 
+00583  
+00584 ________________________________________________________________________________________
+00585 \version	01.04.04.02 07.05.2012
+00586  \internal
+00587  - Bugfixe in incomingreturngoods. ok button not enabled when pharmaform empty, but articles existing without pharmaform
+00588  \endinternal 
+00589  
+00590 ________________________________________________________________________________________
+00591 \version	01.04.04.01 23.04.2012
+00592  \internal
+00593  - Bugfixes in den Dialogen NA14 BTM-Ausgabebeleg und NA15 Manuelle Erfassung / Bearbeitung von Ausgabebelegen durchgeführt.
+00594  \endinternal 
+00595 
+00596 ________________________________________________________________________________________
+00597 \version	01.04.04.00 04.04.2012
+00598  \internal
+00599  - Druck der tourid aus dem KSC auf die Empfangsbestätigung implementiert.
+00600  - Anpassung der postscript-Dateien der digitalen Abgabebelege (Löschen der Testdaten).
+00601  \endinternal 
+00602  
+00603 ________________________________________________________________________________________
+00604 \version	01.04.03.00 30.03.2012
+00605  \internal
+00606  - Anpassung des Vernichtungsbelegs an neue BfArM-Anforderungen.
+00607  - div. Bugfixes 
+00608  \endinternal 
+00609  
+00610 ________________________________________________________________________________________
+00611 \version	01.04.02.01 05.03.2012
+00612  \internal
+00613  - Überprüfung in createprocessnarcoticbooking auf darreichform entfernt (savingAllowed()). Artikel ohne Darreichform konnten so nocht gespeichert werden.
+00614  \endinternal 
+00615  
+00616 ________________________________________________________________________________________
+00617 \version	01.04.02.00 20.02.2012
+00618  \internal
+00619  - Umstellung auf elektronische Uebertragung der Abgabemeldungen zur BfArM 
+00620  - Der printhread wird durch anklicken eines buttons gestartet, da nicht für alle benutzer der druck benötigt wird (CCT,  kontrolleuer,..)
+00621  \endinternal 
+00622 
+00623 ________________________________________________________________________________________
+00624 \version	01.04.01.00 26.01.2012
+00625  \internal
+00626  - Umstellung auf elektronische Uebertragung der Abgabemeldungen zur BfArM 
+00627  - div. Bugfixes 
+00628  - neue Formulare 
+00629  - leere Meldungen koennen ueber einen button aufgerufen werden. pdfs muessen in print liegen. auf selber ebene wie exe 
+00630  - es kann bei wareneingaengen auf bestellebene das datum geaendert werden 
+00631  \endinternal 
+00632  
+00633 ________________________________________________________________________________________
+00634 \version	01.03.01.01 XX.XX.2011
+00635  \internal
+00636  - Beim Drucken Vergleich der Kundennummer (falls Auftragsnummer fälschlicherweise noch auf 0 steht)!
+00637  \endinternal 
+00638  
+00639 ________________________________________________________________________________________
+00640 \version	01.04.00.00 20.12.2011
+00641  \internal
+00642  - Umstellung auf elektronische Uebertragung der Abgabemeldungen zur BfArM 
+00643  - div. Bugfixes 
+00644  - neue Formulare 
+00645  \endinternal 
+00646  
+00647 ________________________________________________________________________________________
+00648 \version	01.03.01.00 21.06.2011
+00649  \internal
+00650  - Scannen von Abgabebelegnummern eingebaut
+00651  - Registrierung fuer Lieferscheindoppel entfernt (Maske zu gross fuer Bildschirm Hr. Hans
+00652  \endinternal 
+00653  
+00654 ________________________________________________________________________________________
+00655 \version	01.03.00.01 20.04.2011
+00656  \internal
+00657  - Verschiedene Prozessanpassungen für elektonischen Abgabebeleg.
+00658  \endinternal 
+00659  
+00660 ________________________________________________________________________________________
+00661 \version	01.03.00.00 17.02.2011 - 17:35
+00662  \internal
+00663  - merge between trunk and servicepack executed successfully
+00664  \endinternal 
+00665  
+00666 ________________________________________________________________________________________
+00667 \version	01.02.00.00 07.05.2010 - 16:17
+00668  \internal
+00669  - changes in dialog NA01! Change the data from the the dialog NA01
+00670  - changes in dialog NA03! Change the data from the the dialog NA03
+00671  - changes in dialog NA06! Change the data from the the dialog NA06
+00672  - changes in dialog NA08! Change the data from the the dialog NA08
+00673  - new dialog NA12! Order Overview
+00674  - new dialog NA13! ResultSet Overview
+00675  - new dialog NA14! Record Edit Contribution Voucher
+00676  - new dialog NA15! Narcotics Contribution Voucher
+00677  - upgrade ssuk to 01.08.00.00 
+00678  \endinternal 
+00679  
+00680 ________________________________________________________________________________________
+00681 \version	01.01.01.00 30.12.2008 - 13:22
+00682  \internal
+00683  - change the dialog NA01! Change the data from the the dialog NA08
+00684  \endinternal 
+00685  
+00686 ________________________________________________________________________________________
+00687 \version	01.01.00.03 12.11.2008 - 13:22
+00688  \internal
+00689  - Go with the new user admin!
+00690  \endinternal 
+00691  
+00692 ________________________________________________________________________________________
+00693 \version	01.01.00.02 24.10.2008 - 17:38
+00694  \internal
+00695  - Error elimination for migration!
+00696  \endinternal 
+00697  
+00698 ________________________________________________________________________________________
+00699 \version	01.01.00.01 23.10.2008
+00700  \internal
+00701  - Upgrade on basar lib 01.05.01.00 - Return values.
+00702  \endinternal 
+00703  
+00704 ________________________________________________________________________________________
+00705 \version	01.01.00.00 22.10.2008
+00706  \internal
+00707  - Upgrade on basar lib 01.05.01.00 - migration background.
+00708  \endinternal 
+00709  
+00710 ________________________________________________________________________________________
+00711 \version	01.00.07.05 09.06.2008
+00712  \internal
+00713  - the print data for the desolve receipt are allow only the current date. The date must come from
+00714  - 	from the current booking item. 
+00715  \endinternal 
+00716 
+00717 ________________________________________________________________________________________
+00718 \version	01.00.07.04 08.03.2008
+00719  \internal
+00720  - internal change in file 'narcoticsgroupmodule.cpp'::NarcoticsGroupDM::findStockLocationByArticleNo()
+00721  - if a article is not longer listed as a narcotics article. 
+00722  \endinternal 
+00723 
+00724 ________________________________________________________________________________________
+00725  \version	01.00.07.03 24.05.2007
+00726  \internal
+00727  - internal change in file 'narcoticsmodule.cpp::'::NarcoticsDM::updateDiffQtyInStock() 
+00728  - Transaction is closed after deleting (all branch specific differences), 
+00729  - so that no key value is locked for the new inserts (new differences in stock).
+00730  - Field BGANR_EK of table filiale.
+00731  \endinternal 
+00732 
+00733 ________________________________________________________________________________________
+00734  \version	01.00.07.01 08.03.2007
+00735  \internal
+00736  - internal change in file 'createprocessnarcoticsbooking.cpp': 
+00737 					combobox is initialized with the right index.
+00738  \endinternal 
+00739  
+00740  */
+00741 
+00742 
+00743  /*
+00744  Here is the template for a version description.
+00745  Copy this section to the top of the version history to create a new version history entry.
+00746 
+00747 ________________________________________________________________________________________
+00748 \version XX.XX.XX.XX
+00749 \date XXXX-XX-XX
+00750 \internal
+00751 \endinternal
+00752 \~german
+00753 \~english
+00754 \~
+00755 
+00756  */
+00757 
+00758 
+---------
+Macros accessible in this file:
+---------
+BASAR_VERSIONNO VERSION_BUILDNO VERSION_MAJORNO VERSION_EXTENSION VERSIONNO Q_OBJECT PROGRAM_NAME VERSION_MINORNO VERSION_NUMBER 
+---------
+Parsing file C:/GIT/pharmos.outbound.narcotics/dev/src/narcotic/version.h...
+Building group list...
+Building directory list...
+Building namespace list...
+Building file list...
+Building class list...
+Associating documentation with classes...
+Computing nesting relations for classes...
+Building example list...
+Searching for enumerations...
+Searching for documented typedefs...
+Searching for members imported via using declarations...
+Searching for included using directives...
+Searching for documented variables...
+Building interface member list...
+Building member list...
+Searching for friends...
+Searching for documented defines...
+Computing class inheritance relations...
+Computing class usage relations...
+Flushing cached template relations that have become invalid...
+Creating members for template instances...
+Computing class relations...
+Add enum values to enums...
+Searching for member function documentation...
+Building page list...
+Search for main page...
+Computing page relations...
+Determining the scope of groups...
+Sorting lists...
+Freeing entry tree
+Determining which enums are documented
+Computing member relations...
+Building full member lists recursively...
+Adding members to member groups.
+Computing member references...
+Inheriting documentation...
+Generating disk names...
+Adding source references...
+Adding xrefitems...
+Sorting member lists...
+Computing dependencies between directories...
+Generating citations page...
+Counting data structures...
+Resolving user defined references...
+Finding anchors and sections in the documentation...
+Transferring function references...
+Combining using relations...
+Adding members to index pages...
+Generating style sheet...
+Generating search indices...
+Generating example documentation...
+Generating file sources...
+Generating code for file C:/GIT/pharmos.outbound.narcotics/dev/src/narcotic/version.h...
+Generating file documentation...
+Generating page documentation...
+Generating group documentation...
+Generating class documentation...
+Generating namespace index...
+Generating graph info page...
+Generating directory documentation...
+Generating index page...
+Generating page index...
+Generating module index...
+Generating namespace member index...
+Generating annotated compound index...
+Generating alphabetical compound index...
+Generating hierarchical class index...
+Generating member index...
+Generating file member index...
+Generating example index...
+finalizing index lists...
+writing tag file...
+lookup cache used 127/65536 hits=628 misses=194
+finished...

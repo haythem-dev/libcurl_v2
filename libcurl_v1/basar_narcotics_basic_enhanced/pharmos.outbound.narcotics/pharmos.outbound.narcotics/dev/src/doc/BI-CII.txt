@@ -1,0 +1,201 @@
+parCNarcUnitCond     = IF &parCCheckNarcUnit EQ '0' 
+THEN 'AND ( n.narcunit != ''ST'' )' 
+ELSE 'AND ( n.narcunit = ''ST'' )';
+
+parCDisplay          = IF &parCCheckNarcUnit EQ '0' 
+THEN 'CII '                           
+ELSE 'CI';
+
+NarcgroupCond= IF (&parNDateFrom LT 20080101)   OR ( &parNDateFrom GE 20130101) 
+THEN '  ' 
+ELSE  ' AND n.narcgroup != ''490'' ';
+
+parCUnitTitelStrCond = IF &parCCheckNarcUnit EQ '0' 
+THEN 'Alle Angaben in Gramm (g)'      
+ELSE 'Alle Angaben in Stück (ST.)';
+
+
+
+
+-* Get the groups
+SELECT n.narcgroup, max(n.transactiondate) as transactiondate
+FROM narctransactioncatalog n
+WHERE n.branchno = 59
+AND (n.qtyinstock != 0 OR n.qtytransaction != 0)
+AND n.transactiondate <= 20151231
+AND n.narcunit != 'ST'
+GROUP BY n.narcgroup 
+INTO temp tmp_btm1;
+
+-* Get the groups
+SELECT DISTINCT n.narcgroup, n.narcname, n.narcpotency, n.narcunit
+FROM narctransactioncatalog n INNER JOIN tmp_btm1 t
+ON  n.narcgroup       = t.narcgroup
+AND n.transactiondate = t.transactiondate 
+WHERE n.branchno = 59
+  AND (n.qtyinstock != 0 OR n.qtytransaction != 0)
+  AND n.transactiondate <= 20151231
+  AND n.narcunit != 'ST'
+INTO temp tmp_btm;
+
+-* Get the start stock quantity - new version with addtional temp tables
+SELECT n.branchno, n.articleno, max( n.transactiondate*1000000 + n.transactiontime ) AS dattim
+FROM narctransactioncatalog n
+WHERE  n.branchno      = 59                                                         
+  AND  n.transactiondate < 20150701                                                  
+  AND  n.narcgroup    IN ( SELECT DISTINCT narcgroup FROM tmp_btm )                                             
+  AND  n.processedflag = '1'                                                         
+  AND  n.deletedflag   = '0'  
+GROUP BY n.branchno, n.articleno  
+INTO temp tmp_dattim;
+
+SELECT branchno, articleno, dattim, (dattim - mod( dattim, 1000000 )) / 1000000 AS transactiondate, mod( dattim, 1000000 ) AS transactiontime
+FROM tmp_dattim
+INTO temp tmp_dattim2;
+
+SELECT dt2.articleno, n.qtyinstock, n.narcfactor, n.narcgroup 
+FROM tmp_dattim2 dt2 inner join narctransactioncatalog n
+ON  dt2.branchno        = n.branchno
+AND dt2.articleno       = n.articleno
+AND dt2.transactiondate = n.transactiondate
+AND dt2.transactiontime = n.transactiontime
+WHERE  n.branchno      = 59                                                          
+  AND  n.transactiondate < 20150701                                                  
+  AND  n.narcgroup    IN ( SELECT DISTINCT narcgroup FROM tmp_btm ) 
+INTO temp tmp_oldqty;
+
+
+-* SUBSELECT 1: oldqtyinstock
+SELECT n.narcgroup, sum(n.qtyinstock * n.narcfactor) AS oldqtyinstock   
+FROM tmp_oldqty n                                       
+GROUP BY n.narcgroup
+INTO temp tmp_oldqtyinstock;
+
+-* SUBSELECT 2: incominggoods
+SELECT n.narcgroup, SUM(n.qtytransaction * n.narcfactor) AS incominggoods
+FROM  narctransactioncatalog n
+WHERE n.branchno          = 59  
+  AND n.transactiondate  >= 20150701
+  AND n.transactiondate  <= 20151231 
+  AND n.narcgroup    IN ( SELECT DISTINCT narcgroup FROM tmp_btm )                                             
+  AND n.processedflag     = '1' 
+  AND n.deletedflag       = '0' 
+  AND n.transactiontype   IN ('c','b') 
+GROUP BY n.narcgroup
+INTO temp tmp_incominggoods;
+
+
+-* SUBSELECT 3: otherincominggoods
+SELECT n.narcgroup, SUM(n.qtytransaction * n.narcfactor) AS otherincominggoods
+FROM narctransactioncatalog n
+WHERE n.branchno          = 59  
+  AND n.transactiondate  >= 20150701 
+  AND n.transactiondate  <= 20151231 
+  AND n.narcgroup    IN ( SELECT DISTINCT narcgroup FROM tmp_btm )                                             
+  AND n.transactiontype  = 'x' 
+  AND n.processedflag    = '1' 
+  AND n.deletedflag      = '0' 
+GROUP BY n.narcgroup
+INTO temp tmp_otherincominggoods;
+
+
+-* SUBSELECT 4: disposals
+SELECT n.narcgroup, SUM(n.qtytransaction * n.narcfactor) AS disposals
+FROM narctransactioncatalog n
+WHERE n.branchno          = 59  
+  AND n.transactiondate  >= 20150701 
+  AND n.transactiondate  <= 20151231
+  AND n.narcgroup    IN ( SELECT DISTINCT narcgroup FROM tmp_btm )                                             
+  AND n.processedflag    = '1' 
+  AND n.deletedflag      = '0' 
+  AND n.transactiontype  IN ('a','d') 
+GROUP BY n.narcgroup
+INTO temp tmp_disposals;
+
+-* SUBSELECT 5: otherdisposals
+SELECT n.narcgroup, SUM(n.qtytransaction * n.narcfactor) AS otherdisposals
+FROM   narctransactioncatalog n
+WHERE n.branchno          = 59  
+  AND n.transactiondate  >= 20150701 
+  AND n.transactiondate  <= 20151231 
+  AND n.narcgroup    IN ( SELECT DISTINCT narcgroup FROM tmp_btm )                                             
+  AND n.processedflag    = '1' 
+  AND n.deletedflag      = '0' 
+  AND n.transactiontype  = 'y' 
+GROUP BY n.narcgroup
+INTO temp tmp_otherdisposals;
+
+
+-* SUBSELECT 6: elimination
+SELECT n.narcgroup, SUM(n.qtytransaction * n.narcfactor) AS  elimination
+FROM narctransactioncatalog n
+WHERE n.branchno          = 59 
+  AND n.transactiondate  >= 20150701
+  AND n.transactiondate  <= 20151231
+  AND n.narcgroup    IN ( SELECT DISTINCT narcgroup
+                          FROM tmp_btm )                                             
+  AND n.processedflag    = '1' 
+  AND n.deletedflag      = '0' 
+  AND n.transactiontype  = 'z' 
+GROUP BY n.narcgroup
+INTO temp tmp_elimination;
+
+-* Get the end stock quantity - new version with addtional temp tables
+SELECT n.branchno, n.articleno, max( n.transactiondate*1000000 + n.transactiontime ) AS dattim
+FROM narctransactioncatalog n
+WHERE  n.branchno      = 59                                                          
+  AND  n.transactiondate <= 20151231 
+  AND  n.narcgroup    IN ( SELECT DISTINCT narcgroup FROM tmp_btm )                                             
+  AND  n.processedflag = '1'                                                         
+  AND  n.deletedflag   = '0'  
+GROUP BY n.branchno, n.articleno  
+INTO temp tmp_dattim3;
+
+SELECT branchno, articleno, dattim, (dattim - mod( dattim, 1000000 )) / 1000000 AS transactiondate, mod( dattim, 1000000 ) AS transactiontime
+FROM tmp_dattim3
+INTO temp tmp_dattim4;
+
+SELECT dt4.articleno, n.qtyinstock, n.narcfactor, n.narcgroup 
+FROM tmp_dattim4 dt4 inner join narctransactioncatalog n
+ON  dt4.branchno        = n.branchno
+AND dt4.articleno       = n.articleno
+AND dt4.transactiondate = n.transactiondate
+AND dt4.transactiontime = n.transactiontime
+WHERE  n.branchno      = 59                                                           
+  AND  n.transactiondate <= 20151231
+  AND  n.narcgroup    IN ( SELECT DISTINCT narcgroup FROM tmp_btm ) 
+INTO temp tmp_newqty;
+
+-* SUBSELECT 7: END qtyinstock
+SELECT n.narcgroup, sum(n.qtyinstock * n.narcfactor) AS qtyinstock   
+FROM tmp_newqty n                                       
+GROUP BY n.narcgroup
+INTO temp tmp_qtyinstock;
+
+
+-* Join all the temp tables
+SELECT b.narcgroup,
+       b.narcname,
+       b.narcpotency,
+       b.narcunit,
+       s1.oldqtyinstock,
+       s2.incominggoods,
+       s3.otherincominggoods,
+       s4.disposals,
+       s5.otherdisposals,
+       s6.elimination,
+       s7.qtyinstock
+FROM tmp_btm b LEFT OUTER JOIN tmp_oldqtyinstock s1
+ON b.narcgroup = s1.narcgroup
+LEFT OUTER JOIN tmp_incominggoods s2
+ON b.narcgroup = s2.narcgroup
+LEFT OUTER JOIN tmp_otherincominggoods s3
+ON b.narcgroup = s3.narcgroup
+LEFT OUTER JOIN tmp_disposals s4
+ON b.narcgroup = s4.narcgroup
+LEFT OUTER JOIN tmp_otherdisposals s5
+ON b.narcgroup = s5.narcgroup
+LEFT OUTER JOIN tmp_elimination s6
+ON b.narcgroup = s6.narcgroup
+LEFT OUTER JOIN tmp_qtyinstock s7
+ON b.narcgroup = s7.narcgroup;

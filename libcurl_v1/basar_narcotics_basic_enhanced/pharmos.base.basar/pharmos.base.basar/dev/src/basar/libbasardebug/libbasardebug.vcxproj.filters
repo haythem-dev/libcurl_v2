@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{7c936f1c-1716-4c6a-bfe7-aaf521352876}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="checks.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasardebug.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="checks.h" />
+    <ClInclude Include="libbasardebug.h" />
+    <ClInclude Include="libbasardebug_functions.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{b492f711-884d-4d9d-add8-74fa94691065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sqlstringbuilder">
+      <UniqueIdentifier>{239c5092-7529-42c4-890c-72547c748a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="manager">
+      <UniqueIdentifier>{895c3fff-f90e-4852-8054-b134e836281e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Method">
+      <UniqueIdentifier>{b6bbb89e-73af-4b74-a8b8-81e87cd47cde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cachecontroller">
+      <UniqueIdentifier>{55f8d301-d66b-45d8-8aa8-43ad74fd1abb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cachecontroller\cachingpolicies">
+      <UniqueIdentifier>{89c342c1-72cc-430a-b55c-29d4de96963f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Accessor">
+      <UniqueIdentifier>{df316a44-deaf-4144-bbdb-7c7eec931462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connection">
+      <UniqueIdentifier>{bff99a0b-31fb-4a88-afb4-36469a662aee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libbasardbaspect_sqlstringbuilder.h">
+      <Filter>sqlstringbuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlstringbuilderimpl.h">
+      <Filter>sqlstringbuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbaspect_manager.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="managerimpl.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="accessmethod.h">
+      <Filter>Method</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbaspect_accessmethod.h">
+      <Filter>Method</Filter>
+    </ClInclude>
+    <ClInclude Include="cachecontroller.h">
+      <Filter>cachecontroller</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbaspect_accessorpropertytable.h">
+      <Filter>cachecontroller</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbaspect_accessorpropertytable_yiterator.h">
+      <Filter>cachecontroller</Filter>
+    </ClInclude>
+    <ClInclude Include="cachingpolicy.h">
+      <Filter>cachecontroller\cachingpolicies</Filter>
+    </ClInclude>
+    <ClInclude Include="fullcaching.h">
+      <Filter>cachecontroller\cachingpolicies</Filter>
+    </ClInclude>
+    <ClInclude Include="nocaching.h">
+      <Filter>cachecontroller\cachingpolicies</Filter>
+    </ClInclude>
+    <ClInclude Include="ondemandcaching.h">
+      <Filter>cachecontroller\cachingpolicies</Filter>
+    </ClInclude>
+    <ClInclude Include="singlerowcaching.h">
+      <Filter>cachecontroller\cachingpolicies</Filter>
+    </ClInclude>
+    <ClInclude Include="accessor.h">
+      <Filter>Accessor</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbaspect_accessor.h">
+      <Filter>Accessor</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbaspect_accessorexecutelistener.h">
+      <Filter>Accessor</Filter>
+    </ClInclude>
+    <ClInclude Include="connection.h">
+      <Filter>connection</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbaspect_connectionref.h">
+      <Filter>connection</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbaspect.h" />
+    <ClInclude Include="libbasardbaspect_definitions.h" />
+    <ClInclude Include="libbasardbaspect_exceptions.h" />
+    <ClInclude Include="libbasardbaspect_functions.h" />
+    <ClInclude Include="libbasardbaspect_macros.h" />
+    <ClInclude Include="loggerpool.h" />
+    <ClInclude Include="libbasardbaspect_stringbuildertypeindexes.h">
+      <Filter>sqlstringbuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlpreparedstringbuilderimpl.h">
+      <Filter>sqlstringbuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="isqlstringbuilderimpl.h">
+      <Filter>sqlstringbuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlstringbuilderbaseimpl.h">
+      <Filter>sqlstringbuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbaspect_logmacros.h" />
+    <ClInclude Include="libbasardbaspect_iaccessor.h">
+      <Filter>Accessor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sqlstringbuilder.cpp">
+      <Filter>sqlstringbuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlstringbuilderimpl.cpp">
+      <Filter>sqlstringbuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlstringbuilderlist_iterator.cpp">
+      <Filter>sqlstringbuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlstringbuilderlistref.cpp">
+      <Filter>sqlstringbuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlstringbuilderref.cpp">
+      <Filter>sqlstringbuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="managerimpl.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="accessmethod.cpp">
+      <Filter>Method</Filter>
+    </ClCompile>
+    <ClCompile Include="accessmethod_iterator.cpp">
+      <Filter>Method</Filter>
+    </ClCompile>
+    <ClCompile Include="accessmethodlistref.cpp">
+      <Filter>Method</Filter>
+    </ClCompile>
+    <ClCompile Include="accessmethodref.cpp">
+      <Filter>Method</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorpropertytable_yiterator.cpp">
+      <Filter>cachecontroller</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorpropertytableref.cpp">
+      <Filter>cachecontroller</Filter>
+    </ClCompile>
+    <ClCompile Include="cachecontroller.cpp">
+      <Filter>cachecontroller</Filter>
+    </ClCompile>
+    <ClCompile Include="cachingpolicy.cpp">
+      <Filter>cachecontroller\cachingpolicies</Filter>
+    </ClCompile>
+    <ClCompile Include="fullcaching.cpp">
+      <Filter>cachecontroller\cachingpolicies</Filter>
+    </ClCompile>
+    <ClCompile Include="nocaching.cpp">
+      <Filter>cachecontroller\cachingpolicies</Filter>
+    </ClCompile>
+    <ClCompile Include="ondemandcaching.cpp">
+      <Filter>cachecontroller\cachingpolicies</Filter>
+    </ClCompile>
+    <ClCompile Include="singlerowcaching.cpp">
+      <Filter>cachecontroller\cachingpolicies</Filter>
+    </ClCompile>
+    <ClCompile Include="accessor.cpp">
+      <Filter>Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessordefinitionlist_iterator.cpp">
+      <Filter>Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessordefinitionlistref.cpp">
+      <Filter>Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessordefinitionref.cpp">
+      <Filter>Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorexecuteevent.cpp">
+      <Filter>Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorexecutelistenerref.cpp">
+      <Filter>Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorinstancelist_iterator.cpp">
+      <Filter>Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorinstancelistref.cpp">
+      <Filter>Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorinstanceref.cpp">
+      <Filter>Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="connection.cpp">
+      <Filter>connection</Filter>
+    </ClCompile>
+    <ClCompile Include="connectionref.cpp">
+      <Filter>connection</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasardbaspect.cpp" />
+    <ClCompile Include="loggerpool.cpp" />
+    <ClCompile Include="sqlpreparedstringbuilderimpl.cpp">
+      <Filter>sqlstringbuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlstringbuilderbaseimpl.cpp">
+      <Filter>sqlstringbuilder</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

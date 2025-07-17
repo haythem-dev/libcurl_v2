@@ -1,0 +1,76 @@
+<ui version="4.0" >
+ <class>TestguiqtwidgetClass</class>
+ <widget class="QMainWindow" name="TestguiqtwidgetClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Testguiqtwidget</string>
+  </property>
+  <property name="accessibleName" >
+   <string>TestguiqtwidgetClass</string>
+  </property>
+  <widget class="QWidget" name="centralWidget" >
+   <property name="accessibleName" >
+    <string>centralWidget</string>
+   </property>
+   <widget class="QDateEdit" name="dateEdit" >
+    <property name="geometry" >
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="BasarTimeEdit" name="timeEdit" >
+    <property name="geometry" >
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>118</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTests" >
+    <property name="title" >
+     <string>tests</string>
+    </property>
+    <addaction name="actionTableWiget_Test_1" />
+   </widget>
+   <addaction name="menuTests" />
+  </widget>
+  <action name="actionTableWiget_Test_1" >
+   <property name="text" >
+    <string>TableWiget Test 1</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>BasarTimeEdit</class>
+   <extends>QTimeEdit</extends>
+   <header>libbasarqtwidget_timeedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

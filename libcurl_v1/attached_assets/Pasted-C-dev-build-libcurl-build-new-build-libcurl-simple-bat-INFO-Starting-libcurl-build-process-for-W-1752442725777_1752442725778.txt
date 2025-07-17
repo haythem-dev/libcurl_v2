@@ -1,0 +1,42 @@
+C:\dev\build_libcurl\build_new>build_libcurl_simple.bat
+[INFO] Starting libcurl build process for Windows
+[INFO] Build type: Release
+[INFO] Install prefix: C:\libcurl
+
+[INFO] Using source directory: libcurl-build\curl-8.14.1
+[INFO] Configuring with CMake...
+-- Building for: Visual Studio 17 2022
+-- Using CMake version 3.30.5-msvc23
+-- curl version=[8.14.1]
+-- Selecting Windows SDK version 10.0.22621.0 to target Windows 10.0.19045.
+-- The C compiler identification is MSVC 19.43.34809.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Professional/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMake platform flags: WIN32 MSVC-1943
+-- Performing Test HAVE_WIN32_WINNT
+-- Performing Test HAVE_WIN32_WINNT - Success
+-- Found _WIN32_WINNT=0x0a00
+-- Picky compiler options: -W4 -Wall -wd4061 -wd4191 -wd4255 -wd4464 -wd4548 -wd4574 -wd4668 -wd4710 -wd4711 -wd4746 -wd4774 -wd4820 -wd5045
+-- Found Perl: C:/Program Files/Git/usr/bin/perl.exe (found version "5.26.2")
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR)
+-- Could NOT find Brotli (missing: BROTLI_INCLUDE_DIR BROTLIDEC_LIBRARY BROTLICOMMON_LIBRARY)
+-- Could NOT find Zstd (missing: ZSTD_INCLUDE_DIR ZSTD_LIBRARY)
+-- Could NOT find NGHTTP2 (missing: NGHTTP2_INCLUDE_DIR NGHTTP2_LIBRARY)
+-- Could NOT find Libidn2 (missing: LIBIDN2_INCLUDE_DIR LIBIDN2_LIBRARY)
+CMake Error at C:/Program Files/Microsoft Visual Studio/2022/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake:233 (message):
+  Could NOT find Libpsl (missing: LIBPSL_INCLUDE_DIR LIBPSL_LIBRARY)
+Call Stack (most recent call first):
+  C:/Program Files/Microsoft Visual Studio/2022/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake:603 (_FPHSA_FAILURE_MESSAGE)
+  CMake/FindLibpsl.cmake:69 (find_package_handle_standard_args)
+  CMakeLists.txt:1370 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+[ERROR] CMake configuration failed
+Press any key to continue . . .
+
+C:\dev\build_libcurl\build_new\libcurl-build\curl-8.14.1\build>
+C:\dev\build_libcurl\build_new\libcurl-build\curl-8.14.1\build>

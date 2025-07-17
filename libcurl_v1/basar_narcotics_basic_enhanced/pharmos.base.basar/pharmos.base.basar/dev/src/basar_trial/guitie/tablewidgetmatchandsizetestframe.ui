@@ -1,0 +1,156 @@
+<ui version="4.0" >
+ <class>TableWidgetMatchAndSizeTestFrameClass</class>
+ <widget class="QWidget" name="TableWidgetMatchAndSizeTestFrameClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>492</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>TableWidgetdataSelectionChangedTestFrame</string>
+  </property>
+  <widget class="BasarTableWidget" name="tableWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>731</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="rowCount" >
+    <number>3</number>
+   </property>
+   <property name="columnCount" >
+    <number>10</number>
+   </property>
+   <row/>
+   <row/>
+   <row/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+   <column/>
+  </widget>
+  <widget class="QComboBox" name="comboCachingPolicy" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboMemoryPolicy" >
+   <property name="geometry" >
+    <rect>
+     <x>210</x>
+     <y>220</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="cbExceptions" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>131</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Remove Exceptions</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbMatch" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>match</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbResizeColumns" >
+   <property name="geometry" >
+    <rect>
+     <x>210</x>
+     <y>260</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>resizeColumnsToContents </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbResizeRows" >
+   <property name="geometry" >
+    <rect>
+     <x>400</x>
+     <y>260</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>resizeRowsToContents</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pbClear" >
+   <property name="geometry" >
+    <rect>
+     <x>400</x>
+     <y>220</y>
+     <width>171</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>clear</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelDescription" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>731</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Use "match" to select data into table widget with adjusted policies. The "resizeXXX" buttons will apply the resize methods to the table widget. If you page up and down, the columns/rows size should be adjusted, if the columns/rows were resized via button.</string>
+   </property>
+   <property name="wordWrap" >
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>BasarTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>libbasarqtwidget_tablewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

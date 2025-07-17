@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{1d4505d7-2395-4869-9dd6-e0591f1f335a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{ea1cc292-9ce4-43fb-8e35-9730fa76afc2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="data\basar.config.xml">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\sqlhosts.ut">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\utlogin.cfg">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="backup.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="nodlg.cpp" />
+  </ItemGroup>
+</Project>

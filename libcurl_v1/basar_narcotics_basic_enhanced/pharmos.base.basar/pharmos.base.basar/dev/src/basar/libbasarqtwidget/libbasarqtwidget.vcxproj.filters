@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="tablewidget">
+      <UniqueIdentifier>{39c1b336-81af-472e-b534-08fefbb339c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="multicombobox">
+      <UniqueIdentifier>{f3d31efa-56a9-478e-ba18-f1aa9cab77d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+    </Filter>
+    <Filter Include="SignalEmitter">
+      <UniqueIdentifier>{a1cbcd14-e710-4e3a-bb6b-295bfe8956de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetPointer">
+      <UniqueIdentifier>{3b576b3c-4289-442e-87aa-975e7b177979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="i18n">
+      <UniqueIdentifier>{a8c2c74f-fa5c-4805-b420-1a90358b8738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DateTimeWidget">
+      <UniqueIdentifier>{9182eb4b-4d31-4084-94af-308705d3a0da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Coverage">
+      <UniqueIdentifier>{a14541a7-7451-430c-8f92-999e38dd540c}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{4655efab-957d-47af-b343-267f3084512d}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{57d6b924-75cb-4179-9dd8-3feb0e9ad951}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libbasarqtwidget_i18n.h">
+      <Filter>i18n</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarqtwidget_functions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tablewidget.cpp">
+      <Filter>tablewidget</Filter>
+    </ClCompile>
+    <ClCompile Include="tablewidgetplugin.cpp">
+      <Filter>tablewidget</Filter>
+    </ClCompile>
+    <ClCompile Include="multicombobox.cpp">
+      <Filter>multicombobox</Filter>
+    </ClCompile>
+    <ClCompile Include="multicomboboxplugin.cpp">
+      <Filter>multicombobox</Filter>
+    </ClCompile>
+    <ClCompile Include="integersignalemitter.cpp">
+      <Filter>SignalEmitter</Filter>
+    </ClCompile>
+    <ClCompile Include="widgetpointer.cpp">
+      <Filter>WidgetPointer</Filter>
+    </ClCompile>
+    <ClCompile Include="i18n.cpp">
+      <Filter>i18n</Filter>
+    </ClCompile>
+    <ClCompile Include="basardateedit.cpp">
+      <Filter>DateTimeWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="basardateeditplugin.cpp">
+      <Filter>DateTimeWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="basardatetimeedit.cpp">
+      <Filter>DateTimeWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="basardatetimeeditplugin.cpp">
+      <Filter>DateTimeWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="basartimeedit.cpp">
+      <Filter>DateTimeWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="basartimeeditplugin.cpp">
+      <Filter>DateTimeWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="basarwidgets.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasarqtwidget.cpp" />
+    <ClCompile Include="GeneratedFiles\Coverage\moc_tablewidgetplugin.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tablewidgetplugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tablewidgetplugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_multicomboboxplugin.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_multicomboboxplugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_multicomboboxplugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basartimeeditplugin.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basartimeeditplugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basartimeeditplugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basardatetimeeditplugin.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basardatetimeeditplugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basardatetimeeditplugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basardateeditplugin.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basardateeditplugin.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basardateeditplugin.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_tablewidget.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_widgetpointer.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basardateedit.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basardatetimeedit.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basartimeedit.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basardateedit.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basardatetimeedit.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basartimeedit.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tablewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_multicombobox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_integersignalemitter.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widgetpointer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basarwidgets.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basarwidgets.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_integersignalemitter.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_multicombobox.cpp">
+      <Filter>Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basarwidgets.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_integersignalemitter.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_multicombobox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tablewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widgetpointer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basardateedit.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basardatetimeedit.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basartimeedit.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="libbasarqtwidget_tablewidget.h">
+      <Filter>tablewidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetplugin.h">
+      <Filter>tablewidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_multicombobox.h">
+      <Filter>multicombobox</Filter>
+    </CustomBuild>
+    <CustomBuild Include="multicomboboxplugin.h">
+      <Filter>multicombobox</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_integersignalemitter.h">
+      <Filter>SignalEmitter</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_widgetpointer.h">
+      <Filter>WidgetPointer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="basardateeditplugin.h">
+      <Filter>DateTimeWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="basardatetimeeditplugin.h">
+      <Filter>DateTimeWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="basartimeeditplugin.h">
+      <Filter>DateTimeWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_dateedit.h">
+      <Filter>DateTimeWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_datetimeedit.h">
+      <Filter>DateTimeWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_timeedit.h">
+      <Filter>DateTimeWidget</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget.h" />
+    <CustomBuild Include="libbasarqtwidget_basarwidgets.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="basarwidgets.json" />
+  </ItemGroup>
+</Project>

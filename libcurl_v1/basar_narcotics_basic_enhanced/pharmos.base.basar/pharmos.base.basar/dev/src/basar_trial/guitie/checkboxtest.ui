@@ -1,0 +1,156 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>CheckBoxTestClass</class>
+ <widget class="QFrame" name="CheckBoxTestClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>411</width>
+    <height>341</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>CheckBoxTest</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_2" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>371</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>CheckBox Test</string>
+   </property>
+   <widget class="QGroupBox" name="groupbox_checkbox1" >
+    <property name="geometry" >
+     <rect>
+      <x>40</x>
+      <y>140</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>CheckBox 1</string>
+    </property>
+    <widget class="QCheckBox" name="colvch3b" >
+     <property name="geometry" >
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>colvch3b</string>
+     </property>
+     <property name="checked" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupbox_checkbox2" >
+    <property name="geometry" >
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>CheckBox 2</string>
+    </property>
+    <widget class="QCheckBox" name="colvch4a" >
+     <property name="geometry" >
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>colvch4a</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="colvch3a" >
+     <property name="geometry" >
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>colvch3a</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QCheckBox" name="colvch3c" >
+    <property name="geometry" >
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>colvch3c</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_14" >
+    <property name="geometry" >
+     <rect>
+      <x>180</x>
+      <y>150</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Read Box 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_15" >
+    <property name="geometry" >
+     <rect>
+      <x>180</x>
+      <y>270</y>
+      <width>121</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Read colvch3c</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_12" >
+    <property name="geometry" >
+     <rect>
+      <x>180</x>
+      <y>40</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Read Box 2</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,344 @@
+# Doxyfile 1.4.7
+
+#---------------------------------------------------------------------------
+# Project related configuration options
+#---------------------------------------------------------------------------
+DOXYFILE_ENCODING      = UTF-8
+CREATE_SUBDIRS         = YES
+OUTPUT_LANGUAGE        = English
+
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = NO
+ABBREVIATE_BRIEF       = "The $name class" \
+                         "The $name widget" \
+                         "The $name file" \
+                         is \
+                         provides \
+                         specifies \
+                         contains \
+                         represents \
+                         a \
+                         an \
+                         the
+ALWAYS_DETAILED_SEC    = NO
+INLINE_INHERITED_MEMB  = NO
+FULL_PATH_NAMES        = YES
+SHORT_NAMES            = NO
+JAVADOC_AUTOBRIEF      = NO
+QT_AUTOBRIEF           = NO
+MULTILINE_CPP_IS_BRIEF = NO
+INHERIT_DOCS           = YES
+DISTRIBUTE_GROUP_DOC   = NO
+SEPARATE_MEMBER_PAGES  = NO
+TAB_SIZE               = 4
+ALIASES                = 
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+BUILTIN_STL_SUPPORT    = YES
+SUBGROUPING            = YES
+#---------------------------------------------------------------------------
+# Build related configuration options
+#---------------------------------------------------------------------------
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = NO
+HIDE_UNDOC_MEMBERS     = YES
+HIDE_UNDOC_CLASSES     = YES
+HIDE_FRIEND_COMPOUNDS  = NO
+HIDE_IN_BODY_DOCS      = NO
+INTERNAL_DOCS          = NO
+CASE_SENSE_NAMES       = NO
+HIDE_SCOPE_NAMES       = NO
+SHOW_INCLUDE_FILES     = YES
+INLINE_INFO            = YES
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = YES
+SORT_BY_SCOPE_NAME     = YES
+GENERATE_TODOLIST      = YES
+GENERATE_TESTLIST      = YES
+GENERATE_BUGLIST       = YES
+GENERATE_DEPRECATEDLIST= YES
+ENABLED_SECTIONS       = 
+MAX_INITIALIZER_LINES  = 30
+SHOW_USED_FILES        = YES
+FILE_VERSION_FILTER    = 
+#---------------------------------------------------------------------------
+# configuration options related to warning and progress messages
+#---------------------------------------------------------------------------
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = YES
+WARN_FORMAT            = "$file:$line: $text"
+#---------------------------------------------------------------------------
+# configuration options related to the input files
+#---------------------------------------------------------------------------
+FILE_PATTERNS          = *.c \
+                         *.cc \
+                         *.cxx \
+                         *.cpp \
+                         *.c++ \
+                         *.d \
+                         *.java \
+                         *.ii \
+                         *.ixx \
+                         *.ipp \
+                         *.i++ \
+                         *.inl \
+                         *.h \
+                         *.hh \
+                         *.hxx \
+                         *.hpp \
+                         *.h++ \
+                         *.idl \
+                         *.odl \
+                         *.cs \
+                         *.php \
+                         *.php3 \
+                         *.inc \
+                         *.m \
+                         *.mm \
+                         *.dox \
+                         *.ec
+RECURSIVE              = YES
+EXCLUDE                = 
+EXCLUDE_SYMLINKS       = NO
+EXCLUDE_PATTERNS       = 
+EXAMPLE_PATH           = 
+EXAMPLE_PATTERNS       = *
+EXAMPLE_RECURSIVE      = NO
+IMAGE_PATH             = 
+INPUT_FILTER           = 
+FILTER_PATTERNS        = 
+FILTER_SOURCE_FILES    = NO
+EXTENSION_MAPPING      = ec=C
+#---------------------------------------------------------------------------
+# configuration options related to source browsing
+#---------------------------------------------------------------------------
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+STRIP_CODE_COMMENTS    = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+USE_HTAGS              = NO
+VERBATIM_HEADERS       = YES
+#---------------------------------------------------------------------------
+# configuration options related to the alphabetical class index
+#---------------------------------------------------------------------------
+ALPHABETICAL_INDEX     = YES
+COLS_IN_ALPHA_INDEX    = 3
+IGNORE_PREFIX          = 
+#---------------------------------------------------------------------------
+# configuration options related to the HTML output
+#---------------------------------------------------------------------------
+GENERATE_HTML          = YES
+#HTML_OUTPUT            = 
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            = 
+HTML_FOOTER            = 
+HTML_STYLESHEET        = 
+HTML_EXTRA_STYLESHEET  = 
+HTML_EXTRA_FILES       = 
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_TIMESTAMP         = YES
+HTML_DYNAMIC_SECTIONS  = NO
+HTML_INDEX_NUM_ENTRIES = 100
+GENERATE_DOCSET        = NO
+DOCSET_FEEDNAME        = "Doxygen generated docs"
+DOCSET_BUNDLE_ID       = org.doxygen.Project
+DOCSET_PUBLISHER_ID    = org.doxygen.Publisher
+DOCSET_PUBLISHER_NAME  = Publisher
+GENERATE_HTMLHELP      = YES
+#CHM_FILE               = 
+#HHC_LOCATION           = hhc.exe
+GENERATE_CHI           = NO
+CHM_INDEX_ENCODING     = 
+BINARY_TOC             = NO
+TOC_EXPAND             = YES
+GENERATE_QHP           = NO
+QCH_FILE               = 
+QHP_NAMESPACE          = org.doxygen.Project
+QHP_VIRTUAL_FOLDER     = doc
+QHP_CUST_FILTER_NAME   = 
+QHP_CUST_FILTER_ATTRS  = 
+QHP_SECT_FILTER_ATTRS  = 
+QHG_LOCATION           = 
+GENERATE_ECLIPSEHELP   = NO
+ECLIPSE_DOC_ID         = org.doxygen.Project
+DISABLE_INDEX          = NO
+GENERATE_TREEVIEW      = NO
+ENUM_VALUES_PER_LINE   = 4
+TREEVIEW_WIDTH         = 250
+EXT_LINKS_IN_WINDOW    = NO
+FORMULA_FONTSIZE       = 10
+FORMULA_TRANSPARENT    = YES
+USE_MATHJAX            = NO
+MATHJAX_FORMAT         = HTML-CSS
+MATHJAX_RELPATH        = http://cdn.mathjax.org/mathjax/latest
+MATHJAX_EXTENSIONS     = 
+MATHJAX_CODEFILE       = 
+SERVER_BASED_SEARCH    = NO
+EXTERNAL_SEARCH        = NO
+SEARCHENGINE_URL       = 
+SEARCHDATA_FILE        = searchdata.xml
+EXTERNAL_SEARCH_ID     = 
+EXTRA_SEARCH_MAPPINGS  = 
+#---------------------------------------------------------------------------
+# configuration options related to the LaTeX output
+#---------------------------------------------------------------------------
+GENERATE_LATEX         = NO
+LATEX_OUTPUT           = latex
+LATEX_CMD_NAME         = latex
+MAKEINDEX_CMD_NAME     = makeindex
+COMPACT_LATEX          = NO
+PAPER_TYPE             = a4wide
+EXTRA_PACKAGES         = 
+LATEX_HEADER           = 
+PDF_HYPERLINKS         = NO
+USE_PDFLATEX           = NO
+LATEX_BATCHMODE        = NO
+LATEX_HIDE_INDICES     = NO
+#---------------------------------------------------------------------------
+# configuration options related to the RTF output
+#---------------------------------------------------------------------------
+GENERATE_RTF           = NO
+RTF_OUTPUT             = rtf
+COMPACT_RTF            = NO
+RTF_HYPERLINKS         = NO
+RTF_STYLESHEET_FILE    = 
+RTF_EXTENSIONS_FILE    = 
+#---------------------------------------------------------------------------
+# configuration options related to the man page output
+#---------------------------------------------------------------------------
+GENERATE_MAN           = NO
+MAN_OUTPUT             = man
+MAN_EXTENSION          = .3
+MAN_LINKS              = NO
+#---------------------------------------------------------------------------
+# configuration options related to the XML output
+#---------------------------------------------------------------------------
+GENERATE_XML           = NO
+XML_OUTPUT             = xml
+XML_PROGRAMLISTING     = YES
+#---------------------------------------------------------------------------
+# configuration options for the AutoGen Definitions output
+#---------------------------------------------------------------------------
+GENERATE_AUTOGEN_DEF   = NO
+#---------------------------------------------------------------------------
+# configuration options related to the Perl module output
+#---------------------------------------------------------------------------
+GENERATE_PERLMOD       = NO
+PERLMOD_LATEX          = NO
+PERLMOD_PRETTY         = YES
+PERLMOD_MAKEVAR_PREFIX = 
+#---------------------------------------------------------------------------
+# Configuration options related to the preprocessor   
+#---------------------------------------------------------------------------
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = YES
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           =
+INCLUDE_FILE_PATTERNS  = 
+PREDEFINED             = \
+			_WIN32 \
+			__sun \
+			__linux__ \
+			_AIX \
+			"BEGIN_WRITE_BUILDER_DECLARATION(name)=class name: public basar::db::aspect::SQLWriteStringBuilder{public: /*! create new SQLWriteStringBuilder \return shared_ptr to SQLStringBuilder */ virtual const boost::shared_ptr<basar::db::aspect::SQLStringBuilder> create() const; protected: /*! check if statement is ready for execution \return bool indicating statement is executeable */ virtual const bool isExecutable() const; /*! resolve sql-statement */ virtual void buildSQLString(); private: static basar::ConstString s_SqlStmt;/*!< sql-string*/};" \
+			"BEGIN_QUERY_BUILDER_DECLARATION(name)=class name: public basar::db::aspect::SQLQueryStringBuilder{public: /*! create new SQLQueryStringBuilder \return shared_ptr to SQLStringBuilder */ virtual const boost::shared_ptr<basar::db::aspect::SQLStringBuilder> create() const; protected: /*! check if statement is ready for execution \return bool indicating statement is executeable */ virtual const bool isExecutable() const; /*! resolve sql-statement */ virtual void buildSQLString(); private: static basar::ConstString s_SqlStmt;/*!< sql-string*/};" \
+			"BEGIN_SINGLE_QUERY_BUILDER_DECLARATION(name)=class name: public basar::db::aspect::SQLQueryStringBuilder{public: /*! create new SQLSingleQueryStringBuilder \return shared_ptr to SQLStringBuilder */ virtual const boost::shared_ptr<basar::db::aspect::SQLStringBuilder> create() const; /*! builder has single query \return std::pair indicating builder has single query */ virtual std::pair<bool, basar::db::aspect::QueryTypeEnum> isQuery() const { return std::make_pair<bool, basar::db::aspect::QueryTypeEnum>( true, basar::db::aspect::SINGLE_QUERY ); }; protected: /*! check if statement is ready for execution \return bool indicating statement is executeable */ virtual const bool isExecutable() const; /*! resolve sql-statement */ virtual void buildSQLString(); private: static basar::ConstString s_SqlStmt;/*!< sql-string*/};" \
+			"BEGIN_AGGREGATE_QUERY_BUILDER_DECLARATION(name)=class name: public basar::db::aspect::SQLQueryStringBuilder{public: /*! create new SQLAggregateQueryStringBuilder \return shared_ptr to SQLStringBuilder */ virtual const boost::shared_ptr<basar::db::aspect::SQLStringBuilder> create() const; /*! builder has aggregate query \return std::pair indicating builder has aggregate query */ virtual std::pair<bool, basar::db::aspect::QueryTypeEnum> isQuery() const { return std::make_pair<bool, basar::db::aspect::QueryTypeEnum>( true, basar::db::aspect::AGGREGATE_QUERY ); }; protected: /*! check if statement is ready for execution \return bool indicating statement is executeable */ virtual const bool isExecutable() const; /*! resolve sql-statement */ virtual void buildSQLString(); private: static basar::ConstString s_SqlStmt;/*!< sql-string*/};" \
+			"SYSTEM_EVENT_HANDLER_DECLARATION(name)=basar::appl::EventReturnType handle ## name (basar::appl::IEventSource & , basar::db::aspect::AccessorPropertyTable_YIterator ); "
+EXPAND_AS_DEFINED = \
+			END_BUILDER_DECLARATION \
+			BUILDER_DEFINITION \
+			ENSURE_PROPERTIES_ARE_SET_AND_ONE_IN_STATE \
+			ENSURE_PROPERTIES_ARE_SET \
+			ENSURE_FIRST_PROPERTIES_ARE_SET_AND_SECOND_ONE_IN_STATE \
+			DONT_CHECK_PROPERTIES \
+			SQL_PATTERN \
+			BEGIN_ACCESSOR_DEFINITION \
+			PROPERTY_DESCRIPTION_LIST \
+			ACCESS_METHOD \
+			SQL_BUILDER_CREATE \
+			SQL_BUILDER_PUSH_BACK \
+			END_ACCESSOR_DEFINITION \
+			SYSTEM_EVENT_HANDLER_DEFINITION \
+			SYSTEM_EVENT_HANDLER_REGISTRATION_WITH_SOURCE \
+			SYSTEM_EVENT_HANDLER_REGISTRATION \
+			BEGIN_HANDLERS_REGISTRATION \
+			END_HANDLERS_REGISTRATION \
+			HANDLE_1_SYSTEM_EVENT \
+			HANDLE_2_SYSTEM_EVENTS \
+			HANDLE_3_SYSTEM_EVENTS \
+			HANDLE_4_SYSTEM_EVENTS \
+			HANDLE_5_SYSTEM_EVENTS \
+			HANDLE_6_SYSTEM_EVENTS \
+			HANDLE_7_SYSTEM_EVENTS \
+			HANDLE_8_SYSTEM_EVENTS \
+			HANDLE_9_SYSTEM_EVENTS \
+			HANDLE_10_SYSTEM_EVENTS \
+			HANDLE_11_SYSTEM_EVENTS \
+			HANDLE_12_SYSTEM_EVENTS \
+			HANDLE_13_SYSTEM_EVENTS \
+			HANDLE_14_SYSTEM_EVENTS \
+			HANDLE_15_SYSTEM_EVENTS \
+			HANDLE_16_SYSTEM_EVENTS \
+			HANDLE_17_SYSTEM_EVENTS \
+			HANDLE_18_SYSTEM_EVENTS \
+			HANDLE_19_SYSTEM_EVENTS \
+			HANDLE_20_SYSTEM_EVENTS
+SKIP_FUNCTION_MACROS   = YES
+#---------------------------------------------------------------------------
+# Configuration::additions related to external references   
+#---------------------------------------------------------------------------
+TAGFILES               = 
+GENERATE_TAGFILE       = 
+ALLEXTERNALS           = NO
+EXTERNAL_GROUPS        = YES
+PERL_PATH              = /usr/bin/perl
+#---------------------------------------------------------------------------
+# Configuration options related to the dot tool   
+#---------------------------------------------------------------------------
+CLASS_DIAGRAMS         = YES
+#MSCGEN_PATH            = 
+HIDE_UNDOC_RELATIONS   = NO
+HAVE_DOT               = NO
+DOT_NUM_THREADS        = 0
+DOT_FONTNAME           = Helvetica
+DOT_FONTSIZE           = 10
+DOT_FONTPATH           = 
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+GROUP_GRAPHS           = YES
+UML_LOOK               = YES
+UML_LIMIT_NUM_FIELDS   = 10
+TEMPLATE_RELATIONS     = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = NO
+DOT_IMAGE_FORMAT       = png
+INTERACTIVE_SVG        = NO
+DOT_PATH               =
+DOTFILE_DIRS           = 
+MSCFILE_DIRS           = 
+DOT_GRAPH_MAX_NODES    = 50
+MAX_DOT_GRAPH_DEPTH    = 1000
+DOT_TRANSPARENT        = NO
+DOT_MULTI_TARGETS      = NO
+GENERATE_LEGEND        = NO
+DOT_CLEANUP            = YES
+
+#---------------------------------------------------------------------------
+# Configuration::additions related to the search engine   
+#---------------------------------------------------------------------------
+SEARCHENGINE           = NO

@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+
+<!-- configuration for basar libraries -->
+<basar>
+
+	<!-- component libbasarproperty -->
+	<property>
+	
+		<!-- class PropertyTable_YIterator -->
+		<propertytable_yiterator>
+		
+			<!-- runtime check mode: CHK_NO_ITERATOR | CHK_ITERATOR -->
+			<!-- 
+			<checkmode>CHK_ITERATOR</checkmode>
+			-->
+		
+		</propertytable_yiterator>
+	
+	</property>
+
+	<!-- component libbasarlogin -->
+	<login>
+	
+		<!-- login type flag -->
+		<logintype>AD</logintype>
+		
+		<!-- old login flow without AD -->
+		<oldlogin>
+		<!-- database server for connect to user admin -->
+		<dbserver>
+		
+			<!-- primary database server -->
+			<main>zdev21_tcp</main>
+			
+			<!-- secondary database server -->
+			<backup>zdev21_tcp</backup>
+			
+		</dbserver>
+		
+			<!-- user admin database -->
+			<database>
+		
+				<!-- primary database -->
+				<main>zpcua1</main>
+				
+				<!-- secondary database -->
+				<backup>zpcua2</backup>
+				
+			</database>
+			
+		</oldlogin>
+		
+		<!-- AD login -->
+		<adlogin>
+		
+			<!-- database server for connect to user admin -->
+			<dbserver>
+				<!-- primary database server -->
+				<main>zdev21_tcp</main>
+				
+				<!-- secondary database server -->
+				<backup>zdev21_tcp</backup>
+				
+			</dbserver>
+			
+
+			<!-- user admin database -->
+			<database>
+				<!-- AD type login primary database -->
+				<main>uadm1</main>
+				
+				<!-- AD type login secondary database -->
+				<backup>uadm2</backup>
+				
+			</database>
+	
+			<!-- LDAP Server -->
+			<ldapserver>10.130.247.202</ldapserver>
+			
+			<!-- TCP Port -->
+			<tcpport>389</tcpport>
+			
+			<!-- Common name of service account used to query AD (here common name is used for binding) -->
+			<account_cn>svc - UADM Lookup</account_cn>
+			
+			<!-- Password of service account -->
+			<password>Ago2Tod6</password>
+			
+			<!-- service account distinguished name prefix (everything before value in account) -->
+			<dn_prefix>CN=</dn_prefix>
+			
+			<!-- service account distinguished name postfix (everything after value in account) -->
+			<dn_postfix>,OU=Services,OU=Global,DC=phoenix,DC=loc</dn_postfix>
+			
+		</adlogin>
+			
+		
+		
+	</login>
+	
+</basar>

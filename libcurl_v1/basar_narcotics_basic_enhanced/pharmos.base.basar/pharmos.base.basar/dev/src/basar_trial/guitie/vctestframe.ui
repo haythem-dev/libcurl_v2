@@ -1,0 +1,120 @@
+<ui version="4.0" >
+ <class>VCTestFrameClass</class>
+ <widget class="QFrame" name="VCTestFrameClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>VCTestFrame</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>351</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>create a new ViewConnPtr</string>
+   </property>
+   <widget class="QRadioButton" name="radioButton" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>151</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>with removable Parent</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_2" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>84</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>noParent</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton" >
+    <property name="geometry" >
+     <rect>
+      <x>230</x>
+      <y>10</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>create</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2" >
+    <property name="geometry" >
+     <rect>
+      <x>230</x>
+      <y>40</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>create Twice</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>72</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>store VC</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3" >
+    <property name="geometry" >
+     <rect>
+      <x>230</x>
+      <y>80</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>reset stored VC</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTextEdit" name="textEdit" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>351</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

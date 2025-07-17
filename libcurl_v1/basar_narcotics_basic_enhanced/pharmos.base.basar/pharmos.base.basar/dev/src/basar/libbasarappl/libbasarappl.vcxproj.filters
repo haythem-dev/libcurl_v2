@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="eventmanager">
+      <UniqueIdentifier>{2d4f6d59-7e8e-4443-91a6-8df1c407ee0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unix">
+      <UniqueIdentifier>{708b99e5-e805-4641-b47a-3b2f14a4237f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libbasarappl_eventmacros.h">
+      <Filter>eventmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarappl_syseventexecuter.hpp">
+      <Filter>eventmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarappl_systemeventmanager.h">
+      <Filter>eventmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarappl.h" />
+    <ClInclude Include="libbasarappl_functions.h" />
+    <ClInclude Include="loggerpool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="systemeventmanager.cpp">
+      <Filter>eventmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasarappl.cpp" />
+    <ClCompile Include="loggerpool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+  </ItemGroup>
+</Project>

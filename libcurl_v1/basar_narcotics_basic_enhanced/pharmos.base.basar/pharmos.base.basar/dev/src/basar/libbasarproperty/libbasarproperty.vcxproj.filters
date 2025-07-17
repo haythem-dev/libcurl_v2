@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{99b336c9-8bcc-4389-aad0-e365f2cecc24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertytype">
+      <UniqueIdentifier>{66b2df87-4795-4396-bf3b-343f075f2bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertystate">
+      <UniqueIdentifier>{d11ac245-0b35-44bf-ab9f-a1674ae8eeae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertydescriptionlist">
+      <UniqueIdentifier>{111b434b-d6f3-437e-acce-85de72062d52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertydescriptionlist\ref">
+      <UniqueIdentifier>{3a51425e-70d8-4c8e-8c37-ac6e9874ff45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertydescriptionlist\iterator">
+      <UniqueIdentifier>{ede3a29f-6e35-4234-9ce6-a0b98c547a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertydescriptionlist\impl">
+      <UniqueIdentifier>{42c43dfd-0b6a-4ad7-8adf-607a6e659d32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertydescriptionlist\algorithm">
+      <UniqueIdentifier>{b77e5530-cb3e-4f6e-b352-b48c43845ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertytable">
+      <UniqueIdentifier>{52590e4c-a06f-462f-806d-d85f6d5653f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertytable\ref">
+      <UniqueIdentifier>{0a6338af-fec5-4d34-9f7b-bc0cc2696b7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertytable\xiterator">
+      <UniqueIdentifier>{cecaaadb-d8a4-4ad2-8b28-86358cc99456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertytable\impl">
+      <UniqueIdentifier>{e58b595a-777c-4299-94cf-f15a5c7fcb8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertytable\yiterator">
+      <UniqueIdentifier>{578336ab-b0ca-47cd-9016-980905438e1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertytable\snapshot">
+      <UniqueIdentifier>{01258b5b-fedc-40da-a227-55f63059ac80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="supportedstate">
+      <UniqueIdentifier>{9182e12e-53f5-4747-9e6a-9899f8ae987e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertystateset">
+      <UniqueIdentifier>{21ed597e-02fb-415d-8071-ba5c49286d2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertyinternal">
+      <UniqueIdentifier>{483d55d1-81c8-4168-bced-dd799e1e79f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertyinternal\any">
+      <UniqueIdentifier>{067b1368-d204-4fd4-81ed-94c8333f73f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertydescription">
+      <UniqueIdentifier>{dda5f1df-7448-4b9f-8135-7c70effeecb9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libbasarproperty_propertytype.h">
+      <Filter>propertytype</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty_propertystate.h">
+      <Filter>propertystate</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty_propertydescriptionlistref.h">
+      <Filter>propertydescriptionlist\ref</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty_propertydescriptionlist_iterator.h">
+      <Filter>propertydescriptionlist\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="propertydescriptionlist.h">
+      <Filter>propertydescriptionlist\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty_algorithm.h">
+      <Filter>propertydescriptionlist\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty_propertytableref.h">
+      <Filter>propertytable\ref</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty_propertytable_xiterator.h">
+      <Filter>propertytable\xiterator</Filter>
+    </ClInclude>
+    <ClInclude Include="propertytable.h">
+      <Filter>propertytable\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty_propertytable_yiterator.h">
+      <Filter>propertytable\yiterator</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty_propertytablesnapshotref.h">
+      <Filter>propertytable\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="propertytable_yiteratorsnapshot.h">
+      <Filter>propertytable\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="propertytablesnapshot.h">
+      <Filter>propertytable\snapshot</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty_supportedstate.h">
+      <Filter>supportedstate</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty_propertystateset.h">
+      <Filter>propertystateset</Filter>
+    </ClInclude>
+    <ClInclude Include="propertyinternal.h">
+      <Filter>propertyinternal</Filter>
+    </ClInclude>
+    <ClInclude Include="property_any.hpp">
+      <Filter>propertyinternal\any</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty_propertydescription.h">
+      <Filter>propertydescription</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarproperty.h" />
+    <ClInclude Include="libbasarproperty_definitions.h" />
+    <ClInclude Include="libbasarproperty_exceptions.h" />
+    <ClInclude Include="libbasarproperty_functions.h" />
+    <ClInclude Include="libbasarproperty_saveaccessiterator.hpp" />
+    <ClInclude Include="loggerpool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="propertytype.cpp">
+      <Filter>propertytype</Filter>
+    </ClCompile>
+    <ClCompile Include="propertystate.cpp">
+      <Filter>propertystate</Filter>
+    </ClCompile>
+    <ClCompile Include="propertydescriptionlistref.cpp">
+      <Filter>propertydescriptionlist\ref</Filter>
+    </ClCompile>
+    <ClCompile Include="propertydescriptionlist_iterator.cpp">
+      <Filter>propertydescriptionlist\iterator</Filter>
+    </ClCompile>
+    <ClCompile Include="propertydescriptionlist.cpp">
+      <Filter>propertydescriptionlist\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm.cpp">
+      <Filter>propertydescriptionlist\algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="propertytableref.cpp">
+      <Filter>propertytable\ref</Filter>
+    </ClCompile>
+    <ClCompile Include="propertytable_xiterator.cpp">
+      <Filter>propertytable\xiterator</Filter>
+    </ClCompile>
+    <ClCompile Include="propertytable.cpp">
+      <Filter>propertytable\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="propertytable_yiterator.cpp">
+      <Filter>propertytable\yiterator</Filter>
+    </ClCompile>
+    <ClCompile Include="propertytable_yiteratorsnapshot.cpp">
+      <Filter>propertytable\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="propertytablesnapshot.cpp">
+      <Filter>propertytable\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="propertytablesnapshotref.cpp">
+      <Filter>propertytable\snapshot</Filter>
+    </ClCompile>
+    <ClCompile Include="propertystateset.cpp">
+      <Filter>propertystateset</Filter>
+    </ClCompile>
+    <ClCompile Include="propertyinternal.cpp">
+      <Filter>propertyinternal</Filter>
+    </ClCompile>
+    <ClCompile Include="propertydescription.cpp">
+      <Filter>propertydescription</Filter>
+    </ClCompile>
+    <ClCompile Include="propertydescriptionvector.cpp">
+      <Filter>propertydescription</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasarproperty.cpp" />
+    <ClCompile Include="loggerpool.cpp" />
+  </ItemGroup>
+</Project>

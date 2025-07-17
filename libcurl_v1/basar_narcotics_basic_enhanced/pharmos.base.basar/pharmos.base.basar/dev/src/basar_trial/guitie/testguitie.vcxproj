@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{01F6B3B8-DB53-4784-8B92-DDB4C9A69F78}</ProjectGuid>
+    <RootNamespace>testguitie</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">./$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">./$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">./$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">./$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>GeneratedFiles;$(QTDIR)\include;$(SolutionDir)\..\..\src\basar\library\include;$(SolutionDir)\..\..\ext\boost;$(SolutionDir)\..\..\ext\log4cplus\include;.\GeneratedFiles;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasarqtwidget.lib;libbasarcmnutil.lib;libbasarappl.lib;libbasardbsql.lib;libbasarproperty.lib;libbasardbaspect.lib;libbasarguitie.lib;liblog4cplus.lib;qtmain.lib;QtCore4.lib;QtGui4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\..\src\basar\library\lib\$(OutDir);$(SolutionDir)\..\..\ext\log4cplus\lib\$(OutDir);$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>GeneratedFiles;$(QTDIR)\include;$(SolutionDir)\..\..\src\basar\library\include;$(SolutionDir)\..\..\ext\boost;$(SolutionDir)\..\..\ext\log4cplus\include;.\GeneratedFiles;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>Cdecl</CallingConvention>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasarqtwidget.lib;libbasarcmnutil.lib;libbasarappl.lib;libbasardbsql.lib;libbasarproperty.lib;libbasardbaspect.lib;libbasarguitie.lib;liblog4cplus.lib;qtmaind.lib;QtCored4.lib;QtGuid4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\..\src\basar\library\lib\$(OutDir);$(SolutionDir)\..\..\ext\log4cplus\lib\$(OutDir);$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="check_hpp.cpp" />
+    <ClCompile Include="checkboxtest.cpp" />
+    <ClCompile Include="comboboxes.cpp" />
+    <ClCompile Include="datetimetest.cpp" />
+    <ClCompile Include="dlg2.cpp" />
+    <ClCompile Include="frame1.cpp" />
+    <ClCompile Include="frame2.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="msgboxtest.cpp" />
+    <ClCompile Include="selects.cpp" />
+    <ClCompile Include="tablewidgetabsoluteheadertestframe1.cpp" />
+    <ClCompile Include="tablewidgetabsoluteheadertestframe2.cpp" />
+    <ClCompile Include="tablewidgetdataselectionchangedtestframe.cpp" />
+    <ClCompile Include="tablewidgetmatchandsizetestframe.cpp" />
+    <ClCompile Include="tablewidgetmultmatchselectframe.cpp" />
+    <ClCompile Include="tablewidgetmultmatchtestframe.cpp" />
+    <ClCompile Include="tablewidgetnocoltestframe.cpp" />
+    <ClCompile Include="test1vc.cpp" />
+    <ClCompile Include="testconnection.cpp" />
+    <ClCompile Include="testguitie.cpp" />
+    <ClCompile Include="vctestframe.cpp" />
+    <ClCompile Include="viewconnptr.cpp" />
+    <ClCompile Include="generatedfiles\debug\moc_checkboxtest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_checkboxtest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_comboboxes.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_comboboxes.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_datetimetest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_datetimetest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_dlg2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_dlg2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_frame1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_frame1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_frame2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_frame2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_msgboxtest.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\Release\moc_msgboxtest.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_TableWidgetAbsoluteHeaderTestFrame1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_TableWidgetAbsoluteHeaderTestFrame1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_TableWidgetAbsoluteHeaderTestFrame2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_TableWidgetAbsoluteHeaderTestFrame2.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_tablewidgetdataselectionchangedtestframe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\Release\moc_tablewidgetdataselectionchangedtestframe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_tablewidgetmatchandsizetestframe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_tablewidgetmatchandsizetestframe.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_tablewidgetmultmatchselectframe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\Release\moc_tablewidgetmultmatchselectframe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_TableWidgetMultMatchTestFrame.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_TableWidgetMultMatchTestFrame.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_TableWidgetNoColTestFrame.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_TableWidgetNoColTestFrame.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\Release\moc_test1vc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_test1vc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_testguitie.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_testguitie.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\Release\moc_vctestframe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_vctestframe.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="buttablepropertydescriptions.h" />
+    <CustomBuild Include="buttablepropertydescriptionvectors.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="checkboxtest.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing checkboxtest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\checkboxtest.h" -o ".\GeneratedFiles\$(Configuration)\moc_checkboxtest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\checkboxtest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_checkboxtest.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing checkboxtest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\checkboxtest.h" -o ".\GeneratedFiles\$(Configuration)\moc_checkboxtest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\checkboxtest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_checkboxtest.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="comboboxes.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing comboboxes.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\comboboxes.h" -o ".\GeneratedFiles\debug\moc_comboboxes.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\comboboxes.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\debug\moc_comboboxes.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing comboboxes.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\comboboxes.h" -o ".\GeneratedFiles\release\moc_comboboxes.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\comboboxes.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\release\moc_comboboxes.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="datetimetest.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing datetimetest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\datetimetest.h" -o ".\GeneratedFiles\$(Configuration)\moc_datetimetest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\datetimetest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_datetimetest.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing datetimetest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\datetimetest.h" -o ".\GeneratedFiles\$(Configuration)\moc_datetimetest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\datetimetest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_datetimetest.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dlg2.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing dlg2.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\dlg2.h" -o "GeneratedFiles\Debug\moc_dlg2.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\dlg2.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeneratedFiles\Debug\moc_dlg2.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing dlg2.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\dlg2.h" -o "GeneratedFiles\Release\moc_dlg2.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\dlg2.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeneratedFiles\Release\moc_dlg2.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="frame1.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing frame1.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\frame1.h" -o ".\GeneratedFiles\$(Configuration)\moc_frame1.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\frame1.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_frame1.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing frame1.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\frame1.h" -o ".\GeneratedFiles\$(Configuration)\moc_frame1.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\frame1.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_frame1.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="frame2.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing frame2.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\frame2.h" -o ".\GeneratedFiles\$(Configuration)\moc_frame2.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\frame2.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_frame2.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing frame2.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\frame2.h" -o ".\GeneratedFiles\$(Configuration)\moc_frame2.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\frame2.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_frame2.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="msgboxtest.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing msgboxtest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I"$(SolutionDir)\..\..\src\basar\library\include\." -I"$(SolutionDir)\..\..\ext\boost\." -I"$(SolutionDir)\..\..\ext\log4cplus\include\." -I".\GeneratedFiles\." -I".\." ".\msgboxtest.h" -o ".\GeneratedFiles\$(Configuration)\moc_msgboxtest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\msgboxtest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_msgboxtest.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing msgboxtest.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I"$(SolutionDir)\..\..\src\basar\library\include\." -I"$(SolutionDir)\..\..\ext\boost\." -I"$(SolutionDir)\..\..\ext\log4cplus\include\." -I".\GeneratedFiles\." -I".\." ".\msgboxtest.h" -o ".\GeneratedFiles\$(Configuration)\moc_msgboxtest.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\msgboxtest.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_msgboxtest.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="selects.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetabsoluteheadertestframe1.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing tablewidgetabsoluteheadertestframe1.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetabsoluteheadertestframe1.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetabsoluteheadertestframe1.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetabsoluteheadertestframe1.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetabsoluteheadertestframe1.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing tablewidgetabsoluteheadertestframe1.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetabsoluteheadertestframe1.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetabsoluteheadertestframe1.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetabsoluteheadertestframe1.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetabsoluteheadertestframe1.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetabsoluteheadertestframe2.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing tablewidgetabsoluteheadertestframe2.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetabsoluteheadertestframe2.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetabsoluteheadertestframe2.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetabsoluteheadertestframe2.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetabsoluteheadertestframe2.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing tablewidgetabsoluteheadertestframe2.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetabsoluteheadertestframe2.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetabsoluteheadertestframe2.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetabsoluteheadertestframe2.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetabsoluteheadertestframe2.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetdataselectionchangedtestframe.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing tablewidgetdataselectionchangedtestframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetdataselectionchangedtestframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetdataselectionchangedtestframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetdataselectionchangedtestframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetdataselectionchangedtestframe.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing tablewidgetdataselectionchangedtestframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetdataselectionchangedtestframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetdataselectionchangedtestframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetdataselectionchangedtestframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetdataselectionchangedtestframe.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetmatchandsizetestframe.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing tablewidgetmatchandsizetestframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I"$(SolutionDir)\..\..\src\basar\library\include\." -I"$(SolutionDir)\..\..\ext\boost\." -I"$(SolutionDir)\..\..\ext\log4cplus\include\." -I".\GeneratedFiles\." -I".\." ".\tablewidgetmatchandsizetestframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetmatchandsizetestframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetmatchandsizetestframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetmatchandsizetestframe.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing tablewidgetmatchandsizetestframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I"$(SolutionDir)\..\..\src\basar\library\include\." -I"$(SolutionDir)\..\..\ext\boost\." -I"$(SolutionDir)\..\..\ext\log4cplus\include\." -I".\GeneratedFiles\." -I".\." ".\tablewidgetmatchandsizetestframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetmatchandsizetestframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetmatchandsizetestframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetmatchandsizetestframe.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetmultmatchselectframe.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing tablewidgetmultmatchselectframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetmultmatchselectframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetmultmatchselectframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetmultmatchselectframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetmultmatchselectframe.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing tablewidgetmultmatchselectframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetmultmatchselectframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetmultmatchselectframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetmultmatchselectframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetmultmatchselectframe.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetmultmatchtestframe.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing tablewidgetmultmatchtestframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetmultmatchtestframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetmultmatchtestframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetmultmatchtestframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetmultmatchtestframe.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing tablewidgetmultmatchtestframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetmultmatchtestframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetmultmatchtestframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetmultmatchtestframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetmultmatchtestframe.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetnocoltestframe.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing tablewidgetnocoltestframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetnocoltestframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetnocoltestframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetnocoltestframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetnocoltestframe.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing tablewidgetnocoltestframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\tablewidgetnocoltestframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_tablewidgetnocoltestframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\tablewidgetnocoltestframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_tablewidgetnocoltestframe.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="test1vc.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing test1vc.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I"$(SolutionDir)\..\..\src\basar\library\include\." -I"$(SolutionDir)\..\..\ext\boost\." -I"$(SolutionDir)\..\..\ext\log4cplus\include\." -I".\GeneratedFiles\." -I".\." ".\test1vc.h" -o ".\GeneratedFiles\$(Configuration)\moc_test1vc.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\test1vc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_test1vc.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing test1vc.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I"$(SolutionDir)\..\..\src\basar\library\include\." -I"$(SolutionDir)\..\..\ext\boost\." -I"$(SolutionDir)\..\..\ext\log4cplus\include\." -I".\GeneratedFiles\." -I".\." ".\test1vc.h" -o ".\GeneratedFiles\$(Configuration)\moc_test1vc.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\test1vc.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_test1vc.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="testconnection.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="testguitie.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing testguitie.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\testguitie.h" -o "GeneratedFiles\Debug\moc_testguitie.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\testguitie.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeneratedFiles\Debug\moc_testguitie.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing testguitie.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles" -I"$(QTDIR)\include" -I"$(SolutionDir)\..\..\src\basar\library\include" -I"$(SolutionDir)\..\..\ext\boost" -I"$(SolutionDir)\..\..\ext\log4cplus\include" -I".\GeneratedFiles" -I"." ".\testguitie.h" -o "GeneratedFiles\Release\moc_testguitie.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\testguitie.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeneratedFiles\Release\moc_testguitie.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="usings.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="vctestframe.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing vctestframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -D_DEBUG -D -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I"$(SolutionDir)\..\..\src\basar\library\include\." -I"$(SolutionDir)\..\..\ext\boost\." -I"$(SolutionDir)\..\..\ext\log4cplus\include\." -I".\GeneratedFiles\." -I".\." ".\vctestframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_vctestframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\vctestframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(Configuration)\moc_vctestframe.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing vctestframe.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  -DWIN32 -DNDEBUG -D -I".\GeneratedFiles\." -I"$(QTDIR)\include\." -I"$(SolutionDir)\..\..\src\basar\library\include\." -I"$(SolutionDir)\..\..\ext\boost\." -I"$(SolutionDir)\..\..\ext\log4cplus\include\." -I".\GeneratedFiles\." -I".\." ".\vctestframe.h" -o ".\GeneratedFiles\$(Configuration)\moc_vctestframe.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\vctestframe.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(Configuration)\moc_vctestframe.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="generatedfiles\ui_checkboxtest.h" />
+    <ClInclude Include="generatedfiles\ui_comboboxes.h" />
+    <ClInclude Include="generatedfiles\ui_datetimetest.h" />
+    <ClInclude Include="generatedfiles\ui_dlg2.h" />
+    <ClInclude Include="generatedfiles\ui_frame1.h" />
+    <ClInclude Include="generatedfiles\ui_frame2.h" />
+    <ClInclude Include="generatedfiles\ui_msgboxtest.h" />
+    <ClInclude Include="generatedfiles\ui_tablewidgetabsoluteheadertestframe1.h" />
+    <ClInclude Include="generatedfiles\ui_tablewidgetabsoluteheadertestframe2.h" />
+    <ClInclude Include="generatedfiles\ui_tablewidgetdataselectionchangedtestframe.h" />
+    <ClInclude Include="generatedfiles\ui_tablewidgetmatchandsizetestframe.h" />
+    <ClInclude Include="generatedfiles\ui_tablewidgetmultmatchselectframe.h" />
+    <ClInclude Include="generatedfiles\ui_tablewidgetmultmatchtestframe.h" />
+    <ClInclude Include="generatedfiles\ui_tablewidgetnocoltestframe.h" />
+    <ClInclude Include="generatedfiles\ui_test1vc.h" />
+    <ClInclude Include="GeneratedFiles\ui_testguitie.h" />
+    <ClInclude Include="generatedfiles\ui_vctestframe.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="checkboxtest.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing checkboxtest.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_checkboxtest.h" ".\checkboxtest.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_checkboxtest.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing checkboxtest.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_checkboxtest.h" ".\checkboxtest.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_checkboxtest.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="comboboxes.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing comboboxes.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_comboboxes.h" ".\comboboxes.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_comboboxes.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing comboboxes.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_comboboxes.h" ".\comboboxes.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_comboboxes.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="datetimetest.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing datetimetest.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_datetimetest.h" ".\datetimetest.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_datetimetest.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing datetimetest.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_datetimetest.h" ".\datetimetest.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_datetimetest.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dlg2.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing dlg2.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o "GeneratedFiles\ui_dlg2.h" ".\dlg2.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeneratedFiles\ui_dlg2.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing dlg2.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o "GeneratedFiles\ui_dlg2.h" ".\dlg2.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeneratedFiles\ui_dlg2.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="frame1.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing frame1.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_frame1.h" ".\frame1.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_frame1.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing frame1.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_frame1.h" ".\frame1.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_frame1.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="frame2.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_frame2.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_frame2.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_frame2.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_frame2.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="msgboxtest.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_msgboxtest.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_msgboxtest.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_msgboxtest.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_msgboxtest.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetabsoluteheadertestframe1.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetabsoluteheadertestframe1.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_tablewidgetabsoluteheadertestframe1.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetabsoluteheadertestframe1.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_tablewidgetabsoluteheadertestframe1.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetabsoluteheadertestframe2.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetabsoluteheadertestframe2.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_tablewidgetabsoluteheadertestframe2.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetabsoluteheadertestframe2.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_tablewidgetabsoluteheadertestframe2.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetdataselectionchangedtestframe.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetdataselectionchangedtestframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_tablewidgetdataselectionchangedtestframe.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetdataselectionchangedtestframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_tablewidgetdataselectionchangedtestframe.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetmatchandsizetestframe.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetmatchandsizetestframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_tablewidgetmatchandsizetestframe.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetmatchandsizetestframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_tablewidgetmatchandsizetestframe.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetmultmatchselectframe.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetmultmatchselectframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_tablewidgetmultmatchselectframe.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetmultmatchselectframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_tablewidgetmultmatchselectframe.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetmultmatchtestframe.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetmultmatchtestframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_tablewidgetmultmatchtestframe.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetmultmatchtestframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_tablewidgetmultmatchtestframe.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetnocoltestframe.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetnocoltestframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_tablewidgetnocoltestframe.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_tablewidgetnocoltestframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_tablewidgetnocoltestframe.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="test1vc.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_test1vc.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_test1vc.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_test1vc.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_test1vc.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="testguitie.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing testguitie.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o "GeneratedFiles\ui_testguitie.h" ".\testguitie.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GeneratedFiles\ui_testguitie.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing testguitie.ui...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o "GeneratedFiles\ui_testguitie.h" ".\testguitie.ui"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GeneratedFiles\ui_testguitie.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="vctestframe.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_vctestframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_vctestframe.h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(FullPath)...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_vctestframe.h" "%(FullPath)"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_vctestframe.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="testguitie.ico">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Creating windows resources...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rc.exe /fo "testguitie.res" "testguitie.rc"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">testguitie.res;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Creating windows resources...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rc.exe /fo "testguitie.res" "testguitie.rc"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">testguitie.res;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="testguitie.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="testguitie.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties QtVersion="4.4.3" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,387 @@
+<ui version="4.0" >
+ <class>MsgBoxTestClass</class>
+ <widget class="QFrame" name="MsgBoxTestClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>542</width>
+    <height>442</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>CheckBoxTest</string>
+  </property>
+  <widget class="QComboBox" name="cbType" >
+   <property name="geometry" >
+    <rect>
+     <x>140</x>
+     <y>10</y>
+     <width>191</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>46</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Type</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="leMessage" >
+   <property name="geometry" >
+    <rect>
+     <x>140</x>
+     <y>40</y>
+     <width>381</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="leTitle" >
+   <property name="geometry" >
+    <rect>
+     <x>140</x>
+     <y>70</y>
+     <width>381</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>46</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Message</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>46</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Title</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btShowThis" >
+   <property name="geometry" >
+    <rect>
+     <x>110</x>
+     <y>360</y>
+     <width>161</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Show (parent == this)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btShowNull" >
+   <property name="geometry" >
+    <rect>
+     <x>280</x>
+     <y>360</y>
+     <width>151</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Show (parent == NULL)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>400</y>
+     <width>46</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Result</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="leResult" >
+   <property name="enabled" >
+    <bool>false</bool>
+   </property>
+   <property name="geometry" >
+    <rect>
+     <x>140</x>
+     <y>400</y>
+     <width>381</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxButtons" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>491</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Available buttons</string>
+   </property>
+   <widget class="QCheckBox" name="cbButtonSaveAll" >
+    <property name="geometry" >
+     <rect>
+      <x>250</x>
+      <y>50</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonSaveAll</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonYesToAll" >
+    <property name="geometry" >
+     <rect>
+      <x>250</x>
+      <y>90</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonYesToAll</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonOk" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonOk</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonApply" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonApply</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonNoToAll" >
+    <property name="geometry" >
+     <rect>
+      <x>250</x>
+      <y>130</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonNoToAll</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonIgnore" >
+    <property name="geometry" >
+     <rect>
+      <x>250</x>
+      <y>190</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonIgnore</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonHelp" >
+    <property name="geometry" >
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonHelp</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonAbort" >
+    <property name="geometry" >
+     <rect>
+      <x>250</x>
+      <y>150</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonAbort</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonRetry" >
+    <property name="geometry" >
+     <rect>
+      <x>250</x>
+      <y>170</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonRetry</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonOpen" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonOpen</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonReset" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonReset</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonCancel" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonCancel</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonNo" >
+    <property name="geometry" >
+     <rect>
+      <x>250</x>
+      <y>110</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonNo</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonClose" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonClose</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonDiscard" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonDiscard</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonYes" >
+    <property name="geometry" >
+     <rect>
+      <x>250</x>
+      <y>70</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonYes</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonRestoreDefaults" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonRestoreDefaults</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="cbButtonSave" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>200</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ButtonSave</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

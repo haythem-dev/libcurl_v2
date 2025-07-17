@@ -1,0 +1,1401 @@
+<hr>
+<h2>Changelog</h2>
+<h3>vNext - tbd</h3>
+<ul>
+</ul>
+<h3>01.14.01.01 - 2025-03-06</h3>
+<ul>
+    <li>all:
+    <ul>
+		<li>CPR-220463 PlanetPress Replacement: OL Parameters must be configurable by region or branch (areID) - BugFix</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.14.01.00 - 2024-11-15</h3>
+<ul>
+    <li>all:
+    <ul>
+		<li>CPR-220463 PlanetPress Replacement: new final version for windows and axi - optimization and bugfixing</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.14.00.03 - 2024-09-03</h3>
+<ul>
+    <li>all:
+    <ul>
+		<li>CPR-220463 PlanetPress Replacement: new functions saveCopyPdf which will not move the generated PDF from shared directory</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.14.00.02 - 2024-07-08</h3>
+<ul>
+    <li>all:
+    <ul>
+		<li>CPR-220463 PlanetPress Replacement: Adoption for the print and preview functionality to use Objectif Lune solution</li>
+        <li>FIX missing AIX compilation</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.14.00.01 - 2023-12-05</h3>
+<ul>
+    <li>all:
+    <ul>
+        <li>upgrade ghostscript version to 10.02.0</li>
+		<li>CPR-220463 PlanetPress Replacement: Adoption for the print and preview functionality to use Objectif Lune solution</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.13.03.03 - 2023-06-30</h3>
+<ul>
+    <li>all:
+    <ul>
+        <li>add ActiveQt for Windows</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.13.03.02 - 2023-04-13</h3>
+<ul>
+    <li>all:
+    <ul>
+        <li>set INFORMIXDIR in makefile for AIX</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.13.03.01 - 2023-01-10</h3>
+<ul>
+    <li>all:
+    <ul>
+        <li>fixed bug in cachingpolicy</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.13.03.00 - 2022-01-12</h3>
+<ul>
+    <li>all:
+    <ul>
+        <li>migration to VS 2019</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.13.02.00 - 2020-02-07</h3>
+<ul>
+    <li>all:
+    <ul>
+        <li>fixed missing zlib*.dll in package</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.13.01.00 - 2020-02-06</h3>
+<ul>
+    <li>libbasarcmnutil:
+    <ul>
+        <li>fixed bug in ghostscript module where wrong sprintf formatter was used to convert a pointer to a string</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.13.00.00 - 2019-12-20</h3>
+<ul>
+    <li>all:
+        <ul>
+            <li>added support for VS 2015 x64</li>
+            <li>dropped support for VS 2010. There won't be a version for VS 2010 anymore</li>
+            <li>QDate has a maximum year of 9999 since qt 5.11. please make sure your application does not rely on 7999</li>
+        </ul>
+    </li>
+    <li>dependencies:
+        <ul>
+            <li>updated all libraries to latest versions for each platform</li>
+        </ul>
+    </li>
+    <li>artifacts:
+        <ul>
+            <li>removed export of log4cplus and boost. These dependencies are now properly provided by ant itself.</li>
+        </ul>
+    </li>
+    <li>deprecations:
+        <ul>
+            <li>removed all deprecated methods (addDate => addDays, showDlg => interactiveLogin, withoutDlg => nonInteractiveLogin). They were deprecated long enough</li>
+        </ul>
+    </li>
+</ul>
+<h3>01.12.02.00 - 2019-06-07</h3>
+<ul>
+    <li>libbasarcmnutil:
+    <ul>
+        <li>fixed bug in ssh connection if too many data is received</li>
+    </ul>
+    </li>
+    <li>unix artifact:
+    <ul>
+    <li>also offering Qt's Ftp library as part of the export</li>
+    </ul>
+    <li>windows artifact:
+    <ul>
+        <li>also offering Qt's ScriptTools library as part of the export</li>
+    </ul>
+    <li>libbasarcmnutil:
+    <ul>
+        <li>TcpSocket::connect(): fix exception during logging error message (getsockname()).
+            Smtp::connect() was affected, too.
+        </li>
+    </ul>
+    </li>
+    <li>libbasardbaspect:
+    <ul>
+        <li>changed type of dbHint parameter of Accessor to DatabaseHintEnum instead of int</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.12.01.01 - 2017-06-06</h3>
+<ul>
+    <li>libbasarlogin:
+    <ul>
+        <li>fixed bug in login if no previous login was found</li>
+    </ul>
+    </li>
+</ul>
+<h3>01.12.01.00 - 2017-05-15</h3>
+<ul>
+    <li>libbasarcmnutil:
+    <ul>
+        <li>added optional precision to ftos of VarString and I18nString</li>
+        <li>made DateTime addition/subtraction operators more canonical</li>
+        <li>conversion from and to Unix time stamps now takes into accord the difference between local time and GMT (as Unix time stamps are based on GMT)</li>
+    </ul>
+    </li>
+    <li>libbasardbsql:
+    <ul>
+        <li>fixed error when reading a string after an empty string was read</li>
+    </ul>
+    <li>libbasarproperty:
+        <ul>
+            <li>floating point numbers will now be added with precision 9 for Float and 17 for Float64 to sql strings</li>
+        </ul>
+    </li>
+</ul>
+<h3>01.12.00.00 - 2017-02-13:</h3>
+<ul>
+    <li>libbasarcmnutil:
+    <ul>
+        <li>VarString now offers conversion from and to Int64</li>
+        <li>smtp class will continue to send mails even if one or more addresses were rejected by the server</li>
+        <li>now removing trailing newline from mailmessages subject if present</li>
+        <li>fixed typo in class name BasarFileNotAccessibleException</li>
+    </ul>
+    </li>
+    <li>libbasardbsql:
+        <ul>
+            <li>Informix types INT8, BIGINT, BIGSERIAL, SERIAL8, TEXT and BYTE are now supported</li>
+            <li>serials are now returned as Int64</li>
+            <li>calling Resultsets get...-member functions will now throw an exception if caller didn't call next first</li>
+            <li>ExecuteReturnInfo now offers raw error codes and messages from underlying db api</li>
+        </ul>
+    </li>
+    <li>libbasarproperty:
+        <ul>
+            <li>added operator-> to propertydescriptionlist_iterator</li>
+        </ul>
+    </li>
+    <li>libbasardbaspect:
+        <ul>
+            <li>Added support for Int64 and Binary</li>
+            <li>yiterators getString now returns a reference-to-const instead of a copy</li>
+        </ul>
+    </li>
+    <li>libbasarqtwidget:
+        <ul>
+            <li>basartablewidgets frozen view now adopts style of table</li>
+        </ul>
+    </li>
+    <li>libbasarlogin:
+        <ul>
+            <li>integrated AD login code for UADM2</li>
+        </ul>
+    </li>
+</ul>
+<h3>01.11.00.00 - 2016-05-18:</h3>
+<ul>
+    <li>libbasarcmnutil:
+        <ul>
+            <li>BString and I18nString now offering upper/lower case copy-returning functions</li>
+            <li>Unix: basar will also try to get its config file from the shared objects location. this location is tryed last.</li>
+            <li>fixed DST-bug in basar::cmnutil::DateTime::toStrInternetMsg()</li>
+            <li>added member function isDST for basar::cmnutil::DateTime</li>
+            <li>added member function creating timespan from numerical representation</li>
+            <li>added member function returning numerical representation of timespan</li>
+            <li>fixed issure with pdf generation in multi-threading environment</li>
+            <li>upgraded Ghostscript to v9.18 - enabled pdf generation on unix</li>
+            <li>Decimals now offers functions for commutative multiplication of ints and floats</li>
+            <li>basar's decimal will be set to 0.0 when from...String member functions are called with empty string</li>
+            <li>changed implementation of addition to and subtraction from timespan due to former not working properly</li>
+            <li>added member function to create a timespan from an amount of a certain unit of time units ( e.g. days, hours, seconds)</li>
+            <li>added member function to multiplicate a timespan with a numeric</li>
+            <li>DateTimeTools offers a function to get a DateTime from an Unix timestamp and vice versa</li>
+            <li>upgraded Ghostscript to v9.15 due to Citrix 64 Bit problems</li>
+            <li>fixed bug in Ghostscript: non-ASCII in-/output file names</li>
+            <li>refactored Ghostscript related classes</li>
+            <li>fix PrintTools::getFormPathClient() debug log message: damaged form path for Windows.</li>
+        </ul>
+    <li>libbasardbsql:
+        <ul>
+            <li>added handling for aggregate query to prepared statement</li>
+            <li>resultset now offers a column name collection to clients</li>
+            <li>resultset now offers a column type collection to clients</li>
+        </ul>
+    </li>
+    <li>libbasarproperty:
+        <ul>
+            <li>increased performance somewhat</li>
+        </ul>
+    </li>
+    <li>libbasardbaspect:
+        <ul>
+            <li>Upon execute, a Yits insert type is reset to FOR_CLEAN if it was FOR_INSERT or FOR_UPDATE</li>
+            <li>AccessorPropertyTable.begin and .end are now const member functions</li>
+            <li>Accessor now checks if its registered to its connection before attempting to unregister itself - doing so won't lead to assertions anymore</li>
+            <li>added possibility to use prepared statements in aspect layer</li>
+            <li>fixed logic for AccessorPropertyTableRef::empty() and AccessorPropertyTableRef::isEmpty() - now should not return false when property table is empty</li>
+            <li>added aspect specific log macros from libutil (BLOG_TRACE_SQLSTRING, BLOG_YIT_IN_LINE, BLOG_YIT, BLOG_PROPTAB_NORM, BLOG_PROPTAB)</li>
+        </ul>
+    </li>
+    <li>libbasarguiqt:
+        <ul>
+            <li>added new application logos</li>
+        </ul>
+    </li>
+    <li>libbasarguitie:
+        <ul>
+            <li>fixed bug: matcher now obeys policy distregard deleted also for the first item in acc prop tab</li>
+            <li>added possiblity for matcher to notify controls that matching is done (eg. for resizing)</li>
+        </ul>
+    </li>
+    <li>libbasarqtwidget:
+        <ul>
+            <li>BasarTableWidget won't create signals upon row shortcuts for non-existant rows</li>
+            <li>fixed bug in BasarTableWidget, allowing setAbsoluteVerticalHeaders to be also called with VarString-List</li>
+            <li>added possibility to freeze (= keep visible when scrolling sideways) the first n columns of a BasarTableWidget, see functions enableFrozenView(int) and disableFrozenView()</li>
+            <li>BasarTableWidget now will honor setting for resizeRowsToContents, resizeColumnsToContents, setStretchLastSection and apply these after matching</li>
+        </ul>
+    </li>
+    <li>libbasarlogin:
+        <ul>
+            <li>fixed bug if previous values (branchregionid or languageid) weren't found in yits</li>
+            <li>renamed functions showDlg to interactiveLogin and withoutDlg to nonInteractiveLogin - former functions have been deprecated</li>
+        </ul>
+    </li>
+</ul>
+<h3>01.10.01.00 - 10.03.2015:</h3>
+<ul>
+    <li>libbasarcmnutil:
+        <ul>
+            <li>fixed bug in mail class - mails w/o attachment should be displayed fine</li>
+            <li>fixed possible out-of-range exception in mailmessages wrapBody function</li>
+        </ul>
+    </li>
+    <li>libbasarguiqt:
+        <ul>
+            <li>PrintPreview class offers two new functions for setting preview dpi and starting preview zoom factor</li>
+        </ul>
+    </li>
+</ul>
+<h3>01.10.00.00 - 2014-08-12:</h3>
+<ul>
+    <li>First version using VS2010 - version number was increased to 01.10.00.00 by request</li>
+    <li>removed symlink to .a-versions of new libraries (openssl, zlib, libssh2)</li>
+    <li>libbasarcmnutil:
+        <ul>
+            <li>informix's CLIENT_LOCALE and DB_LOCALE are set to en_us.8859-1 during initialization</li>
+            <li>fixed log configfile not found message, should print filename now</li>
+        </ul>
+    <li>libbasardbsql:
+        <ul>
+            <li>added support for writing empty strings back to database</li>
+            <li>fixed handling of null-value interval database fields</li>
+            <li>fixed ResultsetInfx::close() for using in PreparedStatementInfx::executeQuery() loops.</li>
+        </ul>
+    </li>
+    <li>libbasardbaspect:
+        <ul>
+            <li>added methods hasAccessorDefinition and hasAccessorInstance</li>
+            <li>removed forced log during init, should obey config file now</li>
+        </ul>
+    </li>
+    <li>libbasarqtwidget:
+        <ul>
+            <li>changed tablewidget to not emit qt warning during certain operations</li>
+        </ul>
+    </li>
+    <li>libbasarlogin:
+        <ul>
+            <li>added possibility to load only regional rights in login</li>
+        </ul>
+    </li>
+</ul>
+<h3>01.09.01.01 - 2013-12-18:</h3>
+<ul>
+    <li>libbasardbsql:
+        <ul>
+            <li>removed caching from resultsetinfx for TimeSpan, Date, DateTime, Decimal and Time</li>
+        </ul>
+    </li>
+</ul>
+<h3>01.09.01.00 - 2013-12-10:</h3>
+<ul>
+    <li>upgrade to Boost 1.52.0_2: not based on ICU anymore,
+        so boost::locale depends on std::locale</li>
+    <li>fixed "ConstString &amp;" parameters</li>
+    <li>libbasarcmnutil:
+        <ul>
+            <li>offering string stream log macros: BLOG_TRACE_STREAM, ...</li>
+            <li>Decimal's toSepString should work as expected on requesting zero decimal places</li>
+            <li>added "less than"/"greater than" to DateTime</li>
+            <li>class Locale: refactored</li>
+            <li>BString::format() fixed "%12.3s" bug</li>
+            <li>class I18nString: based on hardcoded values (replaced using of boost::locale)</li>
+            <li>I18nString::format() reimplemented due to bugs and missing features</li>
+            <li>added new data type Timespan, based on Informix's INTERVAL
+                (ranging form Days to MSecs, max: 999999999 23:59:59.998 - about 2.7 milion years)</li>
+            <li>added output stream operators for date, decimal, datetime, timespan
+                (operators call public toString methods)</li>
+            <li>TcpSocket::disconnect(): fix close(); isAvailable() also closes socket
+                if ip address is not valid; avoid socket state SYN_SENT</li>
+            <li>added functions getExecDir(), getExecName()</li>
+            <li>improved setting logging context (NDC) regarding coming log4cplus upgrade.
+                added unit test.</li>
+        </ul>
+    </li>
+    <li>libbasardbsql:
+        <ul>
+            <li>added support for using Timespan type in SQL statements</li>
+            <li>selecting an alias now properly ignores caseing</li>
+            <li>DbExceptionCics: fixed logger name</li>
+            <li>CicsDefinitions::openSession(): removed not needed tca_findslot()</li>
+            <li>CicsDefinitions::closeSession(): regards aborted session</li>
+            <li>ResultsetCics::getValueInternal(): fixed exception message</li>
+            <li>SetEnvInfx::adjustEnv(): now sets connection timeouts and retries for Informix db connections</li>
+            <li>libbasardbsql: added class connectiontimeoutinfx</li>
+            <li>sqlhostsinfx: ignores fifth (and more) entry in sqlhosts file</li>
+        </ul>
+    </li>
+    <li>libbasarproperty:
+        <ul>
+            <li>added support for using Timespan in property descriptions</li>
+        </ul>
+    </li>
+    <li>libbasardbaspect:
+        <ul>
+            <li>added support for using Timespan</li>
+        </ul>
+    </li>
+    <li>libbasarguitie:
+        <ul>
+            <li>added support for using Timespan</li>
+        </ul>
+    </li>
+    <li>libbasarguiqt:
+        <ul>
+            <li>added exception catching code for callDisplay()</li>
+        </ul>
+    </li>
+    <li>libbasarlogin:
+        <ul>
+            <li>removed isInfxAvail from Connection's connection logic due to db server logfile spam</li>
+            <li>changed caption of warning / info messageboxes to supplied application name</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>01.09.00.00 - 2013-04-05:</h3>
+<ul>
+    <li>upgrade to log4cplus 1.0.4.2_01<br>
+        regard for Unix: link liblog4cplus.so before other libs!
+    </li>
+    <li>upgrade to Boost 1.52.0_1</li>
+    <li>upgrade to Qt 4.4.3_5<br>
+        changed file names for debug versions
+    </li>
+    <li>makefile configured for AIX GCC</li>
+    <li>avoiding static init order fiasco:<br>
+        init() function for every library<br>
+        logger accessed by function: construction on first use
+    </li>
+    <li>int8 is signed(!) char now (char sign depends on platform)</li>
+    <li>pdb files for release configuration too:<br>
+        supports executing release version in IDE debugger (stack trace, watch variables)
+    </li>
+    <li>typedef ConstBuffer for non-const buffer pointer
+        (needed for return type regarding pedantic compiler)</li>
+    <li>libbasarcmnutil:
+        <ul>
+            <li>Locale::getOSLocaleString(): locale string for Bosnia/Herzegovina
+                has changed for Windows Server 2008 and higher</li>
+            <li>Locale string adjusted for AIX</li>
+            <li>VarString (i.e. BString) derived from std::string (char)</li>
+            <li>BString::itos(),ltos(),ftos(): using stream internally</li>
+            <li>I18nString uses boost::locale for I18n</li>
+            <li>locale information is generated by boost::locale via ICU-Library for AIX, C-std locale for Win32</li>
+            <li>Interpretprint added mutexes for loading and usage of ghostscript dll</li>
+        </ul>
+    </li>
+    <li>libbasardbsql:
+        <ul>
+            <li>DbLocaleInfxImpl::getLocale(): improved log messages</li>
+            <li>ResultsetInfxMulti::reopen(): declare previously closed cursor again</li>
+            <li>ResultsetInfxSingle::reopen(): fix cursor state</li>
+            <li>SetEnvInfx::~SetEnvInfx(): Informix connections restore previously set
+                environment variables</li>
+            <li>removed lazy loading tcACCESS libraries: AIX issues</li>
+            <li>StatementCics::executeXXX(): fixed exception behaviour</li>
+        </ul>
+    </li>
+    <li>libbasardbaspect:
+        <ul>
+            <li>LoggerPool::loggerAptYIterator: shortened logger name</li>
+            <li>logger call improved</li>
+            <li>Accessor::execute() regards flagExcept for queries too</li>
+            <li>AccessorExecuteEvent::m_separateBuilderResults: fixed typo</li>
+            <li>AccessorPropertyTableRef added member function const bool isEmpty() const</li>
+        </ul>
+    </li>
+    <li>libbasarguitie:
+        <ul>
+            <li>logger call improved</li>
+            <li>GuiPropertyTable_XIterator: bug (wrong parameters) with logging fixed</li>
+        </ul>
+    </li>
+    <li>libbasarlogin:
+        <ul>
+            <li>logger call improved</li>
+            <li>Connection:
+                <ul>
+                    <li>connecting to user databases has 15 sec timeout,
+                        so total timeout is ca. 30 sec</li>
+                    <li>improved log messages</li>
+                    <li>removed NullReferenceException occurrencies</li>
+                    <li>throw BackupDBException if connect to main and backup database
+                        is not possible</li>
+                </ul>
+            </li>
+            <li>LoginAppl::withoutDlg(): throw InvalidAreaException for unknown area ID</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>01.08.02.00 - 2010-10-26:</h3>
+<ul>
+    <li>improved header file includes</li>
+    <li>libbasardebug
+        <ul>
+            <li>added printDbgMsg()</li>
+        </ul>
+    </li>
+    <li>libbasarcmnutil
+        <ul>
+            <li>added dumpDecimal  (): callable during debugging</li>
+            <li>added dumpDate     (): callable during debugging</li>
+            <li>added dumpDateTime (): callable during debugging</li>
+            <li>added dumpParamList(): callable during debugging</li>
+            <li>ParameterList::toStream(): output improved</li>
+            <li>TcpSocket:
+                <ul>
+                    <li>made TcpSocket public (Windows dllexport)</li>
+                    <li>added isAvail(timeout)</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>libbasardbsql
+        <ul>
+            <li>added class SqlHostInfx for retrieving Informix sqlhosts parameter</li>
+            <li>DatabaseInfo:
+                <ul>
+                    <li>added isCicsAvail(timeout)</li>
+                    <li>added isInfxAvail(timeout)</li>
+                </ul>
+            </li>
+            <li>ResultsetInfxMulti/InsertsetInfx: cursor id is derived from calling statement object
+                (needed by prepared update/delete cursor)</li>
+            <li>added ConnectionRef::createPrepRowStmt(): update/delete cursor can be prepared
+                (only Informix!) with linked "select" statement</li>
+            <li>ExecuteReturnInfo: added methods</li>
+        </ul>
+    </li>
+    <li>libbasarproperty
+        <ul>
+            <li>PropertyTable_YIterator:
+                <ul>
+                    <li>OP 163: fixed bug in assign() (called via copy constructor)<br>
+                        Assignment of AccessorPropertyTable_YIterator now works as intended after<br>
+                        usage with filtered AccessorPropertyTableRef::begin()</li>
+                    <li>toStream(): output improved</li>
+                    <li>checkPropTbl(): improved safety for dereferencing PropertyTable</li>
+                    <li>checkIterator(): improved safety for dereferencing internal iterator</li>
+                    <li>added static s_Check + get-/set-Methods for runtime checks (default: disabled).<br>
+                        configurable by file basar.config.xml: "basar.property.propertytable_yiterator.checkmode"</li>
+                </ul>
+            </li>
+            <li>PropertyDescriptionList::toStream(): output improved</li>
+            <li>added dumpPropDescList(): callable during debugging</li>
+        </ul>
+    </li>
+    <li>libbasardbaspect
+        <ul>
+            <li>added dumpAccPropTblYIt(): callable during debugging</li>
+            <li>OPL 189: removed ManagerBase::getAccessorEmptyYIterator()<br>
+                In case of call SystemEventManager::fire() without YIterator the manager will<br>
+                call the event handler with a real NULL-YIterator instead of an YIterator with<br>
+                empty property list.</li>
+            <li>OPL 189: removed throw of DifferentContainersIteratorException from<br>
+                AccessorPropertyTable_YIterator::operator==() and <br>
+                AccessorPropertyTable_YIterator::operator!=(). In case of different containers<br>
+                the operators will act like yit1 != yit2. In DEBUG mode an error log message<br>
+                will be written.</li>
+            <li>OP 217: OnDemandCaching::erase(yit) returns correct YIterator if last fetched row
+                is deleted. another row is fetched after erase.
+            </li>
+        </ul>
+    </li>
+    <li>libbasarguitie
+        <ul>
+            <li>BasarDateTimeEditBehaviour::getDateTime(): no check for BasarDateTimeEdit::MinimumTime():
+                "00:00:00.000" is valid time and stored to DB</li>
+            <li>Helper::getWidgetType(): uses qobject_cast() to determine widget type. So matcher can
+                deal with Qt or basar derived widgets</li>
+        </ul>
+    </li>
+    <li>wizard: removed because out of date, no longer maintained</li>
+</ul>
+
+<h3>01.08.01.01 - 2010-06-07:</h3>
+<ul>
+    <li>libbasarguitie
+        <ul>
+            <li>Matcher::setGuiPropTblYIt: regression fixed. matcher didn't regard SS_UNSET property state</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>01.08.01.00 - 2010-05-17:</h3>
+<ul>
+    <li>libbasarcmnutil
+        <ul>
+            <li>OP 205: log4cplus upgrade:<br>
+                improved Daily/RollingFileAppender<br>
+                removed basar::Patternlayout, use instead log4cplus::Patternlayout<br>
+                removed pattern %P for process id, use instead %i<br>
+                improved pattern %q (msec), %Q (µsec, Solaris)<br>
+                see example svn://denu1s150/marathon/ssuk/trunk/dev/src/basar/test/unit/cmnutil/data/utcmnutil.cfg
+            </li>
+            <li>added typedef ParamPair => c'tor ParameterList(const ParamPair &amp;)</li>
+            <li>OP 232: MailMessage enhancement:<br>
+                new content type: text/html<br>
+                new method setContentType()
+            </li>
+            <li>added class BasarAssertionException, function assertion(), macro ASSERTION</li>
+        </ul>
+    </li>
+    <li>libbasardbaspect
+        <ul>
+            <li>Accessor::~Accessor(): fixed assertion bug, check existing connection before unRegister()</li>
+        </ul>
+    </li>
+    <li>libbasarguitie
+        <ul>
+            <li>moved method default parameter from class ManagerImpl to class ManagerBase
+                (implementation => public class)</li>
+            <li>GuiPropertyTable::create(): removed default parameter</li>
+            <li>TransformerRef removed: not needed</li>
+            <li>added typedef TransformSharedPtr</li>
+            <li>dllexport CheckBoxTransformer::s_STATEON/PART/OFF (for test purposes)</li>
+            <li>dllexport RadioButtonTransformer::s_STATEON/PART/OFF (for test purposes)</li>
+            <li>removed c'tor RadioButtonTransformer(ConstString, ...):<br>
+                can be called via RadioButtonTransformer(basar::cmnutil::ParamPair("xyz=abc;"));
+            </li>
+            <li>RadioButtonTransformer bug fixed: ensured that only one GuiPropertyTable column has state "on"</li>
+            <li>OP 101: integrate general project transformers
+              <ul>
+                <li>added IntTransformer</li>
+                <li>added DecimalTransformer</li>
+                <li>added StateTransformer</li>
+                <li>added DateTimeTransformer</li>
+                <li>added DateTransformer</li>
+                <li>added TimeTransformer</li>
+                <li>added GroupBoxBehavour (checkable, used with CheckBoxTransformer)</li>
+              </ul>
+            </li>
+        </ul>
+    </li>
+    <li>libbasarlogin
+        <ul>
+            <li>new interface "getBranchesWithRightOrderedByName()"</li>
+            <li>checking basar config file: improved evaluation order, debug messages</li>
+        </ul>
+    </li>
+    <li>libbasarproperty
+        <ul>
+            <li>PropertyTable_YIterator::toStream() handles this->isEnd() condition</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>01.08.00.00 - 2010-02-15:</h3>
+<ul>
+     <li>added types BLong, BULong (abstracts size_t, ssize_t)</li>
+    <li>linked to Boost upgrade 1.41: providing static (Windows) and dynamic (Solaris) libraries</li>
+    <li>OP 223: Solaris build uses C std library stlport4 (needed by of Boost). see wiki "STLport".<br>
+        linked versions:
+        <ul>
+            <li>STLport 4.5.3</li>
+            <li>Qt 4.4.3_2</li>
+            <li>Boost 1.41.0_2</li>
+            <li>log4cplus 1.0.2_3</li>
+            <li>unittest++ 1.3_2</li>
+        </ul>
+    </li>
+    <li>libbasarappl
+            <ul>
+            <li>improved macro END_HANDLERS_REGISTRATION()</li>
+             <li>improved singleton template definitions</li>
+             <li>made FuncExecuter::operator == () const</li>
+            </ul>
+    </li>
+    <li>libbasarcmnutil
+        <ul>
+            <li>DateTime::getDateTime(): fixed bug with NULLVAL_SQL_DATE/TIME</li>
+            <li>initSystemSettings(): changed behaviour to exit() at failure</li>
+            <li>removed Solaris SunStudio compiler warnings</li>
+            <li>BString:stol() returns Long64 value</li>
+            <li>BString:substr() gets default value for parameter count</li>
+             <li>improved singleton template definitions</li>
+            <li>added function: getExecPath()</li>
+            <li>improvements to class ParameterList due to STLport</li>
+            <li>improvements to classes Logging, PrintTools, RawPrint now using Boost
+            <li>removed PrintTools::convertSlashes2OS()
+                => use boost::filesystem::basic_path::file_string()</li>
+            <li>OP 220: added class Config for reading basar config file "basar.config.xml".
+                searched in executable's and current working directory</li>
+        </ul>
+    </li>
+    <li>libbasardbaspect
+        <ul>
+            <li>ManagerImpl: std::map::find() calls improved</li>
+            <li>ManagerImpl::createAccessorDefinition() throws ExistAccessorInstanceException</li>
+            <li>Accessor: STL stuff improved</li>
+            <li>Accessor::createAccessMethod() throws ExistAccessorMethodException</li>
+            <li>OP 165: ~Accessor() : clear and reset PropertyTable (macro FREE_ACCESSOR not necessary),
+                                    deregister accessor at connection</li>
+            <li>OP 165: Connection: store safe Accessors in std::map</li>
+            <li>OP 165: ConnectionRef, Connection: added unRegister(), raw accessor pointer replaced
+                                                by safe weak pointer avoid memory access violation)</li>
+            <li>OP 165: ConnectionRef: made public: begin/rollback/commitTransaction(), no crash at rollback()</li>
+            <li>improvements for classes Accessor, Connection, Manager</li>
+            <li>ExistAccessorInstanceException added</li>
+            <li>ExistAccessorMethodException added</li>
+            <li>renamed non-virtual CachingPolicy::begin() methods (Solaris compiler warning)</li>
+            <li>improved singleton template definitions</li>
+            <li>ExecuteResultInfo: removed hacked operator Int32() (ambiguous return value)<br>
+                use instead methods hasError(), getError(), getAffectedRows()</li>
+        </ul>
+    </li>
+    <li>libbasardbsql
+        <ul>
+            <li>DatabaseInfo::getCICSName() added</li>
+            <li>ResultsetCics::getDecimal(): value is more precise
+                                            (problem CISC DECIMAL => tcACCESS double => basar Decimal)</li>
+            <li>ConnectionOdbc: added QSqlDatabase::removeDatabase() to eliminate Qt warnings
+                                regarding database</li>
+            <li>improved logger hierarchy</li>
+            <li>improved singleton template definitions</li>
+        </ul>
+    </li>
+    <li>libbasardebug
+        <ul>
+            <li>added enableLeakCheck(), ignoreMemoryDiff() for checking Windows memory leaks</li>
+            <li>added printError(): avoids GUI MessageBox</li>
+            <li>added isBuildServer()</li>
+        </ul>
+    </li>
+    <li>libbasarguiqt
+        <ul>
+            <li>improved singleton template definitions</li>
+        </ul>
+    </li>
+    <li>libbasarguitie
+        <ul>
+            <li>memory leak fixed: caused by matcher's cyclic referenced shared pointers</li>
+            <li>OP 216: Basar/Date/TimeEditBehavour improved regarding special case YEAR to DAY / HOUR to SEC</li>
+             <li>improved singleton template definitions</li>
+        </ul>
+    </li>
+    <li>libbasarlogin
+        <ul>
+            <li>improved singleton template definitions</li>
+            <li>OP 220: connection parameters for user admin database are determined in following order:
+                <ul>
+                    <li>parameters from file "basar.config.xml" (executable's or working directory)</li>
+                    <li>parameters for dev/test database server if file "login4test.cfg" exists
+                        (executable's or working directory)</li>
+                    <li>parameters for prod database servers (primary/backup)</li>
+                </ul>
+            </li>
+            <li>class Connection uses Boost</li>
+        </ul>
+    </li>
+    <li>libbasarproperty
+        <ul>
+            <li>PropertyDescriptionVector: added Function toCommaSeparatedNames(TableName, AsStatement) as
+                a method to write a list of columns in a select statement with join,
+                f.ex: select tableA.toCommaSeparatedNames(A, true) , tableB.toCommaSeparatedNames(B, true)
+                    from tabelA A and tableB B where .... </li>
+            <li>PropertyDescription: added a few to..String() methods to get more readability in sql Statements </li>
+            <li>PropertyDescription: added operator==() </li>
+            <li>property::any: fixed memory leaks</li>
+            <li>improved PropertyType type determination</li>
+            <li>removed unsued PropertyInternal::m_Value</li>
+            <li>PropertyDescriptionList: improvements due to STLport</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>01.07.01.00 - 2009-08-26:</h3>
+<ul>
+     <li>improved dependencies for recursive header includes</li>
+    <li>wizard:
+        <ul>
+            <li>improved Phoenix company strings</li>
+        </ul>
+    </li>
+    <li>libbasarcmnutil:
+        <ul>
+            <li>Locale: added Phoenix specific format separator methods: Locale::get...Sep...()</li>
+        </ul>
+    </li>
+    <li>libbasardbsql:
+        <ul>
+            <li>SqlOperative::checkStmtStart(): fixed bug with ::isspace()</li>
+            <li>ResultsetCics::getString(): fixed bug with ::isspace()</li>
+            <li>ConnectionRef::isValid(): added (checks techically valid connection)</li>
+            <li>DatabaseInfo: improved necessary ODBC parameter, added suitable methods</li>
+            <li>OP 203: CicsDefintions: refactoring; replaced tcACCESS connection API (needs tcACCESS >= 8.0 SP3),
+                                        new parameters IP, port, start transaction</li>
+            <li>OP 204: adjustments for I18n, bug fixed for VSE socket close</li>
+        </ul>
+    </li>
+    <li>libbasarguiqt:
+        <ul>
+            <li>Serbian translation added</li>
+            <li>MainBackground: removed logo Phoenix Germany</li>
+            <li>removed "Phoenix AG" strings</li>
+        </ul>
+    </li>
+    <li>libbasarguitie:
+        <ul>
+            <li>BasarTableWidgetBehavour: calls to a non virtual method are not delegated.
+                Added a virtual method (setItem) in TableWidgetBehavour
+                to compensate for the non virtual implementation of that
+                method in BasarTableWidget / QTableWidget </li>
+            <li>integrated new widgets BasarDateTimeEdit, BasarDateEdit, BasarTimeEdit into matcher</li>
+            <li>fixed bug in Helper::getDateFromAcc(), ::getTimeFromAcc() for PropertyTypes INT32, INTDATE, INTTIME</li>
+        </ul>
+    </li>
+    <li>libbasarlogin:
+            <ul>
+            <li>ChangePw::isPwComplex: bug fixed with isspace(), isupper()</li>
+            </ul>
+    </li>
+    <li>libbasarqtwidget:
+        <ul>
+            <li>class BasarDateTimeEdit added</li>
+            <li>class BasarDateEdit added</li>
+            <li>class BasarTimeEdit added</li>
+            <li>class I18n: added Phoenix specific date/time format (Qt) methods I18n::getPh...Format()</li>
+            <li>improved capability for QT designer plugin</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>01.07.00.00  -  2009-07-07:</h3>
+<ul>
+    <li>libbasarappl:
+        <ul>
+            <li>added two convenience methods: EventReturnStruct::isOK()/isHandlerOK()</li>
+        </ul>
+    </li>
+    <li>libbasarcmnutil:
+        <ul>
+            <li>I18n: added locale for Bosnian, Serbian and Czech</li>
+            <li>I18n: adjustments to Locale, Decimal, BString, I18nString, Date, DateTime, MailMessage</li>
+            <li>Decimal::Decimal(string), toNonLocString(), fromNonLocString() added</li>
+            <li>DateTime::setRange(from, to) added</li>
+            <li>DateTime::getDateTime() improved</li>
+            <li>OP 213: DateTime::addTime() with range year to second fixed</li>
+            <li>BString::stof(): adjustments to Solaris 10 behaviour for atof() with locale de_CH, fr_CH</li>
+            <li>Exception::fillInStackTrace(), Exception::stackTrace(), Exception::getStackTrace() added</li>
+        </ul>
+    </li>
+    <li>libbasardbaspect:
+        <ul>
+            <li> I18n: NoCaching::getSQLString() adjusted</li>
+        </ul>
+    </li>
+    <li>libbasardbsql:
+        <ul>
+            <li>added class InfxString for converting illegal characters in SQL statements to valid ones</li>
+            <li>I18n: modified ConnectionInfx for automatically setting appropriate Informix environment variable.
+                    added classes DbLocaleInfx, LocaleEnvInfx</li>
+            <li>ConnectionOdbc::begin(), commit() bug fixed</li>
+            <li>ResultsetOdbc: adjust Time/Decimal methods regarding datetime ranges/decimal precision
+        </ul>
+    </li>
+    <li>libbasarguiqt:
+        <ul>
+                <li>added translation files for Bulgarian, French, Croatian, Serbian, Czech</li>
+                <li>2nd print action only possible, after previous one has returned.</li>
+        </ul>
+    </li>
+    <li>libbasarguitie:
+        <ul>
+            <li>I18n: adjustments to DateEditBehavour, DateTimeEditBehavour, TimeEditBehavour, Helper</li>
+            <li>class Helper: removed redundant methods</li>
+            <li>OP 199: Added new classes
+                        ExceptionHandler, ExceptionHandlerRef, ExceptionHandlerManager and
+                        DefaultExceptionHandler as a way to handle base Exception Handeling
+                        for Exceptions that occurr in EventFilter Routines.
+            </li>
+            <li> OP 198: merged BasarTableWidgetBehavour and TableWidgetBehavour classes
+                        into inheritance to minimize duplicate code </li>
+            <li> OP 198: added compileroption /GR to use dynamic_cast </li>
+            <li> OP 198: TableWidgetBehavour: added private functions for pageDown, pageUp, KeyDown, KeyUp
+                        for better readability </li>
+            <li> added file libbasarguitie_apidefinition.h to remove redundant
+                definition of LIBBASARGUITIE_API </li>
+            <li> OP 208: PageUp Event does not always go to the first line </li>
+        </ul>
+    </li>
+    <li>libbasarlogin:
+            <ul>
+            <li>bug fix for setting user account inactive with property "lastpwchange"</li>
+            <li>I18n adjustments in LoginAppl/LoginApplWin</li>
+            </ul>
+    </li>
+    <li>libbasarproperty:
+            <ul>
+                <li> OP 193b: PropertyTable_XIterator::setPropertyState ignores resets of same state </li>
+                <li> I18n: PropertyTable_XIterator::getSQLString() adjusted</li>
+            </ul>
+    </li>
+    <li>libbasarqtwidget:
+            <ul>
+                <li>add I18n: Qt specific codec and locale</li>
+            </ul>
+    </li>
+</ul>
+
+<h3>01.06.00.00  -  2009-01-15:</h3>
+<ul>
+     <li>OP 197: upgrade to Qt 4.4.3</li>
+
+    <li>libbasarcmnutil:
+        <ul>
+            <li>InterpretPrint: bug fixed with smart pointer to array => boost::scoped_array</li>
+            <li>MailMessage   : bug fixed with smart pointer to array => boost::scoped_array</li>
+            <li>OP 209: Date::getWeekOfYear() wrong calculation fixed</li>
+        </ul>
+    </li>
+    <li>libbasardbsql:
+        <ul>
+            <li>ResultsetInfx: bug fixed with smart pointer to array => boost::scoped_array</li>
+            <li>OP 202 infxGetDescColData(): bug fixed regarding wrong cast in rdatestr()</li>
+            <li>OP 206: added new isolation levels for IDS 11, completed levels</li>
+            <li>OP 197 Qt upgrade 4.4.3: ResultsetOdbc::getFloat64() adjusted</li>
+        </ul>
+    </li>
+    <li>libbasarguiqt:
+        <ul>
+                <li>printing from preview via shortcut (Enter)</li>
+                  <li>OP 197: upgrade to Qt 4.4.3</li>
+        </ul>
+    </li>
+    <li>libbasarguitie:
+        <ul>
+            <li>OP 84 : Redesign of the inner workings of class ViewConnPtr in order to
+                        use parentage between Views without delete-sequence problems </li>
+            <li>OP 197: upgrade to Qt 4.4.3</li>
+        </ul>
+    </li>
+    <li>libbasarlogin:
+            <ul>
+            <li>new interface: getRightsByModuleAndArea().</li>
+            <li>withoutDlg() handling language id set by calling application.</li>
+             <li>OP 197: upgrade to Qt 4.4.3</li>
+            </ul>
+    </li>
+    <li>libbasarproperty:
+            <ul>
+                <li> OP 193: PropertyTable_XIterator::setPropertyState throws InvalidParameterException
+                    when the Propertystate can not be set (on SS_UNSET or SS_UNKNOWN).
+                    The setting was formally simply ignored. </li>
+                <li> OP 201: PropertyTable::executePerformed changes mixed PropertyStateSets </li>
+            </ul>
+    </li>
+    <li>libbasarqtwidget:
+            <ul>
+            <li>OP 84 : added class WidgetPointer </li>
+            <li>OP 197: Qt upgrade 4.4.3: pragma warning added</li>
+            <li>OP 207: changed BasarTableWidget::selectAlwaysOnlyOneRow.
+                        The current-Index moves with the Selection </li>
+            </ul>
+    </li>
+</ul>
+
+<h3>01.05.02.00 - 2008-11-14:</h3>
+<ul>
+    <li>libbasarcmnutil:
+        <ul>
+        <li>OP 190: InterpretPrint::setPrintSelect(PRINTER_DEDICATED): bug with incomplete printing (only first page) fixed.
+                    InterpretPrint::setPrintPaperSize() added to adjust other paper sizes than DIN A4 (default).
+                    InterpretPrint::setPrintDuplex() added for enabling duplex printing.
+                    workaround for network printer (doubling backslashes) added because of strange ghostscript behavior.</li>
+        <li>OP 154: Logging::printError() Windows case: MessageBox pops up after logging config failure, exits with EXIT_FAILURE (= 1)</li>
+        <li>OP 191: Date::getDaysOfMonth() added</li>
+        <li>OP 74: added ParameterList::operator== </li>
+        <li>bugfix: of Decimal: getNumberOfDecimalPlaces() changed inner workings </li>
+        <li>bugfix: of Decimal: getNumberOfDigits() changed inner workings </li>
+        <li>CmdLineTokenizer::getPosOfParam() is exported (Windows)</li>
+        </ul>
+    </li>
+    <li>libbasardbaspect:
+        <ul>
+                <li> op 74: added SQLStringBuilder::getParameterList() </li>
+                <li> op 74: added SQLStringBuilderRef::getParameterList() </li>
+                <li> op 74: added AcessorInstanceRef::getDefaultParameterList()
+                    and Acessor::getDefaultParameterList()
+                    returns the given ParameterList, that is set by
+                    Acessor(InstanceRef)::setDefaultParameterList and is
+                    stored in the map Acessor::m_MethodDefaultParameter
+                    That is neccessary as the DefaultParamter in the suservent
+                    SQLStringBuilder may be changed seperatetly and because it is
+                    possible to give a DefaultParameterList for all Methods.
+                    If there is no DefaultParameterList stored in the map for a
+                    given Method, the DefaultParamterList of the first
+                    SQLStringBuilder (begin) within this Method is returned. </li>
+                <li> op 74: added AccessMethodRef::size() const </li>
+                <li> op 74: added AccessMethodRef::empty() const </li>
+                <li> op 74: added const method
+                    AccessMethod(Ref)::getBuilder( const SQLStringBuilderListSize index ) const  </li>
+        </ul>
+    </li>
+    <li>libbasarguitie:
+        <ul>
+            <li> changed Exceptionname from UnableToWriteInLineOfControlException to UnableToReadWriteInLineOfControlException
+                    as the Exception is also used when a non existing value is read from a multiline widget
+                    UnableToWriteInLineOfControlException and UnableToReadInLineOfControlException are
+                    defined identical as typedefs for UnableToReadWriteInLineOfControlException </li>
+            <li> op 188: bugfix: TableWidgetBehaviour::getString(Int32 currentRow, Int32 currentColumn)
+                            UnableToReadWriteInLineOfControlException is thrown, when the currentRow is
+                            less than the AbsoluteIndex and
+                            when it is higher or equal to "rownumber + AbsoluteIndex".
+            <li> op 188: bugfix: BasarTableWidgetBehaviour::getString(Int32 currentRow, Int32 currentColumn)
+                            UnableToReadWriteInLineOfControlException is thrown, when the currentRow
+                            is less than the AbsoluteIndex and
+                            when it is higher or equal to "rownumber + AbsoluteIndex".
+            <li> op 188: Matcher::RightToLeft(GuiPropertyTable_YIterator,AccessorPropertyTable_YIterator,MatcherPolicyType)
+                            changed to use the same inner functions
+                            as  all the other Matcher::RightToLeft functions </li>
+            <li> op 188: Matcher::LeftToRight(GuiPropertyTable_YIterator,AccessorPropertyTable_YIterator,MatcherPolicyType)
+                            changed to use the same inner functions
+                            as  all the other Matcher::LeftToRight functions </li>
+            <li> op 188: bugfix:
+                            Matcher::RightToLeft(GuiPropertyTable_YIterator,AccessorPropertyTable_YIterator,MatcherPolicyType )
+                            corrected the use of Policy SKIP </li>
+            <li> op 188: Matcher::LeftToRight(int, int ) stops when there are no more Accessor Rows to be </li>
+            <li> op 176: changed BasarTableWidgetBehavour::eventFilterCtr Key_Down Event
+                            behavior starts with blockSignals(true)</li>
+            <li> op 176: changed BasarTableWidgetBehavour::eventFilterCtr does not match at Key_Down and Page_Down
+                            when there will be no more lines to be matched </li>
+        </ul>
+    </li>
+    <li>libbasarlogin:
+        <ul>
+            <li>bug fix: for correlations of region + branch, branch + region is only selected once.</li>
+        </ul>
+    </li>
+    <li>libbasarproperty:
+        <ul>
+                <li>PropertyTable_YIterator::setPropertyState(const ColumnIndex&, ...) added</li>
+        </ul>
+    </li>
+</ul>
+
+<h3>01.05.01.00 - 2008-08-05:</h3>
+<ul>
+    <li>libbasarcmnutil:
+    <ul>
+        <li>OP 181: DateTime: added fromStrDateTime() and toStrDateTime()</li>
+        <li>OP 181: DateTime: added getDateFormat(), getTimeFormat(), getShortTimeFormat() </li>
+        <li>OP 175: BString::trim(): bug with char values greater than 127 fixed</li>
+        <li>OP 179: liblog4cplus v1.0.2.2: enabled multithreading for Solaris</li>
+        <li>OP 148: liblog4cplus v1.0.2.2: fixed bug with milliseconds</li>
+        <li>OP 184: PrintTools::getFormPathClient(): "marathon" doesn't need to be enclosed in path for client print forms</li>
+    </ul>
+    </li>
+    <li>libbasardbaspect:
+    <ul>
+        <li>added AccessorPropertyTable_YIterator::getNumberOfColumns returns the number of columns </li>
+        <li>added AccessorPropertyTable_YIterator::getName(ColumnIndex) returns the name of one column </li>
+        <li>added relational operator for AccessorPropertyTableRef </li>
+    </ul>
+    </li>
+    <li>libbasardbsql:
+    <ul>
+        <li>OP 155 c): ManagerImpl::shutdown() doesn't throw exception/assertion if a referenced connection cannot be
+            removed from internal list. So destruction order of manager singletons is irrelevant</li>
+        <li>OP 180: adjusted to tcACCESS v8.0.0.7 because of multithreading bug</li>
+        <li>infxFreeDesc(): revised freeing descriptor area</li>
+        <li>ResultsetInfx::describeStmt(): memory leak after non successful statement description fixed</li>
+        <li>ResultsetInfx::close(): revised</li>
+        <li>PreparedStatementInfx::PreparedStatementInfx(): revised</li>
+        <li>StatementOdbc, PreparedStatementOdbc: set cursor to default "forward only" mode (= off).
+            SQL-Server ODBC failed with "[Microsoft][ODBC SQL Server Driver]Connection is busy with results for another hstmt"
+            when executing two active SQL statements simultaneously</li>
+    </ul>
+    </li>
+    <li>libbasarguiqt:
+      <ul>
+        <li>OP 177: PrintPreview::setPrintSelect() added: Windows printer selection by dialog, standard or dedicated printer</li>
+    </ul>
+    </li>
+    <li>libbasarguitie:
+      <ul>
+        <li> op 152: Do not use inner Indices for matching between foreign Iterators </li>
+        <li> bugfix removed 0-Pointer Exception in TableWidgetBehavour::getString </li>
+        <li> bugfix Helper::setStringToAcc uses setFloat32 for FLOAT32 values </li>
+        <li> bugfix Helper::setStringToAcc uses toStrDateTime for DateTime values (op181) </li>
+        <li> bugfix Helper::getStringFromAcc uses fromStrDateTime for DateTime values (op181) </li>
+        <li> Matcher::RightToLeft(index, count) returns number of rows affected </li>
+        <li> Matcher::LeftToRight(index, count) returns number of rows affected </li>
+        <li> Matcher::RightToLeft() returns number of rows affected </li>
+        <li> Matcher::LeftToRight() returns number of rows affected </li>
+        <li> bugfix Matcher use of Policy SKIP is corrected (added private Function checkPolicy) </li>
+        <li> added GuiPropertyTable_YIterator::getName(const ColumnSize index) </li>
+        <li> added GuiPropertyTable_YIterator::getNumberOfColumns() </li>
+        <li> checked for QWidget == 0 in GuiPropertyTable Constructor </li>
+    </ul>
+    </li>
+    <li>libbasarlogin:
+    <ul>
+        <li>adjusted DB connection parameter to new Unix server</li>
+    </ul>
+    </li>
+    <li>libbasarproperty:
+    <ul>
+        <li>PropertyTable_YIterator: added memberfunction getName(index) </li>
+        <li>PropertyDescriptionVector: added memberfunction toStringList </li>
+    </ul>
+    </li>
+    <li>libbasarqtwidget:
+            <ul>
+            <li> BasarTableWidget: added slot selectAlwaysOnlyOneRow
+                    in order to deselect old selection and select exactly
+                    one row. This is necessary so Modifier can be used
+                    in the ShortcutValues for "setShotcutsToSelectRows"
+                    note: formally used the QTableWidget slot selectRow(int) selects f.ex.
+                    more than one line (from last slected to
+                    actual) while the SHIFT key is pressed
+            </li>
+            </ul>
+    </li>
+</ul>
+
+<h3>01.05.00.00 - 03.06.2008:</h3>
+<ul>
+     <li>upgrade to Qt 4.3.4</li>
+    <li>upgrade to tcACCESS v8</li>
+    <li>libbasarcmnutil:
+        <ul>
+            <li>ParameterList::toString added, in order to convert a ParameterList to its initializing string</li>
+            <li>macros for aligned data access: GET/SET_ALIGNED 16/32/64 bit (libbasarcmnutil_definitions.h)</li>
+        </ul>
+     </li>
+    <li>libbasardbaspect:
+        <ul>
+                <li> added Macro ENSURE_PROPERTIES_ARE_SET_AND_ALL_IN_STATE </li>
+                <li> OP 153:
+                    added Functions with paramterer cmnutil::ParameterList (parallel to String),
+                    in SQLBuilder,SQLBuilderImpl, AccessorPropertyTable_YIterator
+                    <ul>
+                        <li> arePropertiesSetAndOneMustBeInState (const basar::cmnutil::ParameterList& , const PropertyStateSet& rState ) </li>
+                        <li> arePropertiesSetAndOneMustBeInState (const basar::cmnutil::ParameterList& , const VarString&  ) </li>
+                        <li> arePropertiesSetAndAllInState(const basar::cmnutil::ParameterList&  ,const PropertyStateSet& ) </li>
+                        <li> arePropertiesSetAndAllInState(const basar::cmnutil::ParameterList&  ,const VarString& ) </li>
+                        <li> are1stPropertiesSetAnd2ndOneInState(const basar::cmnutil::ParameterList& ,const basar::cmnutil::ParameterList& plOneMustBeInState,const VarString& pss ) </li>
+                    </ul>
+                    in order to use the PropertyDescriptionVector in the macros
+                    and for implemetation changes for OPs 153, 171
+                </li>
+                <li> OP 153 / 171
+                    changed internal implementation of:
+                    <ul>
+                        <li> SQLBuilderImpl::arePropertiesSet </li>
+                        <li> SQLBuilderImpl::arePropertiesSetAndOneMustBeInState </li>
+                        <li> SQLBuilderImpl::arePropertiesSetAndAllInState </li>
+                        <li> SQLBuilderImpl::are1stPropertiesSetAnd2ndOneInState </li>
+                    </ul>
+                </li>
+                <li> OP 153 / 171:
+                    added new member functions to AccessorPropertyTable_YIterator
+                    <ul>
+                        <li> AccessorPropertyTable_YIterator::isOnePropertyInState </li>
+                        <li> AccessorPropertyTable_YIterator::areKnownPropertiesInState </li>
+                        <li> AccessorPropertyTable_YIterator::areKnownAndSetPropertiesInState </li>
+                    </ul>
+                </li>
+        </ul>
+     </li>
+    <li>libbasardbsql:
+        <ul>
+            <li>SqlOperative::checkStmtForSelect() removed because of using stored procedures</li>
+            <li>interface ready for using stored procedures</li>
+            <li>tcACCESS libraries delayed/lazy loaded for Win/Solaris</li>
+            <li>OP 130: enabled tcACCESS VSAM-SQL for Unix</li>
+            <li>OP 131: enabled tcACCESS stored procedure - calling CICS programs</li>
+            <li>SqlExceptHandlerInfx::isSqlStateNotFound(): warning logs warning message (previously: throwed exception)</li>
+        </ul>
+     </li>
+    <li>libbasarlogin:
+        <ul>
+            <li>detailed password checks (at least 6 signs - one digit, one upper case; none of the last six passwords;).</li>
+            <li>connection parameter can be set via "setConnectionConfig()" and are retrieved by 4 get-methods.</li>
+            <li>default connection parameter (host + db) adapted to new 64-bit platform.</li>
+        </ul>
+     </li>
+    <li>libbasarproperty:
+        <ul>
+                <li> PropertyTable_YIterator: added call to checkInitialization() in
+                    PropertyTable_YIterator::begin() and PropertyTable_YIterator::end() </li>
+                <li> PropertyTable_YIterator: removed OutOfRangeIteratorException from PropertyTable_YIterator::end()
+                    when end() == begin() </li>
+                <li> added PropertyTable_YIterator::getXIterator </li>
+                <li> added Function isOnePropertyInState in algorithm </li>
+                <li> added Function areKnownPropertiesInState in algorithm </li>
+                <li> added Function areKnownAndSetPropertiesInState in algorithm </li>
+                <li> added PropertyDescriptionListRef / PropertyDescriptionList::toString </li>
+                  <li> added Debug Logmessages and Logger Instances</li>
+                <li> changed implementation of are1stPropertiesSetAnd2ndOneInState </li>
+                <li> changed implementation of PropertyDescriptionList::getIndex() </li>
+                <li> PropertyTable_XIterator::getSQLString() completed with INTDATE, INTTIME cases </li>
+        </ul>
+     </li>
+</ul>
+
+<h3>01.04.00.00 - 14.04.2008:</h3>
+<ul>
+     <li>port to Solaris 10 LP64</li>
+    <li>libbasar_pkgversion.h published by renaming</li>
+    <li>libbasarappl:
+        <ul>
+            <li>template instantiation ready for Solaris 10: Sun Studio, GCC</li>
+        </ul>
+     </li>
+    <li>libbasarcmnutil:
+        <ul>
+            <li>doxygen comments improved</li>
+            <li>port to Solaris 10 LP64</li>
+            <li>OP 164: Decimal operators extended by type Int32</li>
+        </ul>
+     </li>
+    <li>libbasardbaspect:
+        <ul>
+            <li> Accessor::execute(): cacher object replaced by given yIterator
+            <li> OP 82: changed implementation and use of CachingPolicy::size() returns now the actual
+                    size of the PropertyTable </li>
+            <li> OP 82: changed implementation and use of AccessorPropertyTable::size() returns now the actual
+                    size of the PropertyTable </li>
+            <li> OP 82: AccessorPropertyTable::getNumberOfFetchedRows added to check the actual number
+                    of read/fetched rows </li>
+            <li> AccessorPropertyTable_YIterator::changed result in getPropertyTable Signature </li>
+            <li> AccessorPropertyTable_YIterator::added getCacheControllerSharedPtr to replace old
+                    getPropertyTable function </li>
+            <li> Accessor::execute() with more than one YIterator checks if the YIterator
+                    was already changed by the execute Method on one YIterator, as is done
+                    with delete Statements </li>
+            <li> OP 126: ConnectionRef methods for DB transactions made private again because of problems</li>
+            <li> template instantiation ready for Solaris 10: Sun Studio, GCC</li>
+            <li> OP 143: Accessor::execute(): fixed error: only every second row is deleted</li>
+        </ul>
+     </li>
+    <li>libbasardbsql:
+        <ul>
+            <li>Statement::execute(): enhanced exception message if select statement isn't detected</li>
+            <li>template adjusted to Solaris 10: Sun Studio / gcc</li>
+            <li>OP 157: ResultsetCics::getInt16(): is also able to read CICS type DECIMAL(n) and throws exception
+                                                    if CICS value is wider than 16 bit</li>
+            <li>OP 142: ConnectionCics::open(): tcaccess.ini: inProcess=1 in section [CommunicationHandler] avoids slot sharing
+                                                                with other processes<br>
+                                                initSlot() only finds slot without session. So a slot can opened only once per process.</li>
+            <li>updated to tcACCESS 7.0 SP6</li>
+            <li>OP 150: no prepared statements for CICS implemented because of tcACCESS feature lack</li>
+            <li>OP 150: ResultsetCics::reopen() removed due to no advantage for tcACCESS</li>
+            <li>OP 150: ResultsetCics::next() pays attention to more than one resultset buffer (huge, wide amount of rows)</li>
+            <li>StatementCics::execute() revised log message</li>
+            <li>OP 162: Connection:<br>
+                Infx transaction interrupted by another connection: Infx manages only own Informix connects; no impact by CICS connection.<br>
+                extended struct DatabaseInfo: Infx connection can be opened with concurrent transaction</li>
+        </ul>
+     </li>
+    <li>libbasarguitie:
+        <ul>
+            <li>Helper: bugs with basar::Time fixed (c'tor, isValid())</li>
+            <li>OP 139: added function basarQTMessageHandler in order to write QT Messages to the Logfile:<br>
+                Function: basarQTMessageHandler writes QTMessages to the Logger named "basar.gui.tie.QTMessageHandler".
+                the MessageHandler has to activated with the line:<br>
+                qInstallMsgHandler( basar::gui::tie::basarQTMessageHandler);<br>
+                that should be part of each main Programm that uses QT </li>
+        </ul>
+     </li>
+    <li>libbasarlogin:
+        <ul>
+            <li>template instantiation ready for Solaris 10: Sun Studio, GCC</li>
+        </ul>
+     </li>
+    <li>libbasarproperty:
+        <ul>
+            <li>PropertyDescription::operator VarString(), ConstString() removed because of ambiguity errors for Sun and gcc compiler</li>
+        </ul>
+     </li>
+    <li>libbasarqtwidget:
+        <ul>
+            <li>IntegerSignalEmitter class added </li>
+            <li>BasarTableWidget: added member function
+                setShotcutsToSelectRows :
+                Each row can be selected by a Shortcut, that is defined in the
+                QStringList. The Strings have the same convention as in
+                QKeySequence ( const QString & key ) The ShortcutContext can
+                also be specified.</li>
+            <li>BasarTableWidget: added member function
+                setAbsoluteVerticalHeaders :
+                The vertical headers are rolled, that means, that when rows are inserted
+                or removed the vertical headers are rolled, and appear unchanged, as the RowHeader
+                is used as representation of the Index, rather than as a representation of the row.
+                The list is stored separately, as there may be more entries than rows.</li>
+            <li>BasarTableWidget: added member function
+                setABCVerticalHeaderLabels :
+                uses setAbsoluteVerticalHeaders and setShotcutsToSelectRows to
+                implement absolute alphabetical vertical Headers </li>
+            <li>BasarTableWidget: fixed Null-Pointer Exception in verticalHeaderLabels</li>
+             </ul>
+     </li>
+</ul>
+
+<h3>01.03.02.00 - 28.02.2008:</h3>
+db::sql with tcACCESS not mature for rollout (only for development)
+<ul>
+    <li>cmnutil::DateTime::operator == : compare improved</li>
+    <li>OP 127: cmnutil::InterpretPrint::setPrintSelect() added: printer selection by dialog, standard or dedicated printer</li>
+    <li>db::aspect::ACCESS_METHOD_SINGLE_BUILDER() bug fixed</li>
+    <li>db::aspect::Accessor::execute(const AccessMethodName &, AccessorPropertyTable_YIterator &, ...): bug for affected rows in trace fixed</li>
+    <li>OP 138: db::aspect: added macros for PropertyDescriptionList </li>
+    <li>OP 144: db::aspect::Accessor::execute()/executeAggregate():
+                close preceding statement, resultset for CICS connection; so following statement can be processed</li>
+    <li>db::sql::ResultsetCics::checkRangeAndType(): exception message bug fixed</li>
+    <li>db::sql: doxygen comments improved</li>
+    <li>db::sql::StatementOdbc, db::sql::PreparedStatementOdbc: set cursor to forward only (needs less memory)</li>
+    <li>db::sql: added fetch mode raw for ODBC, CICS</li>
+    <li>db::sql::~ConnectionCics() revised</li>
+    <li>db::sql: logging improved</li>
+    <li>db::sql: PreparedStatementCics::setDecimal() bug fixed (digits, scale inverted)</li>
+    <li>db::sql: PreparedStatementCics::getTime() bug fixed: date field must be invalid -> init time member with invalid state</li>
+    <li>OP 141: db::sql::Resultset::storeColNames(): column names are stored lowercase, so Property Description List must be defined in lower case too</li>
+    <li>OP 146: db::sql::ResultsetCics: get/setInt32(), get/setDecimal() both work for CICS host type DECIMAL(x) (no scale)</li>
+    <li>gui::tie: added doxygen comments</li>
+    <li>OP 138: property: new structs PropertyDescription and PropertyDescriptionVector </li>
+    <li>property: PropertyDescriptionList::construct(const I18nString&): bug with tabs in property description list fixed</li>
+    <li>property: PropertyTable_YIterator::toStream(): bug with shortened string value fixed</li>
+</ul>
+
+<h3>01.03.01.00 - 31.01.2008:</h3>
+    <ul>
+        <li>OP 89: checkbox-matcher error fixed</li>
+        <li>OP 95: tcACCESS VSAM-SQL for Windows added</li>
+        <li>OP 120: error in Informix prepared statements without parameter ? fixed</li>
+        <li>OP 121: PropertyDescriptionList: blank error fixed</li>
+        <li>OP 122: Decimal::toInt32() added</li>
+        <li>OP 124: BString::isDigit() handling for higher ASCII values improved</li>
+        <li>OP 126: db::aspect::ConnectionRef: transaction methods are public now</li>
+        <li>BString extensions</li>
+        <li>ViewConnPtr::operator bool() revised</li>
+        <li>every basar widget can be changed by matcher, maxCountOfControls() return 1 at minimum</li>
+    </ul>
+
+<h3>01.03.00.00 - 12.12.2007:</h3>
+<ul>
+    <li>serial id is returned after insert</li>
+    <li>dbsql-Exception --> Error-Returnvalue</li>
+    <li>dbaspect: Accessor-Execute-Listener</li>
+</ul>
+
+<h3>01.02.01.00 - 10.10.2007:</h3>
+libbasarlogin: added getBranchesWithRight(); adjustments for sql statements (? --> #)
+
+<h3>01.02.00.00 - 04.10.2007:</h3>
+tcACCESS; sql string resolvings, sql masking; bugfixing; iterator methods completion
+
+<h3>01.01.01.00 - 03.05.2007:</h3>
+adaptions in gui::tie + qtwidget
+
+<h3>01.01.00.00 - 04.04.2007:</h3>
+<ul>
+    <li>new datatypes date / datetime for properties</li>
+    <li>cmnutil::Date + DateTime + BString redesigned</li>
+    <li>changes in BasarTableWidget</li>
+    <li>AccessorInstances do not overwrite their former ResultSet at update/insert/delete</li>
+</ul>
+
+<h3>01.00.06.02 - 13.02.2007:</h3>
+corrections in gui::tie + db::aspect + db::sql (odbc) + cmnutil
+
+<h3>01.00.06.01 - 04.01.2007:</h3>
+corrections in gui::tie + db::aspect
+
+<h3>01.00.06.00 - 21.12.2006:</h3>
+corrections in gui::tie + property + db::aspect
+
+<h3>01.00.05.00 - 13.12.2006:</h3>
+corrections in gui::tie + new mail functionality in cmnutil
+
+<h3>01.00.04.01 - 03.11.2006:</h3>
+little corrections concerning datetime und basar::any
+
+<h3>01.00.04.00 - 23.10.2006:</h3>
+changes iteration 9
+
+<h3>01.00.03.00 - 04.09.2006:</h3>
+changes iteration 8 (mainly printing + systemeventmanager)
+
+<h3>01.00.02.01 - 27.07.2006:</h3>
+changes in cmnutil + guiqt
+
+<h3>01.00.02.00 - 04.07.2006:</h3>
+changes in cmnutil + qtwidget
+
+<h3>01.00.01.01 - 07.06.2006</h3>
+
+<h3>01.00.01.00 - 07.06.2006</h3>
+
+<h3>01.00.00.00 - 16.05.2006:</h3>
+first release
+
+<h3>00.99.02.00 - 18.04.2006:</h3>
+5th release candidate
+
+<h3>00.99.01.01 - 06.04.2006:</h3>
+4th release candidate
+
+<h3>00.99.01.00 - 28.03.2006:</h3>
+3rd release candidate
+
+<h3>00.99.00.01 - 03.03.2006:</h3>
+2nd release candidate
+
+<h3>00.99.00.00 - 23.02.2006:</h3>
+1st release candidate

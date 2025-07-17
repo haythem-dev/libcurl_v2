@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{bc261b81-9620-477e-b7dd-172cdf92a75f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{1657e2ff-6fc3-4c6a-b6ba-d3faa9593a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{dca58f6b-535d-4f9b-bca5-aacb7b55c6d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{d1a7921b-c055-4668-8817-d39591a1a353}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="data\ddl.sql">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\dkpar_ut.ftb">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\dml.sql">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\tcastp.stp">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\utdbsql.cfg">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\ddl.mssql.sql">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\dml.mssql.sql">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="buttable.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="defaultmasterbuttable.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="odbcfix.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="testcicsconnection.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="testconnection.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="testinfxconnection.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="testodbcconnection.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="utdbsqlhelper.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="cics.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="cicsconnect.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="cicsmt.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="columnnames.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="connection.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="connectionmt.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="databaseinfo.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="datetime.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="decimal.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="fixedstrings.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="i18n.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="managerimpl.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="odbc.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="preparedstatement.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="resultset.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="statement.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="stmttype.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="storedproc.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="successivestmts.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="testmssqlodbcconnection.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="resultsetclose.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="infxbigserial.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="infxint8.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="infxbigint.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="infxsimpleblob.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="timespan.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="infxsqlfunc.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="buttable.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="defaultmasterbuttable.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="odbcfix.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="testcicsconnection.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="testconnection.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="testinfxconnection.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="testodbcconnection.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="utdbsqlhelper.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="testmssqlodbcconnection.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

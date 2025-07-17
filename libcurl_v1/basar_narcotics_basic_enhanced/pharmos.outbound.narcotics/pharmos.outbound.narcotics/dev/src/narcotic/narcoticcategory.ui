@@ -1,0 +1,290 @@
+<ui version="4.0" >
+ <class>NarcoticCategoryClass</class>
+ <widget class="QDialog" name="NarcoticCategoryClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>599</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>NA06 Narcotics-Group</string>
+  </property>
+  <widget class="QFrame" name="frame_category" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>591</width>
+     <height>531</height>
+    </rect>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="QGroupBox" name="gBox_article" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>581</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Article-Data:</string>
+    </property>
+    <widget class="BasarTableWidget" name="tw_article" >
+     <property name="geometry" >
+      <rect>
+       <x>16</x>
+       <y>20</y>
+       <width>551</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <property name="whatsThis" >
+      <string>Result set of all articles belonging to the given narcotic group</string>
+     </property>
+     <property name="selectionMode" >
+      <enum>QAbstractItemView::NoSelection</enum>
+     </property>
+     <property name="selectionBehavior" >
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="rowCount" >
+      <number>11</number>
+     </property>
+     <property name="columnCount" >
+      <number>4</number>
+     </property>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gBox_group" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>5</y>
+      <width>581</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Narcotic-Group:</string>
+    </property>
+    <widget class="QLabel" name="lb_name" >
+     <property name="geometry" >
+      <rect>
+       <x>13</x>
+       <y>20</y>
+       <width>65</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Name:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_packageunit" >
+     <property name="geometry" >
+      <rect>
+       <x>363</x>
+       <y>19</y>
+       <width>65</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>PackageUnit:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lb_concentration" >
+     <property name="geometry" >
+      <rect>
+       <x>453</x>
+       <y>19</y>
+       <width>69</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Concentration:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="name" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>35</y>
+       <width>341</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="readOnly" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="packageunit" >
+     <property name="geometry" >
+      <rect>
+       <x>360</x>
+       <y>35</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="readOnly" >
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="concentration" >
+     <property name="geometry" >
+      <rect>
+       <x>450</x>
+       <y>35</y>
+       <width>113</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="readOnly" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnClose" >
+    <property name="geometry" >
+     <rect>
+      <x>510</x>
+      <y>480</y>
+      <width>77</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Close</string>
+    </property>
+    <property name="autoDefault" >
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="gBox_search" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>581</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Search:</string>
+   </property>
+   <widget class="QPushButton" name="btnSearch" >
+    <property name="geometry" >
+     <rect>
+      <x>280</x>
+      <y>50</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="group" >
+    <property name="geometry" >
+     <rect>
+      <x>140</x>
+      <y>20</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="whatsThis" >
+     <string>Search criteria input: narcotic group key</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="searchname" >
+    <property name="geometry" >
+     <rect>
+      <x>140</x>
+      <y>50</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="whatsThis" >
+     <string>Search criteria input: narcotic group key</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="optName" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>97</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Narcotic-Name:</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="optGroup" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>101</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Narcotic-Group:</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>BasarTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>libbasarqtwidget_tablewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>group</tabstop>
+  <tabstop>searchname</tabstop>
+  <tabstop>btnSearch</tabstop>
+  <tabstop>tw_article</tabstop>
+  <tabstop>name</tabstop>
+  <tabstop>packageunit</tabstop>
+  <tabstop>concentration</tabstop>
+  <tabstop>btnClose</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

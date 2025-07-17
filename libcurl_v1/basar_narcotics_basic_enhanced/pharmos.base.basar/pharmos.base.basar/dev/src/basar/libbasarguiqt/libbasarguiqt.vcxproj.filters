@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="statusline">
+      <UniqueIdentifier>{7f7fc509-97f1-49d3-aab6-d36582d4ac46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainbackground">
+      <UniqueIdentifier>{4295ec11-7a01-4c5e-ae0a-10ba05ee280b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="About">
+      <UniqueIdentifier>{efedb684-2240-43b3-82ba-4f6aaa7954c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="About\Gui">
+      <UniqueIdentifier>{10f777d9-bdba-44af-8088-31edc7bbfda9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="About\Gui\Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+    </Filter>
+    <Filter Include="About\Gui\Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="manager">
+      <UniqueIdentifier>{5b172564-adb8-4056-856c-d9efb597c950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="printpreview">
+      <UniqueIdentifier>{3378ceea-868a-452a-a585-9193390dd64c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="About\Gui\Generated Files\Debug">
+      <UniqueIdentifier>{ddf2a67e-03ab-4d91-a6b5-b08ba59be58f}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="About\Gui\Generated Files\Release">
+      <UniqueIdentifier>{3e58df20-bc51-4326-9a9e-fe1d6dc41c4e}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="statusline.cpp">
+      <Filter>statusline</Filter>
+    </ClCompile>
+    <ClCompile Include="mainbackground.cpp">
+      <Filter>mainbackground</Filter>
+    </ClCompile>
+    <ClCompile Include="about.cpp">
+      <Filter>About</Filter>
+    </ClCompile>
+    <ClCompile Include="aboutdlg.cpp">
+      <Filter>About</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="managerimpl.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_libbasarguiqt.cpp">
+      <Filter>About\Gui\Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="picturelist.cpp">
+      <Filter>printpreview</Filter>
+    </ClCompile>
+    <ClCompile Include="printpreview.cpp">
+      <Filter>printpreview</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasarguiqt.cpp" />
+    <ClCompile Include="loggerpool.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_aboutdlg.cpp">
+      <Filter>About\Gui\Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aboutdlg.cpp">
+      <Filter>About\Gui\Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_libbasarguiqt_printpreview.cpp">
+      <Filter>About\Gui\Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_libbasarguiqt_printpreview.cpp">
+      <Filter>About\Gui\Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="printpreviewol.cpp">
+      <Filter>printpreview</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="image\app.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\close.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\exit.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\firstpage.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\gotopage.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\lastpage.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\newwindow.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\nextpage.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\openfile.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\prevpage.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\print.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\printpreview.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\zoom_minus.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="image\zoom_plus.png">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="aboutdlg.h">
+      <Filter>About</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aboutdlg.ui">
+      <Filter>About\Gui\Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarguiqt_printpreview.h">
+      <Filter>printpreview</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarguiqt_bg.ts">
+      <Filter>Translation Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarguiqt_cs.ts">
+      <Filter>Translation Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarguiqt_de.ts">
+      <Filter>Translation Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarguiqt_fr.ts">
+      <Filter>Translation Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarguiqt_hr.ts">
+      <Filter>Translation Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarguiqt_rs.ts">
+      <Filter>Translation Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarguiqt.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="loggerpool.h" />
+    <CustomBuild Include="libbasarguiqt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libbasarguiqt_functions.h" />
+    <ClInclude Include="libbasarguiqt_about.h">
+      <Filter>About</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguiqt_statusline.h">
+      <Filter>About\Gui\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguiqt_mainbackground.h">
+      <Filter>About\Gui\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_aboutdlg.h">
+      <Filter>About\Gui\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguiqt_manager.h">
+      <Filter>About\Gui\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="managerimpl.h">
+      <Filter>About\Gui\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="picturelist.h">
+      <Filter>About\Gui\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguiqt_printpreviewol.h">
+      <Filter>printpreview</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\logo_pharmos.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\logo_pharmos_phoenix_group_it.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\dot_blue.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\dot_red.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="image\dot_yellow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

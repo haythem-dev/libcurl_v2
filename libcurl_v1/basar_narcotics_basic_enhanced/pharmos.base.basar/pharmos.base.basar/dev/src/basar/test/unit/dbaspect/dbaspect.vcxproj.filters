@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{494aeb00-27e1-41bd-be07-68f2ac44b964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{728d0ff5-5bde-44eb-8d7d-46817058240d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\Accessor Builder Definitions">
+      <UniqueIdentifier>{6ca1eafc-2df5-4a18-8e8d-105fd319fe57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\Accessor Execute Listener">
+      <UniqueIdentifier>{01d3b813-efd7-4cfd-9026-0e1aeb84e80a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\Const Property Descriptions">
+      <UniqueIdentifier>{3cbb12ce-4694-4a4e-9fea-b89cef87f784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\TestFixture Class">
+      <UniqueIdentifier>{ab3a0c80-2ce3-4869-b748-6f0c84f4311f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\TestFixture Class\accessorpropertytableref">
+      <UniqueIdentifier>{b1c354bb-fc4f-48be-bb2c-c960e7119b80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{a25d9db0-6cc4-4306-9db8-dac2c163e53b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\accessor">
+      <UniqueIdentifier>{dc50eba4-5e92-4675-b312-c803e02ab076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{cedb2044-7e75-4095-bb69-16b9bdc25a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="data\utdbaspect.cfg">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="loggerpool.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="odbcfix.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="testconnection.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="accessmethodnames.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="accessornames.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="butprocs.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="buttablereader.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="cicsvsamdkpar_ut.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="testdelete.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="testfixedstrings.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="testi18n.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="testsqlbuilder.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="testsqlbuilderensureparameters.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="testsqlinsertupdate.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="testsqlresolvequeries.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="testaccessorexecutelistener.cpp">
+      <Filter>helper\Accessor Execute Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="testaccessorholder.cpp">
+      <Filter>helper\TestFixture Class</Filter>
+    </ClCompile>
+    <ClCompile Include="testfixturebase.cpp">
+      <Filter>helper\TestFixture Class</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorpropertytablerefbeginfixture.cpp">
+      <Filter>helper\TestFixture Class\accessorpropertytableref</Filter>
+    </ClCompile>
+    <ClCompile Include="accessordefinitionlist.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorpropertytableref.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="accinstlist.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="accmethod.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="columnnames.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="exceptions.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="fixedstrings.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="i18n.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="iterator.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="prepstmt.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="stmttype.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="storedproc.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="successivestmts.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="transaction.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="yiterator.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorinstanceref.cpp">
+      <Filter>tests\accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorinstancerefdefaultparameterusage.cpp">
+      <Filter>tests\accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorinstancerefdeletetest.cpp">
+      <Filter>tests\accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorinstancerefensureparametertest.cpp">
+      <Filter>tests\accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorinstancerefensureparametertest2.cpp">
+      <Filter>tests\accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorinstancerefsqlinsertupdatetest.cpp">
+      <Filter>tests\accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="accessorinstancerefsqlresolvtest.cpp">
+      <Filter>tests\accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="testpreparedsqlbuilder.cpp">
+      <Filter>helper\TestFixture Class</Filter>
+    </ClCompile>
+    <ClCompile Include="infxint8.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="infxsimpleblob.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="infxint8_builder.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="infxsimpleblob_builder.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="float.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="float_builder.cpp">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="timespan.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="cachingpolicy.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="loggerpool.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="odbcfix.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="testconnection.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="accessmethodnames.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="accessornames.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="butprocs.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="buttablereader.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="cicsvsamdkpar_ut.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="testdelete.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="testfixedstrings.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="testi18n.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="testnames.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="testsqlbuilder.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="testsqlbuilderensureparameters.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="testsqlinsertupdate.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="testsqlresolvequeries.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="testaccessorexecutelistener.h">
+      <Filter>helper\Accessor Execute Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="buttablepropertydescriptions.h">
+      <Filter>helper\Const Property Descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="buttablepropertydescriptionvectors.h">
+      <Filter>helper\Const Property Descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="testaccessorholder.h">
+      <Filter>helper\TestFixture Class</Filter>
+    </ClInclude>
+    <ClInclude Include="testfixturebase.h">
+      <Filter>helper\TestFixture Class</Filter>
+    </ClInclude>
+    <ClInclude Include="accessorpropertytablerefbeginfixture.h">
+      <Filter>helper\TestFixture Class\accessorpropertytableref</Filter>
+    </ClInclude>
+    <ClInclude Include="testpreparedsqlbuilder.h">
+      <Filter>helper\TestFixture Class</Filter>
+    </ClInclude>
+    <ClInclude Include="infxint8_builder.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="infxsimpleblob_builder.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="float_builder.h">
+      <Filter>helper\Accessor Builder Definitions</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="proc">
+      <UniqueIdentifier>{ec5b29aa-0544-45c0-a2cb-7deb66cda88a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc\test">
+      <UniqueIdentifier>{b1a41ee4-5f3b-4f52-914c-456ff9fab8d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unix">
+      <UniqueIdentifier>{0eab5d65-490e-489b-96f6-b5bbffec4182}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="proc\all2unix.bat">
+      <Filter>proc</Filter>
+    </None>
+    <None Include="proc\ftp.bat">
+      <Filter>proc</Filter>
+    </None>
+    <None Include="proc\proc2unix.bat">
+      <Filter>proc</Filter>
+    </None>
+    <None Include="proc\trial2unix.bat">
+      <Filter>proc</Filter>
+    </None>
+    <None Include="proc\var_proj.bat">
+      <Filter>proc</Filter>
+    </None>
+    <None Include="proc\testappl2unix.bat">
+      <Filter>proc\test</Filter>
+    </None>
+    <None Include="proc\testcmnutil2unix.bat">
+      <Filter>proc\test</Filter>
+    </None>
+    <None Include="proc\testdbaspect2unix.bat">
+      <Filter>proc\test</Filter>
+    </None>
+    <None Include="proc\testdbsql2unix.bat">
+      <Filter>proc\test</Filter>
+    </None>
+    <None Include="proc\testlogin2unix.bat">
+      <Filter>proc\test</Filter>
+    </None>
+    <None Include="proc\testproperty2unix.bat">
+      <Filter>proc\test</Filter>
+    </None>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="proc\rm_files.sh">
+      <Filter>unix</Filter>
+    </None>
+  </ItemGroup>
+</Project>

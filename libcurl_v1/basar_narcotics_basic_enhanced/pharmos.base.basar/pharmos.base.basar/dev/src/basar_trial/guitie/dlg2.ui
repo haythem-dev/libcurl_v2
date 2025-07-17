@@ -1,0 +1,112 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>dlg2Class</class>
+ <widget class="QDialog" name="dlg2Class" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>536</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>dlg2</string>
+  </property>
+  <property name="accessibleName" >
+   <string>dlg2Class</string>
+  </property>
+  <widget class="QPushButton" name="pushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>450</x>
+     <y>340</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>pushButton</string>
+   </property>
+   <property name="text" >
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="grpbox" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>221</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>grpbox</string>
+   </property>
+   <property name="title" >
+    <string>Test Group Box</string>
+   </property>
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <widget class="QCheckBox" name="checkBox" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>72</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>checkBox</string>
+    </property>
+    <property name="text" >
+     <string>CheckBox</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_2" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>radioButton_2</string>
+    </property>
+    <property name="text" >
+     <string>RadioButton</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>radioButton</string>
+    </property>
+    <property name="text" >
+     <string>RadioButton</string>
+    </property>
+    <property name="checked" >
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources/>
+ <connections/>
+</ui>

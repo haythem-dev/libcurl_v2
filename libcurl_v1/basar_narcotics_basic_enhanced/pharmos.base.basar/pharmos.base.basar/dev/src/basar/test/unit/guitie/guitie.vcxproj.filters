@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="helper">
+      <UniqueIdentifier>{f52573eb-390a-4cbb-865a-206f16819e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\Accessor">
+      <UniqueIdentifier>{4464b843-c5a3-404c-b483-b16ac34ef4ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\Accessor\Connection">
+      <UniqueIdentifier>{fc4b2c67-a683-424e-846d-c8e8d74cdb43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\Accessor\Definitions">
+      <UniqueIdentifier>{ae8f7c7e-dd94-4f26-961c-a073c4ae1e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\Accessor\Accessor">
+      <UniqueIdentifier>{19546316-0a03-4d84-bc8f-7c88adaeb2b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\BaseMatcherHolder">
+      <UniqueIdentifier>{49ca3fe5-36df-4b65-a28f-e0a4df176358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\TableWidget String Classes">
+      <UniqueIdentifier>{5b270466-17b8-4abb-8946-436332dc4547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\Widgets - ViewConnectors">
+      <UniqueIdentifier>{69f0e9bb-6a39-48a1-ac2b-286a9329f3f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper\ExceptionHandler">
+      <UniqueIdentifier>{1990e536-b41b-414f-a404-c0100ad23539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{f4ce103d-b846-4188-b445-27f655f555d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\Matcher">
+      <UniqueIdentifier>{e78e7d38-0e1a-460b-aeef-b8da9f1a21ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\Transformer">
+      <UniqueIdentifier>{f811c103-1729-4be8-8b9f-5506d922e63d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\Transformer\DateTime">
+      <UniqueIdentifier>{911d1330-511b-4024-91d0-52cd24fb2239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\Transformer\Number">
+      <UniqueIdentifier>{2e908b93-30f5-42bb-a78a-2154ec4e760e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{d51a6be9-7c41-4fd1-a1ff-8369bbbd9a58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{c5ef3404-530e-4004-9a14-da068a03b5c5}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+    </Filter>
+    <Filter Include="Mock">
+      <UniqueIdentifier>{629aa706-4811-41fb-912b-86ff08d448a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="basarderived.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerpool.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="qtderived.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="testconnection.cpp">
+      <Filter>helper\Accessor\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="selects.cpp">
+      <Filter>helper\Accessor\Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="basematcherholder.cpp">
+      <Filter>helper\BaseMatcherHolder</Filter>
+    </ClCompile>
+    <ClCompile Include="basematcherholdertestszenario.cpp">
+      <Filter>helper\BaseMatcherHolder</Filter>
+    </ClCompile>
+    <ClCompile Include="basematcherholdertestszenariolist.cpp">
+      <Filter>helper\BaseMatcherHolder</Filter>
+    </ClCompile>
+    <ClCompile Include="indexcountholder.cpp">
+      <Filter>helper\BaseMatcherHolder</Filter>
+    </ClCompile>
+    <ClCompile Include="stringmatcherholdermorelines.cpp">
+      <Filter>helper\TableWidget String Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="tablewidgetmatcherholder.cpp">
+      <Filter>helper\TableWidget String Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test1avc.cpp">
+      <Filter>helper\Widgets - ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="test1vc.cpp">
+      <Filter>helper\Widgets - ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="test2vc.cpp">
+      <Filter>helper\Widgets - ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="testexceptionhandler.cpp">
+      <Filter>helper\ExceptionHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="testexceptionthrower.cpp">
+      <Filter>helper\ExceptionHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="exceptionhandler.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="iterator.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="viewconnptr.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="matcher.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherbasardatetime.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherbasardatetimederived.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matchercombobox.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherconverttostring.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherdatetime.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherdatetimederived.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherintdatetime.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matchersqldatetime.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherstringmorelines.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherstringmorelinesevents.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherstringoneline.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="checkboxtransformer.cpp">
+      <Filter>test\Transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="currentlisttransformer.cpp">
+      <Filter>test\Transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="propertynametransformer.cpp">
+      <Filter>test\Transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="radiobuttontransformer.cpp">
+      <Filter>test\Transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="statetransformer.cpp">
+      <Filter>test\Transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="datetimetransformer.cpp">
+      <Filter>test\Transformer\DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="datetransformer.cpp">
+      <Filter>test\Transformer\DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="timetransformer.cpp">
+      <Filter>test\Transformer\DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="decimaltransformer.cpp">
+      <Filter>test\Transformer\Number</Filter>
+    </ClCompile>
+    <ClCompile Include="inttransformer.cpp">
+      <Filter>test\Transformer\Number</Filter>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_basarderived.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_basarderived.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\debug\moc_qtderived.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generatedfiles\release\moc_qtderived.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="matcherint64.cpp">
+      <Filter>test\Matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="timespantransformer.cpp">
+      <Filter>test\Transformer\DateTime</Filter>
+    </ClCompile>
+    <ClCompile Include="selectstringsmockcessor.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="basardatetimemockcessor.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="converttostringmockcessor.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherstringsmorelinestwostringsreversemockcessor.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherstringsmorelinesstringsreversemockcessor.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherstringonelinemockcessor.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherstringonelinestringsreversemockcessor.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherstringsmorelinestwostringsmockcessor.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherstringonelinetwostringsreversemockcessor.cpp">
+      <Filter>Mock</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="loggerpool.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="testconnection.h">
+      <Filter>helper\Accessor\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="accessornames.h">
+      <Filter>helper\Accessor\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="buttablepropertydescriptions.h">
+      <Filter>helper\Accessor\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="buttablepropertydescriptionvectors.h">
+      <Filter>helper\Accessor\Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="selects.h">
+      <Filter>helper\Accessor\Accessor</Filter>
+    </ClInclude>
+    <ClInclude Include="basematcherholder.h">
+      <Filter>helper\BaseMatcherHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="basematcherholdertestszenario.h">
+      <Filter>helper\BaseMatcherHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="basematcherholdertestszenariolist.h">
+      <Filter>helper\BaseMatcherHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="direction.h">
+      <Filter>helper\BaseMatcherHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="indexcountholder.h">
+      <Filter>helper\BaseMatcherHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <Filter>helper\BaseMatcherHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="matcherholderlist.h">
+      <Filter>helper\BaseMatcherHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="stringmatcherholdermorelines.h">
+      <Filter>helper\TableWidget String Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="tablewidgetmatcherholder.h">
+      <Filter>helper\TableWidget String Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="test1avc.h">
+      <Filter>helper\Widgets - ViewConnectors</Filter>
+    </ClInclude>
+    <ClInclude Include="test1vc.h">
+      <Filter>helper\Widgets - ViewConnectors</Filter>
+    </ClInclude>
+    <ClInclude Include="test2vc.h">
+      <Filter>helper\Widgets - ViewConnectors</Filter>
+    </ClInclude>
+    <ClInclude Include="testexceptionhandler.h">
+      <Filter>helper\ExceptionHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="testexceptionthrower.h">
+      <Filter>helper\ExceptionHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="selectstringsmockcessor.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="basardatetimemockcessor.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="converttostringmockcessor.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="matcherstringsmorelinestwostringsreversemockcessor.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="matcherstringsmorelinesstringsreversemockcessor.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="matcherstringonelinemockcessor.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="matcherstringonelinetwostringsreversemockcessor.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="matcherstringonelinestringsreversemockcessor.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+    <ClInclude Include="matcherstringsmorelinestwostringsmockcessor.h">
+      <Filter>Mock</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\utguitie.cfg">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="basarderived.h">
+      <Filter>helper</Filter>
+    </CustomBuild>
+    <CustomBuild Include="qtderived.h">
+      <Filter>helper</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

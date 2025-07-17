@@ -1,0 +1,597 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>Frame1Class</class>
+ <widget class="QFrame" name="Frame1Class" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Frame1</string>
+  </property>
+  <widget class="QPushButton" name="closePEPushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>110</x>
+     <y>430</y>
+     <width>107</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>closePEPushButton</string>
+   </property>
+   <property name="text" >
+    <string>closePersistentEditor</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="childrenLabel" >
+   <property name="geometry" >
+    <rect>
+     <x>410</x>
+     <y>20</y>
+     <width>76</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>childrenLabel</string>
+   </property>
+   <property name="text" >
+    <string>Children-Anzahl:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="schliessenPushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>520</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>schliessenPushButton</string>
+   </property>
+   <property name="text" >
+    <string>schliessen</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>350</y>
+     <width>154</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>checkBox</string>
+   </property>
+   <property name="text" >
+    <string>setEnabled (QTableWidget)</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_3" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>560</y>
+     <width>611</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>frame_3</string>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="BasarTableWidget" name="tableWidget_bb" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>581</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>tableWidget_bb</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="childrenCountLineEdit" >
+   <property name="geometry" >
+    <rect>
+     <x>490</x>
+     <y>20</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>childrenCountLineEdit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="erasePushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>280</x>
+     <y>430</y>
+     <width>86</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>erasePushButton</string>
+   </property>
+   <property name="text" >
+    <string>erase GPT-Row</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_4" >
+   <property name="geometry" >
+    <rect>
+     <x>19</x>
+     <y>29</y>
+     <width>371</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>frame_4</string>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QDateTimeEdit" name="datum_aender" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>datum_aender</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="internesteuerung" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>internesteuerung</string>
+    </property>
+    <property name="text" >
+     <string>BESTAND via transformer (2state)</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>341</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>tableWidget</string>
+    </property>
+    <property name="rowCount" >
+     <number>0</number>
+    </property>
+    <property name="columnCount" >
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="artikel_name" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>artikel_name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="artikel_nr" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>artikel_nr</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="_filialnr" >
+    <property name="geometry" >
+     <rect>
+      <x>140</x>
+      <y>20</y>
+      <width>91</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>_filialnr</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="_bestand" >
+    <property name="geometry" >
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>120</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>_bestand</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="_datum_aender" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>_datum_aender</string>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="klasse_faktor" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>klasse_faktor</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame" >
+    <property name="geometry" >
+     <rect>
+      <x>200</x>
+      <y>190</y>
+      <width>141</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>frame</string>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Plain</enum>
+    </property>
+    <widget class="QLineEdit" name="frameLineEdit" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="accessibleName" >
+      <string>frameLineEdit</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="frameRadioButton2" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>87</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="accessibleName" >
+      <string>frameRadioButton2</string>
+     </property>
+     <property name="text" >
+      <string>RadioButton2</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="frameRadioButton1" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>87</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="accessibleName" >
+      <string>frameRadioButton1</string>
+     </property>
+     <property name="text" >
+      <string>RadioButton1</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QListWidget" name="childrenListWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>400</x>
+     <y>40</y>
+     <width>231</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>childrenListWidget</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="openPEPushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>110</x>
+     <y>400</y>
+     <width>107</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>openPEPushButton</string>
+   </property>
+   <property name="text" >
+    <string>openPersistentEditor</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="qTableClearenPushButton_3_2" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>430</y>
+     <width>79</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>qTableClearenPushButton_3_2</string>
+   </property>
+   <property name="text" >
+    <string>QTable clearen</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2" >
+   <property name="geometry" >
+    <rect>
+     <x>180</x>
+     <y>460</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>frame_2</string>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QRadioButton" name="childrenFrameRadioButton" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>158</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>childrenFrameRadioButton</string>
+    </property>
+    <property name="text" >
+     <string>children des Frames einlesen</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="childrenDlgRadioButton" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>165</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>childrenDlgRadioButton</string>
+    </property>
+    <property name="text" >
+     <string>children des Dialoges einlesen</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>270</x>
+     <y>370</y>
+     <width>105</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>pushButton</string>
+   </property>
+   <property name="text" >
+    <string>Speicher in Property</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="twAnzeige" >
+   <property name="geometry" >
+    <rect>
+     <x>110</x>
+     <y>530</y>
+     <width>181</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>twAnzeige</string>
+   </property>
+  </widget>
+  <widget class="MultiComboBox" name="comboBox" >
+   <property name="geometry" >
+    <rect>
+     <x>300</x>
+     <y>530</y>
+     <width>311</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="mouseTracking" >
+    <bool>false</bool>
+   </property>
+   <property name="accessibleName" >
+    <string>comboBox</string>
+   </property>
+   <property name="autoCompletionCaseSensitivity" >
+    <enum>Qt::CaseSensitive</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="neuerDialogPushButton_2" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>490</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>neuerDialogPushButton_2</string>
+   </property>
+   <property name="text" >
+    <string>neuer Dialog</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="qTableFuellenPushButton_3" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>400</y>
+     <width>79</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>qTableFuellenPushButton_3</string>
+   </property>
+   <property name="text" >
+    <string>QTable fuellen</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2" >
+   <property name="geometry" >
+    <rect>
+     <x>270</x>
+     <y>400</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>pushButton_2</string>
+   </property>
+   <property name="text" >
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="childrenEinlesenPushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>380</x>
+     <y>490</y>
+     <width>231</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>childrenEinlesenPushButton</string>
+   </property>
+   <property name="text" >
+    <string>Children einlesen</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="selectPushButton" >
+   <property name="geometry" >
+    <rect>
+     <x>270</x>
+     <y>340</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>selectPushButton</string>
+   </property>
+   <property name="text" >
+    <string>Select</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>BasarTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>libbasarqtwidget_tablewidget.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+  <customwidget>
+   <class>MultiComboBox</class>
+   <extends>QComboBox</extends>
+   <header>libbasarqtwidget_multicombobox.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

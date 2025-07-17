@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{d8b17f09-1ab5-43a2-86f0-248499806ac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestFixtures">
+      <UniqueIdentifier>{39489d48-cb75-48b5-97f9-f8d56888b986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestCases">
+      <UniqueIdentifier>{92e97468-4797-47a7-9ad9-ae1d23b90565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestCases\datetime">
+      <UniqueIdentifier>{172d41d4-7eda-4bf5-8dcf-6f686e4309c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestCases\logging">
+      <UniqueIdentifier>{d60c36ff-4c6b-4d3b-9828-d6a16095ba3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{491a62b6-5b0c-408b-b2b7-1272bd0375aa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="data\utcmnutil.cfg">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exceptionfixture.cpp">
+      <Filter>TestFixtures</Filter>
+    </ClCompile>
+    <ClCompile Include="testfixturebase.cpp">
+      <Filter>TestFixtures</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="decimal.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="endian.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="exception.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="gsprint.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="locale.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="parameterlist.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="singleton.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="socket.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="string.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="date.cpp">
+      <Filter>TestCases\datetime</Filter>
+    </ClCompile>
+    <ClCompile Include="datetime.cpp">
+      <Filter>TestCases\datetime</Filter>
+    </ClCompile>
+    <ClCompile Include="datetime_timespan.cpp">
+      <Filter>TestCases\datetime</Filter>
+    </ClCompile>
+    <ClCompile Include="datetimetools.cpp">
+      <Filter>TestCases\datetime</Filter>
+    </ClCompile>
+    <ClCompile Include="timespan.cpp">
+      <Filter>TestCases\datetime</Filter>
+    </ClCompile>
+    <ClCompile Include="logging.cpp">
+      <Filter>TestCases\logging</Filter>
+    </ClCompile>
+    <ClCompile Include="stringappender.cpp">
+      <Filter>TestCases\logging</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="attachment.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="remotetasktest.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="smtp.cpp">
+      <Filter>TestCases</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="exceptionfixture.h">
+      <Filter>TestFixtures</Filter>
+    </ClInclude>
+    <ClInclude Include="testfixturebase.h">
+      <Filter>TestFixtures</Filter>
+    </ClInclude>
+    <ClInclude Include="singleton.h">
+      <Filter>TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="stringappender.h">
+      <Filter>TestCases\logging</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

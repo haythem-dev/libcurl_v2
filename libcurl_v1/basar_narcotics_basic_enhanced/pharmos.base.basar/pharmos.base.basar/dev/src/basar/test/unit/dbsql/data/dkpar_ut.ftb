@@ -1,0 +1,21 @@
+*
+* SQL-Engine table definition file ([S|F]TB format)
+* #############################################
+*
+HOSTFILE=DKPAR
+*
+*
+*     ! field name       ! used ! host type ! pc type ! start pos ! length ! scale ! user type ! data source spec.
+*-----------------------------------------------------------------------------------------------------------------
+FIELD=PAR_K_FIL,             Y,       C,        C,          0,         2,      0,        ,       
+FIELD=PAR_K_NAME,            Y,       C,        C,          2,         4,      0,        ,       
+FIELD=PAR_K_NR,              Y,       C,        C,          6,         2,      0,        ,       
+FIELD=DUMMY,                 Y,       C,        C,          8,        44,      0,        ,       
+FIELD=TEST_DEC_SCALE_0,      Y,       P,        N,         -1,         9,      0,        ,       
+FIELD=DKPAR_EUIHW,           Y,       P,        N,         -1,         9,      7,        ,       
+FIELD=TEST_LINT,             Y,       F,        N,         -1,         8,      0,     100,       
+FIELD=TEST_SINT,             Y,       H,        N,         -1,         2,      0,     100,       
+FIELD=TEST_FLOAT1,           Y,       N,        N,         -1,         4,      0,        ,       
+FIELD=TEST_FLOAT2,           Y,       N,        N,         -1,         4,      0,        ,       
+FIELD=TEST_DATE,             Y,       D,        N,         -1,         6,      0,      51,       
+FIELD=TEST_TIME,             Y,       T,        N,         -1,         8,      0,        ,       

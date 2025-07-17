@@ -1,0 +1,106 @@
+<ui version="4.0" >
+ <class>DifferenceInStockClass</class>
+ <widget class="QDialog" name="DifferenceInStockClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>658</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>NA09 difference in quantity in stock</string>
+  </property>
+  <widget class="QGroupBox" name="grpDifference" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>621</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Differences between PHARMOS and narcotics</string>
+   </property>
+   <widget class="BasarTableWidget" name="tableWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>581</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="rowCount" >
+     <number>8</number>
+    </property>
+    <property name="columnCount" >
+     <number>4</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnClose" >
+   <property name="geometry" >
+    <rect>
+     <x>570</x>
+     <y>380</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>close</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnUpdateDiffQtyInStock" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>171</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Update Difference Qty in Stock</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnShowCompareBookings" >
+   <property name="geometry" >
+    <rect>
+     <x>388</x>
+     <y>380</y>
+     <width>181</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Show Compare Bookings ...</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>BasarTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>libbasarqtwidget_tablewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

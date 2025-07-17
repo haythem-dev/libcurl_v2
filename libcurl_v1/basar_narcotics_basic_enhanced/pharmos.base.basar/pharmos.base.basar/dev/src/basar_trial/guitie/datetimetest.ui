@@ -1,0 +1,117 @@
+<ui version="4.0" >
+ <class>DateTimeTestClass</class>
+ <widget class="QFrame" name="DateTimeTestClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>423</width>
+    <height>206</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>DateTimeTest</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>371</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Date Test</string>
+   </property>
+   <widget class="QFrame" name="dateWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>381</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>dateWidget</string>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Plain</enum>
+    </property>
+    <widget class="QPushButton" name="pushButton_11" >
+     <property name="geometry" >
+      <rect>
+       <x>140</x>
+       <y>110</y>
+       <width>101</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>invalidate Date</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_10" >
+     <property name="geometry" >
+      <rect>
+       <x>250</x>
+       <y>110</y>
+       <width>51</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Write</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_9" >
+     <property name="geometry" >
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>71</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Read Date</string>
+     </property>
+    </widget>
+    <widget class="QTimeEdit" name="coltime1" >
+     <property name="geometry" >
+      <rect>
+       <x>230</x>
+       <y>20</y>
+       <width>118</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="coldate" >
+     <property name="geometry" >
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDateTimeEdit" name="coldt1" >
+     <property name="geometry" >
+      <rect>
+       <x>90</x>
+       <y>60</y>
+       <width>194</width>
+       <height>23</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

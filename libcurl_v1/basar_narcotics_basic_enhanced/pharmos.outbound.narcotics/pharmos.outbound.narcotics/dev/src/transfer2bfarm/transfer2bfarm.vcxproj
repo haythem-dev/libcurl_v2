@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DFAABBC2-360D-4D9C-9076-66F220DFA5BF}</ProjectGuid>
+    <RootNamespace>transfer2bfarm</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ext\ssuk\basar\include;$(SolutionDir)..\ext\ssuk\boost;$(SolutionDir)..\ext\ssuk\log4cplus\include;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>commonheader.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Core.lib;libbasarcmnutil.lib;libbasarappl.lib;libbasardbaspect.lib;libbasarproperty.lib;libbasardbsql.lib;liblog4cplus.lib;libbasarlogin.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ext\ssuk\basar\lib\$(Configuration);$(SolutionDir)..\ext\ssuk\log4cplus\lib\$(Configuration);$(SolutionDir)..\ext\ssuk\boost\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)libnarcotics;$(SolutionDir)..\ext\ssuk\basar\include;$(SolutionDir)..\ext\boost\include;$(SolutionDir)..\ext\log4cplus\include;$(SolutionDir)..\ext\qt5\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>commonheader.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasarcmnutil.lib;libbasarappl.lib;libbasardbaspect.lib;libbasarproperty.lib;libbasardbsql.lib;libbasarlogin.lib;log4cplus.lib;Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ext\ssuk\basar\lib\$(ConfigurationName);$(SolutionDir)..\ext\boost\lib;$(SolutionDir)..\ext\log4cplus\lib\$(ConfigurationName);$(SolutionDir)..\ext\qt5\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ext\ssuk\basar\include;$(SolutionDir)..\ext\ssuk\boost;$(SolutionDir)..\ext\ssuk\log4cplus\include;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>commonheader.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Qt5Cored.lib;libbasarcmnutil.lib;libbasarappl.lib;libbasardbsql.lib;libbasarproperty.lib;libbasardbaspect.lib;liblog4cplus.lib;libbasarlogin.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ext\ssuk\basar\lib\$(Configuration);$(SolutionDir)..\ext\ssuk\log4cplus\lib\$(Configuration);$(SolutionDir)..\ext\ssuk\boost\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)libnarcotics;$(SolutionDir)..\ext\ssuk\basar\include;$(SolutionDir)..\ext\boost\include;$(SolutionDir)..\ext\log4cplus\include;$(SolutionDir)..\ext\qt5\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>commonheader.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasarcmnutil.lib;libbasarappl.lib;libbasardbsql.lib;libbasarproperty.lib;libbasardbaspect.lib;libbasarlogin.lib;log4cplusD.lib;Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\ext\ssuk\basar\lib\$(ConfigurationName);$(SolutionDir)..\ext\boost\lib;$(SolutionDir)..\ext\log4cplus\lib\$(ConfigurationName);$(SolutionDir)..\ext\qt5\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="commonheader.h" />
+    <ClInclude Include="dateinfo.h" />
+    <ClInclude Include="definitions.h" />
+    <ClInclude Include="transferbfarmappl.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="archivevouchersuc.h" />
+    <ClInclude Include="crosscheckcontributionvouchersuc.h" />
+    <ClInclude Include="transfertobfarmuc.h" />
+    <ClInclude Include="usecasecontroler.h" />
+    <ClInclude Include="bgabranch.h" />
+    <ClInclude Include="bgabranchptr.h" />
+    <ClInclude Include="bgafolder.h" />
+    <ClInclude Include="bgafolderptr.h" />
+    <ClInclude Include="coldmetadata.h" />
+    <ClInclude Include="contributionvoucherentry.h" />
+    <ClInclude Include="contributionvoucherentryptr.h" />
+    <ClInclude Include="contributionvoucherfile.h" />
+    <ClInclude Include="contributionvoucherfileptr.h" />
+    <ClInclude Include="metadata.h" />
+    <ClInclude Include="startenddatecalculator.h" />
+    <ClInclude Include="bgabranchrepo.h" />
+    <ClInclude Include="bgafolderrepo.h" />
+    <ClInclude Include="contributionvoucherentryrepo.h" />
+    <ClInclude Include="repobase.h" />
+    <ClInclude Include="bgabranch_acc.h" />
+    <ClInclude Include="voucherentry_acc.h" />
+    <ClInclude Include="archivesvcfactory.h" />
+    <ClInclude Include="crosschecksvcfactory.h" />
+    <ClInclude Include="servicefactory.h" />
+    <ClInclude Include="archivesvc.h" />
+    <ClInclude Include="bfarmservice.h" />
+    <ClInclude Include="crosschecksvc.h" />
+    <ClInclude Include="serviceconfiguration.h" />
+    <ClInclude Include="configuration.h" />
+    <ClInclude Include="iconfiguration.h" />
+    <ClInclude Include="infxconnection.h" />
+    <ClInclude Include="exbgabranchrepo.h" />
+    <ClInclude Include="exbgafolder.h" />
+    <ClInclude Include="exconfiguration.h" />
+    <ClInclude Include="excrosschecksvc.h" />
+    <ClInclude Include="excrosscheckuc.h" />
+    <ClInclude Include="exservice.h" />
+    <ClInclude Include="exstartdatecalculator.h" />
+    <ClInclude Include="extransfer.h" />
+    <ClInclude Include="exvoucherentryrepo.h" />
+    <ClInclude Include="exvoucherfile.h" />
+    <ClInclude Include="coldmetadatawriter.h" />
+    <ClInclude Include="convert.h" />
+    <ClInclude Include="metadatawriter.h" />
+    <ClInclude Include="metadatawriterptr.h" />
+    <ClInclude Include="loggerpool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dateinfo.cpp" />
+    <ClCompile Include="main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="transferbfarmappl.cpp" />
+    <ClCompile Include="archivevouchersuc.cpp" />
+    <ClCompile Include="crosscheckcontributionvouchersuc.cpp" />
+    <ClCompile Include="transfertobfarmuc.cpp" />
+    <ClCompile Include="usecasecontroler.cpp" />
+    <ClCompile Include="bgabranch.cpp" />
+    <ClCompile Include="bgafolder.cpp" />
+    <ClCompile Include="coldmetadata.cpp" />
+    <ClCompile Include="contributionvoucherentry.cpp" />
+    <ClCompile Include="contributionvoucherfile.cpp" />
+    <ClCompile Include="metadata.cpp" />
+    <ClCompile Include="startenddatecalculator.cpp" />
+    <ClCompile Include="bgabranchrepo.cpp" />
+    <ClCompile Include="bgafolderrepo.cpp" />
+    <ClCompile Include="contributionvoucherentryrepo.cpp" />
+    <ClCompile Include="bgabranch_acc.cpp" />
+    <ClCompile Include="voucherentry_acc.cpp" />
+    <ClCompile Include="archivesvcfactory.cpp" />
+    <ClCompile Include="crosschecksvcfactory.cpp" />
+    <ClCompile Include="servicefactory.cpp" />
+    <ClCompile Include="archivesvc.cpp" />
+    <ClCompile Include="bfarmservice.cpp" />
+    <ClCompile Include="crosschecksvc.cpp" />
+    <ClCompile Include="configuration.cpp" />
+    <ClCompile Include="infxconnection.cpp" />
+    <ClCompile Include="exbgabranchrepo.cpp" />
+    <ClCompile Include="exbgafolder.cpp" />
+    <ClCompile Include="exconfiguration.cpp" />
+    <ClCompile Include="excrosschecksvc.cpp" />
+    <ClCompile Include="excrosscheckuc.cpp" />
+    <ClCompile Include="exservice.cpp" />
+    <ClCompile Include="exstartdatecalculator.cpp" />
+    <ClCompile Include="extransfer.cpp" />
+    <ClCompile Include="exvoucherentryrepo.cpp" />
+    <ClCompile Include="exvoucherfile.cpp" />
+    <ClCompile Include="coldmetadatawriter.cpp" />
+    <ClCompile Include="convert.cpp" />
+    <ClCompile Include="metadatawriter.cpp" />
+    <ClCompile Include="loggerpool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="testtransfer.bat" />
+    <None Include="proc\transfer2bfarm.option" />
+    <None Include="proc\transfer2bfarm.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libnarcotics\libnarcotics.vcxproj">
+      <Project>{a368229f-8d0d-4af0-ab74-bdf089181163}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" QtVersion="4.4.3" Qt5Version_x0020_Win32="5.2.0" Qt5Version_x0020_x64="$(DefaultQtVersion)" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

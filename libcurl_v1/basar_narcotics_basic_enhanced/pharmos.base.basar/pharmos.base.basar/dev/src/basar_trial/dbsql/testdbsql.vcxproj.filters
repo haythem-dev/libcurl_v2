@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{5a6f4ae8-feed-4f81-abf3-4cc22fef8031}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbx.cmd">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="testdbsql.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="connection.cpp" />
+    <ClCompile Include="misc.cpp" />
+    <ClCompile Include="prepstmt.cpp" />
+    <ClCompile Include="statement_cics.cpp" />
+    <ClCompile Include="statement_infx.cpp" />
+    <ClCompile Include="statement_odbc.cpp" />
+    <ClCompile Include="testdbsql.cpp" />
+    <ClCompile Include="version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="testdbsql.h" />
+  </ItemGroup>
+</Project>

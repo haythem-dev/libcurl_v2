@@ -1,0 +1,64 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>TableWidgetAbsoluteHeaderTestFrame2Class</class>
+ <widget class="QFrame" name="TableWidgetAbsoluteHeaderTestFrame2Class" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>641</width>
+    <height>886</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>TableWidgetAbsoluteHeaderTestFrame2</string>
+  </property>
+  <widget class="TableWidgetAbsoluteHeaderTestFrame1" name="frame" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>611</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Sunken</enum>
+   </property>
+  </widget>
+  <widget class="TableWidgetAbsoluteHeaderTestFrame1" name="frame_2" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>430</y>
+     <width>611</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Sunken</enum>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>TableWidgetAbsoluteHeaderTestFrame1</class>
+   <extends>QFrame</extends>
+   <header>tablewidgetabsoluteheadertestframe1.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

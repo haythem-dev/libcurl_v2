@@ -1,0 +1,46 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>InputDateVcClass</class>
+ <widget class="QDialog" name="InputDateVcClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>246</width>
+    <height>64</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>InputDateVc</string>
+  </property>
+  <widget class="QDateEdit" name="SearchDate" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnClose" >
+   <property name="geometry" >
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources/>
+ <connections/>
+</ui>

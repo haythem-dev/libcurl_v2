@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{ce6455e4-3575-4e31-a7da-7f0b8a609f1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmdline">
+      <UniqueIdentifier>{37df0565-77e2-4914-9e65-91ec3877e002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pattern">
+      <UniqueIdentifier>{e48b0214-1f8b-4d67-8c4e-a980a9f278d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exception">
+      <UniqueIdentifier>{757a1f4d-7a40-4bf1-8a13-2837c60bfb03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="parameterlist">
+      <UniqueIdentifier>{34f89f7d-b2bc-4d1d-8c70-755c98c0188f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="print">
+      <UniqueIdentifier>{643c6088-1838-49ed-b780-895d762bdfb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pipedprocess">
+      <UniqueIdentifier>{8914a121-7322-4bee-9455-482bacd3365b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="socket">
+      <UniqueIdentifier>{708cc14c-fde9-4b3f-b1ac-2e90172338f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="email">
+      <UniqueIdentifier>{7b3a6476-d3ad-4f49-8df8-5cb0ae3c02be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codec">
+      <UniqueIdentifier>{39d3166d-8e6b-4b61-9d25-d46a2804dc48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="datatypes">
+      <UniqueIdentifier>{4738d525-789e-43a9-a260-96bf606f88df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="datatypes\datetimetypes">
+      <UniqueIdentifier>{15535a48-d89f-4fe5-8b58-8cbe065092cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{60ec0f88-b11f-43bc-9a05-961af6c24d14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logging">
+      <UniqueIdentifier>{2de30f0e-22de-4fd9-a8ff-a3e365f0e657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="remotetask">
+      <UniqueIdentifier>{cc80ac18-87d3-4fb8-9300-8f373d46b581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="print\ps">
+      <UniqueIdentifier>{2f608730-db88-42dc-b592-ece047d9b100}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libbasarcmnutil_cmdline.cpp">
+      <Filter>cmdline</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_exceptions.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_parameterlist.cpp">
+      <Filter>parameterlist</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_parameterlist_iterator.cpp">
+      <Filter>parameterlist</Filter>
+    </ClCompile>
+    <ClCompile Include="lpr.cpp">
+      <Filter>print</Filter>
+    </ClCompile>
+    <ClCompile Include="portprint.cpp">
+      <Filter>print</Filter>
+    </ClCompile>
+    <ClCompile Include="printtools.cpp">
+      <Filter>print</Filter>
+    </ClCompile>
+    <ClCompile Include="rawprint.cpp">
+      <Filter>print</Filter>
+    </ClCompile>
+    <ClCompile Include="rawprintprocdataprov.cpp">
+      <Filter>print</Filter>
+    </ClCompile>
+    <ClCompile Include="pipe.cpp">
+      <Filter>pipedprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="pipedprocess.cpp">
+      <Filter>pipedprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="tcpsocket.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="mailmessage.cpp">
+      <Filter>email</Filter>
+    </ClCompile>
+    <ClCompile Include="smtp.cpp">
+      <Filter>email</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>codec</Filter>
+    </ClCompile>
+    <ClCompile Include="mimechar.cpp">
+      <Filter>codec</Filter>
+    </ClCompile>
+    <ClCompile Include="quotedprint.cpp">
+      <Filter>codec</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_bstring.cpp">
+      <Filter>datatypes</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_decimal.cpp">
+      <Filter>datatypes</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_i18nstring.cpp">
+      <Filter>datatypes</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_locale.cpp">
+      <Filter>datatypes</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_datetime.cpp">
+      <Filter>datatypes\datetimetypes</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_datetimetools.cpp">
+      <Filter>datatypes\datetimetypes</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_timespan.cpp">
+      <Filter>datatypes\datetimetypes</Filter>
+    </ClCompile>
+    <ClCompile Include="timestamp.cpp">
+      <Filter>datatypes\datetimetypes</Filter>
+    </ClCompile>
+    <ClCompile Include="config.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_logging.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerpool.cpp">
+      <Filter>logging</Filter>
+    </ClCompile>
+    <ClCompile Include="getexecname.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasarcmnutil.cpp" />
+    <ClCompile Include="attachment.cpp">
+      <Filter>email</Filter>
+    </ClCompile>
+    <ClCompile Include="mailhelper.cpp">
+      <Filter>email</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_credentialbase.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_credentialsref.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_remotetaskref.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_remotetaskresultref.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_remotetasksubmitterbase.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_userpasscredential.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="remoteendpoint.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="remotetask.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="remotetaskexecution.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="remotetaskexitstatus.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="remotetaskresult.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="remotetasksubmitterimpl.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="sshchannel.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="sshsession.cpp">
+      <Filter>remotetask</Filter>
+    </ClCompile>
+    <ClCompile Include="ps\psinterpreter.cpp">
+      <Filter>print\ps</Filter>
+    </ClCompile>
+    <ClCompile Include="ps\encodedargs.cpp">
+      <Filter>print\ps</Filter>
+    </ClCompile>
+    <ClCompile Include="ps\collargs.cpp">
+      <Filter>print\ps</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarcmnutil_date.cpp">
+      <Filter>datatypes\datetimetypes</Filter>
+    </ClCompile>
+    <ClCompile Include="getlibpath.cpp" />
+    <ClCompile Include="ps\interpretprint.cpp">
+      <Filter>print</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libbasarcmnutil_cmdline.h">
+      <Filter>cmdline</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_pattern.h">
+      <Filter>pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_datetimeexception.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_exceptions.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_parameterlist.h">
+      <Filter>parameterlist</Filter>
+    </ClInclude>
+    <ClInclude Include="iprintsubmit.h">
+      <Filter>print</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_print.h">
+      <Filter>print</Filter>
+    </ClInclude>
+    <ClInclude Include="lpr.h">
+      <Filter>print</Filter>
+    </ClInclude>
+    <ClInclude Include="portprint.h">
+      <Filter>print</Filter>
+    </ClInclude>
+    <ClInclude Include="rawprintprocdataprov.h">
+      <Filter>print</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_pipedprocess.h">
+      <Filter>pipedprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="pipe.h">
+      <Filter>pipedprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_socket.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_email.h">
+      <Filter>email</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_codec.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_bstring.h">
+      <Filter>datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_decimal.h">
+      <Filter>datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_i18nstring.h">
+      <Filter>datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_locale.h">
+      <Filter>datatypes</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_datetime.h">
+      <Filter>datatypes\datetimetypes</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_datetimetools.h">
+      <Filter>datatypes\datetimetypes</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_datetypes_common.h">
+      <Filter>datatypes\datetimetypes</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_timespan.h">
+      <Filter>datatypes\datetimetypes</Filter>
+    </ClInclude>
+    <ClInclude Include="timestamp.h">
+      <Filter>datatypes\datetimetypes</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_config.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_logging.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="loggerpool.h">
+      <Filter>logging</Filter>
+    </ClInclude>
+    <ClInclude Include="getexecname.h" />
+    <ClInclude Include="libbasarcmnutil.h" />
+    <ClInclude Include="libbasarcmnutil_definitions.h" />
+    <ClInclude Include="libbasarcmnutil_functions.h" />
+    <ClInclude Include="attachmentptr.h">
+      <Filter>email</Filter>
+    </ClInclude>
+    <ClInclude Include="iattachment.h">
+      <Filter>email</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_attachment.h">
+      <Filter>email</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_iattachment.h">
+      <Filter>email</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_iattachmentptr.h">
+      <Filter>email</Filter>
+    </ClInclude>
+    <ClInclude Include="mailhelper.h">
+      <Filter>email</Filter>
+    </ClInclude>
+    <ClInclude Include="iremotetask.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="iremotetaskresult.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="iremotetasksubmitter.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_credentialbase.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_credentialbaseptr.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_credentialsref.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_remote.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_remoteendpoint.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_remotetaskexceptions.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_remotetaskref.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_remotetaskresultref.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_remotetasksubmitter.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_remotetasksubmitterbase.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_sshsessionptr.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_userpasscredential.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="remotetask.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="remotetaskexecution.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="remotetaskexitstatus.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="remotetaskptr.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="remotetaskresult.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="remotetaskresultptr.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="remotetasksubmitterimpl.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="sshchannel.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="sshsession.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="tcpsocketsharedptr.h">
+      <Filter>remotetask</Filter>
+    </ClInclude>
+    <ClInclude Include="ps\psinterpreter.h">
+      <Filter>print\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="ps\encodedargs.h">
+      <Filter>print\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="ps\collargs.h">
+      <Filter>print\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarcmnutil_date.h">
+      <Filter>datatypes\datetimetypes</Filter>
+    </ClInclude>
+    <ClInclude Include="getlibpath.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NarcoticBookClass</class>
+ <widget class="QDialog" name="NarcoticBookClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>922</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NA03 Narcotic-Book</string>
+  </property>
+  <widget class="QGroupBox" name="grpSearchData">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>15</y>
+     <width>881</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="title">
+    <string>Search:</string>
+   </property>
+   <widget class="QLabel" name="lblFromSearch">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>23</y>
+      <width>23</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>from:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblToSearch">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>24</y>
+      <width>16</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>to:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtArticleNoSearch">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="whatsThis">
+     <string>Via the entered article no. all narcotic bookings booked in the given period of time are searched.</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dtFromSearch">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>20</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dtToSearch">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>20</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSearch">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>20</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtArticleNameSearch">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>50</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="whatsThis">
+     <string>Via the entered article no. all narcotic bookings booked in the given period of time are searched.</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="optArticleName">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>88</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Article-Name:</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="optArticleNo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>101</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ArticleNo:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="fraArticleNarcoticData">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>891</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="QGroupBox" name="grpNarcoticData">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>881</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="title">
+     <string>Narcotic Data:</string>
+    </property>
+    <widget class="QLabel" name="lblBtmGroup">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>26</y>
+       <width>72</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NarcoticGroup:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblNarcoticGroupName">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>26</y>
+       <width>31</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Name:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="name">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>188</x>
+       <y>23</y>
+       <width>241</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="concentration">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>22</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="group">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>23</y>
+       <width>51</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblNarcoticGroupPackageUnit">
+     <property name="geometry">
+      <rect>
+       <x>443</x>
+       <y>24</y>
+       <width>65</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PackageUnit:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="packageunit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>512</x>
+       <y>22</y>
+       <width>101</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblConcentration">
+     <property name="geometry">
+      <rect>
+       <x>624</x>
+       <y>24</y>
+       <width>72</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Concentration:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="grpArticleData">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>881</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="title">
+     <string>Article Data:</string>
+    </property>
+    <widget class="QLabel" name="lblArticleNo">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>23</y>
+       <width>46</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ArticleNo:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="articlecode">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>42</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="articlepackageunit">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>91</x>
+       <y>42</y>
+       <width>158</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="articlepharmaform">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>529</x>
+       <y>42</y>
+       <width>155</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="articlestocklocation">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>694</x>
+       <y>41</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="articlename">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>42</y>
+       <width>261</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblArticleName">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>20</y>
+       <width>65</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Name:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblArticlePackageUnit">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>65</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PackageUnit:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblPharmaForm">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>20</y>
+       <width>86</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PharmaForm:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblStorageLocation">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>20</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>StorageLocation:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblInitialInventory">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>20</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Initial inventory:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="qtyinstock">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>783</x>
+       <y>40</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpNarcoticBookingsData">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>881</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="whatsThis">
+    <string>Shows all selected narcotic bookings. Here the bgano can be manipulated by clicking in the bgano cell and selecting a new entry. The selected one will be saved immediately.</string>
+   </property>
+   <property name="title">
+    <string>Narcotic-Bookings:</string>
+   </property>
+   <widget class="QPushButton" name="btnCreate">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>A new narcotic booking can be recorded in an extra detailed dialog.</string>
+    </property>
+    <property name="text">
+     <string>Record...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>420</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>The highlighted narcotic booking can be manipulated in an extra detailed dailog.</string>
+    </property>
+    <property name="text">
+     <string>Edit...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDelete">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>420</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>Deletes the highlighted narcotic booking. It will not be erased physically but will be marked as deleted.</string>
+    </property>
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPrintDeliveryReceipt">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>420</y>
+      <width>141</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>In Iteration 1 nicht implementiert.</string>
+    </property>
+    <property name="text">
+     <string>Print Contribution Voucher</string>
+    </property>
+   </widget>
+   <widget class="BasarTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>27</y>
+      <width>851</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="rowCount">
+     <number>11</number>
+    </property>
+    <property name="columnCount">
+     <number>13</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+   <widget class="QPushButton" name="btnCancellation">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>419</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>Deletes the highlighted narcotic booking. It will not be erased physically but will be marked as deleted.</string>
+    </property>
+    <property name="text">
+     <string>Cancellation</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPrintDissolveReceipt">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>420</y>
+      <width>151</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>In Iteration 1 nicht implementiert.</string>
+    </property>
+    <property name="text">
+     <string>Print Dissolve Receipt</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnClose">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>719</y>
+     <width>77</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSearchInternalAccounts">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>720</y>
+     <width>141</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Search internal accounts</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRestore">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>720</y>
+     <width>100</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Restore...</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnPrintList">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>720</y>
+     <width>80</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Print narcotics book.</string>
+   </property>
+   <property name="text">
+    <string>Print List</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSearchIncomplete">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>720</y>
+     <width>181</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Search incomplete bookings</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSearchDoubleBookings">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>720</y>
+     <width>181</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Search double bookings</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BasarTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>libbasarqtwidget_tablewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>optArticleNo</tabstop>
+  <tabstop>txtArticleNoSearch</tabstop>
+  <tabstop>dtFromSearch</tabstop>
+  <tabstop>dtToSearch</tabstop>
+  <tabstop>btnSearch</tabstop>
+  <tabstop>optArticleName</tabstop>
+  <tabstop>txtArticleNameSearch</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>btnCreate</tabstop>
+  <tabstop>btnEdit</tabstop>
+  <tabstop>btnDelete</tabstop>
+  <tabstop>btnCancellation</tabstop>
+  <tabstop>btnPrintDissolveReceipt</tabstop>
+  <tabstop>btnPrintDeliveryReceipt</tabstop>
+  <tabstop>btnSearchInternalAccounts</tabstop>
+  <tabstop>btnSearchIncomplete</tabstop>
+  <tabstop>btnSearchDoubleBookings</tabstop>
+  <tabstop>btnPrintList</tabstop>
+  <tabstop>btnRestore</tabstop>
+  <tabstop>btnClose</tabstop>
+  <tabstop>group</tabstop>
+  <tabstop>name</tabstop>
+  <tabstop>packageunit</tabstop>
+  <tabstop>concentration</tabstop>
+  <tabstop>articlecode</tabstop>
+  <tabstop>articlepackageunit</tabstop>
+  <tabstop>articlename</tabstop>
+  <tabstop>articlepharmaform</tabstop>
+  <tabstop>articlestocklocation</tabstop>
+  <tabstop>qtyinstock</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>NarcoticBookClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>767</x>
+     <y>828</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>618</x>
+     <y>666</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IncomingReturnGoodsClass</class>
+ <widget class="QDialog" name="IncomingReturnGoodsClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>451</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NA02 IncomingReturnGoodsVC</string>
+  </property>
+  <widget class="QPushButton" name="btnClose">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>410</y>
+     <width>77</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Recordset is saved with abandoning the dialog afterwards.</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnNext">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>77</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Recordset is saved. Afterwards the dialog will be set back to record new ones.</string>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancel">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>410</y>
+     <width>77</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="whatsThis">
+    <string>Closes the dialog without saving.</string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="grp_articleData">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>638</width>
+     <height>116</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Article Data:</string>
+   </property>
+   <widget class="QLineEdit" name="articlecode">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>38</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="articlename">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>96</x>
+      <y>38</y>
+      <width>381</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="qtytransaction">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>81</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pharmaform">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>81</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_articlename">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>20</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_qtytransaction">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>64</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Quantity:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_packegeunit">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>20</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PackageUnit:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_pharmaform">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>64</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PharmaForm:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_articleno">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>20</y>
+      <width>46</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ArticleNo.:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="packageunit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>38</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="articleno">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>80</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grp_transactiontype">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>4</y>
+     <width>251</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Delivery Type:</string>
+   </property>
+   <widget class="QLabel" name="lb_transactiontype">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>26</y>
+      <width>81</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Type of Delivery:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cb_transactiontype">
+    <property name="geometry">
+     <rect>
+      <x>107</x>
+      <y>23</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>Possibility to choose one of the given items.</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grp_incomingGoodsData">
+   <property name="geometry">
+    <rect>
+     <x>272</x>
+     <y>4</y>
+     <width>375</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Data for Incoming Delivery:</string>
+   </property>
+   <widget class="QDateEdit" name="transactiondate">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>36</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="transactiontime">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>35</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_transactiondate">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>17</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Date:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_transactiontime">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>16</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Time:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_customersupplierno">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>64</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BGA-No.:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_purchaseorderno">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>19</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OrderNo.:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="customersupplierno">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>84</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>Put in a customer no (type of delivery: return) or a supplier no (type of dilivery: incoming goods).</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="purchaseorderno">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>37</y>
+      <width>110</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>Order no represents the returns or the incoming goods that don't depend on the selected type of delivery.</string>
+    </property>
+   </widget>
+   <widget class="MultiComboBox" name="cb_customersupplierno">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>84</y>
+      <width>350</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>Put in a customer no (type of delivery: return) or a supplier no (type of delivery: incoming goods).</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_customersuppliername">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_customersupplierlocation">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>47</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Location:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="customersuppliername">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>351</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="customersupplierlocation">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>170</y>
+      <width>291</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="customersupplierstreet">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>200</y>
+      <width>291</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_customersupplierstreet">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>47</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Street:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="customersuppliercip">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>230</y>
+      <width>291</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_customersuppliercip">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>47</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CIP:</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MultiComboBox</class>
+   <extends>QComboBox</extends>
+   <header>libbasarqtwidget_multicombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>cb_transactiontype</tabstop>
+  <tabstop>purchaseorderno</tabstop>
+  <tabstop>transactiondate</tabstop>
+  <tabstop>transactiontime</tabstop>
+  <tabstop>customersupplierno</tabstop>
+  <tabstop>cb_customersupplierno</tabstop>
+  <tabstop>articlecode</tabstop>
+  <tabstop>qtytransaction</tabstop>
+  <tabstop>btnClose</tabstop>
+  <tabstop>btnCancel</tabstop>
+  <tabstop>btnNext</tabstop>
+  <tabstop>pharmaform</tabstop>
+  <tabstop>customersuppliername</tabstop>
+  <tabstop>articlename</tabstop>
+  <tabstop>packageunit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

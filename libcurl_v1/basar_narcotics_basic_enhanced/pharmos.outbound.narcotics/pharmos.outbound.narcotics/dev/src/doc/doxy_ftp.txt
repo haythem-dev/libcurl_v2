@@ -1,0 +1,11 @@
+OPEN groupapps.phoenix.loc
+ftp.outbound
+stepRU7e
+CD narcotics
+PUT codedocu\internal\html\index.html
+PUT codedocu\internal\html\page1.html
+PUT codedocu\internal\html\page2.html
+cd customer
+PUT codedocu\customer\html\index.html
+DISCONNECT
+QUIT

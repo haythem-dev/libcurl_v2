@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/app.png</file>
+        <file>image/close.png</file>
+        <file>image/exit.png</file>
+        <file>image/firstpage.png</file>
+        <file>image/gotopage.png</file>
+        <file>image/lastpage.png</file>
+        <file>image/newwindow.png</file>
+        <file>image/nextpage.png</file>
+        <file>image/openfile.png</file>
+        <file>image/prevpage.png</file>
+        <file>image/print.png</file>
+        <file>image/printpreview.png</file>
+        <file>image/zoom_minus.png</file>
+        <file>image/zoom_plus.png</file>
+        <file>image/dot_blue.png</file>
+        <file>image/dot_red.png</file>
+        <file>image/dot_yellow.png</file>
+        <file>image/logo_pharmos.png</file>
+        <file>image/logo_pharmos_phoenix_group_it.png</file>
+    </qresource>
+</RCC>

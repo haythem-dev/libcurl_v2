@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TransactionDataClass</class>
+ <widget class="QDialog" name="TransactionDataClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>965</width>
+    <height>702</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NA08 Transaction Data</string>
+  </property>
+  <widget class="QGroupBox" name="grpSearchCtriteria">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>4</y>
+     <width>951</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Search Criteria</string>
+   </property>
+   <widget class="QFrame" name="fraSearchCriteria">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>20</y>
+      <width>721</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>To determine if the bgano is a customer or supplier no select one of the options 'Customer' or 'Supplier'</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QCheckBox" name="checkBoxArticle">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>12</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Article</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBoxCustomer">
+     <property name="geometry">
+      <rect>
+       <x>245</x>
+       <y>10</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Customer</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBoxSupplier">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>10</y>
+       <width>71</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Supplier</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="fraArticleSearch">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>37</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="txtArticleName">
+      <property name="geometry">
+       <rect>
+        <x>113</x>
+        <y>35</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtArticleCode">
+      <property name="geometry">
+       <rect>
+        <x>113</x>
+        <y>14</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblArticleNo">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>14</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Article-No:</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxArticleName">
+      <property name="geometry">
+       <rect>
+        <x>13</x>
+        <y>35</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ArticleName:</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fraCustomerSearch">
+     <property name="geometry">
+      <rect>
+       <x>244</x>
+       <y>37</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="txtCustomerName">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtBgaNo">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>19</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxCustomerName">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>41</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CustomerName:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblBgaNo">
+      <property name="geometry">
+       <rect>
+        <x>12</x>
+        <y>19</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bga-No:</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cbAlsoLockedCust">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>0</y>
+        <width>191</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="text">
+       <string>also locked customers</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="fraSupplierSearch">
+     <property name="geometry">
+      <rect>
+       <x>481</x>
+       <y>37</y>
+       <width>231</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="txtSupplierName">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>35</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSupplierNo">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>15</y>
+        <width>89</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSupplierNo">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>15</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Supplier-No:</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxSupplierName">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>35</y>
+        <width>111</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>SupplierName:</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnSearch">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>130</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="grpFromTo">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>30</y>
+      <width>191</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="lblFrom">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>14</y>
+       <width>26</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>From:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTo">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>34</y>
+       <width>16</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>To:</string>
+     </property>
+    </widget>
+    <widget class="BasarDateTimeEdit" name="dtFrom">
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>10</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+    <widget class="BasarDateTimeEdit" name="dtTo">
+     <property name="geometry">
+      <rect>
+       <x>45</x>
+       <y>31</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QCheckBox" name="chkWithDate">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>20</y>
+      <width>71</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string>With Date</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbOrderType">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>102</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Type:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbOrdertype">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>100</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="currentText">
+     <string>all</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>all</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sale</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Received Goods</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Customer Returns</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Supplier Returns</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Destruction</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpTransactionData">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>941</width>
+     <height>457</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Transaction Data</string>
+   </property>
+   <widget class="BasarTableWidget" name="tblTransData">
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>22</y>
+      <width>911</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="rowCount">
+     <number>13</number>
+    </property>
+    <property name="columnCount">
+     <number>8</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnPrint">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>796</x>
+     <y>656</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnClose">
+   <property name="geometry">
+    <rect>
+     <x>876</x>
+     <y>656</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BasarTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>libbasarqtwidget_tablewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BasarDateTimeEdit</class>
+   <extends>QDateTimeEdit</extends>
+   <header>libbasarqtwidget_datetimeedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>btnPrint</tabstop>
+  <tabstop>btnClose</tabstop>
+  <tabstop>checkBoxArticle</tabstop>
+  <tabstop>checkBoxArticleName</tabstop>
+  <tabstop>txtArticleCode</tabstop>
+  <tabstop>txtArticleName</tabstop>
+  <tabstop>checkBoxCustomer</tabstop>
+  <tabstop>cbAlsoLockedCust</tabstop>
+  <tabstop>checkBoxCustomerName</tabstop>
+  <tabstop>txtBgaNo</tabstop>
+  <tabstop>txtCustomerName</tabstop>
+  <tabstop>checkBoxSupplier</tabstop>
+  <tabstop>checkBoxSupplierName</tabstop>
+  <tabstop>txtSupplierNo</tabstop>
+  <tabstop>txtSupplierName</tabstop>
+  <tabstop>chkWithDate</tabstop>
+  <tabstop>dtFrom</tabstop>
+  <tabstop>dtTo</tabstop>
+  <tabstop>cbOrdertype</tabstop>
+  <tabstop>btnSearch</tabstop>
+  <tabstop>tblTransData</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

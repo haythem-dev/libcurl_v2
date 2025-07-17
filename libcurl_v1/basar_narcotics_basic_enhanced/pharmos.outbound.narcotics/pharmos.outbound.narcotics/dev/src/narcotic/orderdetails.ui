@@ -1,0 +1,278 @@
+<ui version="4.0" >
+ <class>OrderDetailsVCClass</class>
+ <widget class="QDialog" name="OrderDetailsVCClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>863</width>
+    <height>418</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>NA20 OrderDetailsVC</string>
+  </property>
+  <widget class="QGroupBox" name="grpNarcoticsBookingsData" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>102</y>
+     <width>841</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Narcotics Bookings Data</string>
+   </property>
+   <widget class="BasarTableWidget" name="tableWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>821</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="selectionMode" >
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior" >
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="rowCount" >
+     <number>5</number>
+    </property>
+    <property name="columnCount" >
+     <number>8</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpOrderData" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>681</width>
+     <height>84</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Order Data</string>
+   </property>
+   <widget class="QLabel" name="lblOrderNo" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>OrderNo:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblBGANo" >
+    <property name="geometry" >
+     <rect>
+      <x>320</x>
+      <y>20</y>
+      <width>50</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>BGA-No:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblLocation" >
+    <property name="geometry" >
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Location:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTime" >
+    <property name="geometry" >
+     <rect>
+      <x>510</x>
+      <y>40</y>
+      <width>53</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Time:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblName" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>53</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblDate" >
+    <property name="geometry" >
+     <rect>
+      <x>510</x>
+      <y>20</y>
+      <width>53</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Date:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="purchaseorderno" >
+    <property name="geometry" >
+     <rect>
+      <x>70</x>
+      <y>20</y>
+      <width>231</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly" >
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="customersupplierlocation" >
+    <property name="geometry" >
+     <rect>
+      <x>370</x>
+      <y>42</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly" >
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="BasarTimeEdit" name="transactiontime" >
+    <property name="enabled" >
+     <bool>true</bool>
+    </property>
+    <property name="geometry" >
+     <rect>
+      <x>560</x>
+      <y>40</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="customersupplierno" >
+    <property name="geometry" >
+     <rect>
+      <x>370</x>
+      <y>19</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="readOnly" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="customersuppliername" >
+    <property name="geometry" >
+     <rect>
+      <x>70</x>
+      <y>42</y>
+      <width>231</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="frame" >
+     <bool>true</bool>
+    </property>
+    <property name="readOnly" >
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="BasarDateEdit" name="transactiondate" >
+    <property name="geometry" >
+     <rect>
+      <x>560</x>
+      <y>19</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnClose" >
+   <property name="geometry" >
+    <rect>
+     <x>772</x>
+     <y>380</y>
+     <width>77</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>BasarTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>libbasarqtwidget_tablewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BasarDateEdit</class>
+   <extends>QDateEdit</extends>
+   <header>libbasarqtwidget_dateedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BasarTimeEdit</class>
+   <extends>QTimeEdit</extends>
+   <header>libbasarqtwidget_timeedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>purchaseorderno</tabstop>
+  <tabstop>customersupplierno</tabstop>
+  <tabstop>customersuppliername</tabstop>
+  <tabstop>customersupplierlocation</tabstop>
+  <tabstop>transactiontime</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>btnClose</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

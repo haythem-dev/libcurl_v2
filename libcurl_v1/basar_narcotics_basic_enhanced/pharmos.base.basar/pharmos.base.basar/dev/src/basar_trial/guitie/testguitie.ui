@@ -1,0 +1,45 @@
+<ui version="4.0" >
+ <class>testguitieClass</class>
+ <widget class="QMainWindow" name="testguitieClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>852</width>
+    <height>494</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>testguitie</string>
+  </property>
+  <property name="accessibleName" >
+   <string>testguitieClass</string>
+  </property>
+  <widget class="QWidget" name="centralWidget" >
+   <property name="accessibleName" >
+    <string>centralWidget</string>
+   </property>
+   <widget class="QTabWidget" name="tabWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>821</width>
+      <height>981</height>
+     </rect>
+    </property>
+    <property name="currentIndex" >
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab" >
+     <attribute name="title" >
+      <string>Tab 1</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <resources/>
+ <connections/>
+</ui>

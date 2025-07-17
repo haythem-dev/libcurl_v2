@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Domain Modules">
+      <UniqueIdentifier>{ccf57e51-b00d-43c7-95f1-e08973c849cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain Modules\transferdm">
+      <UniqueIdentifier>{741a7606-bbac-49ba-9629-d7c1540302f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain Modules\transferdm\Acc">
+      <UniqueIdentifier>{c90ded30-31c2-4f45-8c94-77415e208b17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log4cplus">
+      <UniqueIdentifier>{9284e966-14c8-4efc-bfc3-efa9b8f4b20e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UseCases">
+      <UniqueIdentifier>{e1653d8f-116d-4d07-8a3c-bbbeb1df5329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc">
+      <UniqueIdentifier>{c1f9ae94-5bc0-4709-9e3d-1affb3af08a5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="transferdm.cpp">
+      <Filter>Domain Modules\transferdm</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_catalog.cpp">
+      <Filter>Domain Modules\transferdm\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_customernomapping.cpp">
+      <Filter>Domain Modules\transferdm\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_customersupplier.cpp">
+      <Filter>Domain Modules\transferdm\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_narcgroup.cpp">
+      <Filter>Domain Modules\transferdm\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_transfer.cpp">
+      <Filter>Domain Modules\transferdm\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerpool.cpp">
+      <Filter>log4cplus</Filter>
+    </ClCompile>
+    <ClCompile Include="transferuc.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="usecasecontroller.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="connection.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="narctransferappl.cpp" />
+    <ClCompile Include="parameter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="transferdm.h">
+      <Filter>Domain Modules\transferdm</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_catalog.h">
+      <Filter>Domain Modules\transferdm\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_customernomapping.h">
+      <Filter>Domain Modules\transferdm\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_customersupplier.h">
+      <Filter>Domain Modules\transferdm\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_narcgroup.h">
+      <Filter>Domain Modules\transferdm\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_transfer.h">
+      <Filter>Domain Modules\transferdm\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="loggerpool.h">
+      <Filter>log4cplus</Filter>
+    </ClInclude>
+    <ClInclude Include="transferuc.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="usecasecontroller.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="commonheader.h" />
+    <ClInclude Include="connection.h" />
+    <ClInclude Include="narctransfer_definitions.h" />
+    <ClInclude Include="narctransferappl.h" />
+    <ClInclude Include="parameter.h" />
+    <ClInclude Include="version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="proc\narcotics_global.vars">
+      <Filter>proc</Filter>
+    </None>
+    <None Include="proc\narctransfer.option">
+      <Filter>proc</Filter>
+    </None>
+    <None Include="proc\narctransfer.sh">
+      <Filter>proc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="narctransfer.cfg">
+      <Filter>log4cplus</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

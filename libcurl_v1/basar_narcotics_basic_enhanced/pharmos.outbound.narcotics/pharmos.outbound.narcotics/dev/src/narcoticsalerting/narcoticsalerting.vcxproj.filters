@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="proc">
+      <UniqueIdentifier>{678076e9-dee7-4f60-93c6-79be0f19ecaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\t2b_log4cplus">
+      <UniqueIdentifier>{a55145cc-47b3-4fa9-ab5c-bcabdfc807da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\t2b_Exceptions">
+      <UniqueIdentifier>{66583cf9-a645-47d8-9853-624044747e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\t2b_Connection">
+      <UniqueIdentifier>{d7506065-2187-4230-b0a1-398edaa4cd0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\t2b_config">
+      <UniqueIdentifier>{3fdd2ce1-7470-427d-98e3-e9c82a633493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\t2b_DomainModules">
+      <UniqueIdentifier>{48e638f7-e8a7-4a96-a08f-28a4bcef4744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\t2b_Utils">
+      <UniqueIdentifier>{35f779e0-676f-4dae-af6a-8d45ba092dd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\t2b_Accessors">
+      <UniqueIdentifier>{04adc6ae-1bd3-4e15-925d-8545de4bd753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\t2b_UseCases">
+      <UniqueIdentifier>{35eadabb-d866-4f7a-b5d9-4a56398f9254}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="commonheader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="narcoticsalertingapp.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\loggerpool.h">
+      <Filter>Source Files\t2b_log4cplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\exbgabranchrepo.h">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\exbgafolder.h">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\exconfiguration.h">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\excrosschecksvc.h">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\excrosscheckuc.h">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\exservice.h">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\exstartdatecalculator.h">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\extransfer.h">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\exvoucherentryrepo.h">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\exvoucherfile.h">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\infxconnection.h">
+      <Filter>Source Files\t2b_Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\configuration.h">
+      <Filter>Source Files\t2b_config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\iconfiguration.h">
+      <Filter>Source Files\t2b_config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\serviceconfiguration.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="usecasecontroler.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\crosschecksvc.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\crosschecksvcfactory.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\dateinfo.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\bfarmservice.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\bgabranch.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\bgabranchptr.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\bgabranchrepo.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\bgafolder.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\bgafolderptr.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\bgafolderrepo.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\contributionvoucherentry.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\contributionvoucherentryptr.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\contributionvoucherentryrepo.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\contributionvoucherfile.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\contributionvoucherfileptr.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\convert.h">
+      <Filter>Source Files\t2b_Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\servicefactory.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\startenddatecalculator.h">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\crosscheckcontributionvouchersuc.h">
+      <Filter>Source Files\t2b_UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\bgabranch_acc.h">
+      <Filter>Source Files\t2b_Accessors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\transfer2bfarm\voucherentry_acc.h">
+      <Filter>Source Files\t2b_Accessors</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="narcoticsalertingapp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\loggerpool.cpp">
+      <Filter>Source Files\t2b_log4cplus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\exbgabranchrepo.cpp">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\exbgafolder.cpp">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\exconfiguration.cpp">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\excrosschecksvc.cpp">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\excrosscheckuc.cpp">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\exservice.cpp">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\exstartdatecalculator.cpp">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\extransfer.cpp">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\exvoucherentryrepo.cpp">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\exvoucherfile.cpp">
+      <Filter>Source Files\t2b_Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\infxconnection.cpp">
+      <Filter>Source Files\t2b_Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\configuration.cpp">
+      <Filter>Source Files\t2b_config</Filter>
+    </ClCompile>
+    <ClCompile Include="usecasecontroler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\crosschecksvc.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\crosschecksvcfactory.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\dateinfo.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\bfarmservice.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\bgabranch.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\bgabranchrepo.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\bgafolder.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\bgafolderrepo.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\contributionvoucherentry.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\contributionvoucherentryrepo.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\contributionvoucherfile.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\convert.cpp">
+      <Filter>Source Files\t2b_Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\servicefactory.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\startenddatecalculator.cpp">
+      <Filter>Source Files\t2b_DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\crosscheckcontributionvouchersuc.cpp">
+      <Filter>Source Files\t2b_UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\bgabranch_acc.cpp">
+      <Filter>Source Files\t2b_Accessors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\transfer2bfarm\voucherentry_acc.cpp">
+      <Filter>Source Files\t2b_Accessors</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="proc\narcoticsalerting.option">
+      <Filter>proc</Filter>
+    </None>
+    <None Include="proc\narcoticsalerting.sh">
+      <Filter>proc</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{98473980-5a60-4036-9a70-5246706c71c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="database">
+      <UniqueIdentifier>{99ce04b2-da8e-4a84-bfc7-5d39ab6b4ee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connection">
+      <UniqueIdentifier>{e4322181-9efa-4ac3-a084-c5a934193933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connection\iterator">
+      <UniqueIdentifier>{9370a709-c5b2-4407-85c4-96419607a588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="statement">
+      <UniqueIdentifier>{7d79158b-b40d-4554-abd5-05e7aa816ecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resultset">
+      <UniqueIdentifier>{9efae8df-802a-4fc4-9e57-eb7f8cc37118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exception">
+      <UniqueIdentifier>{0f5f7a8d-2279-49ba-9dcf-8ee839319a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="insertset">
+      <UniqueIdentifier>{4b2ca598-9b29-4ad8-bc00-bf531cd288d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="preparedstatement">
+      <UniqueIdentifier>{34ba2727-5af4-49e2-8931-0999c460cb7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cics definitions">
+      <UniqueIdentifier>{15e862cd-6c28-4af5-b1c6-9e0f378efd15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="database.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="databaseinfo.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\dblocaleinfx.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\localeenvinfx.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\setenvinfx.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\sqlhostsinfx.cpp">
+      <Filter>database</Filter>
+    </ClCompile>
+    <ClCompile Include="connection.cpp">
+      <Filter>connection</Filter>
+    </ClCompile>
+    <ClCompile Include="cics\connectioncics.cpp">
+      <Filter>connection</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\connectioninfx.cpp">
+      <Filter>connection</Filter>
+    </ClCompile>
+    <ClCompile Include="odbc\connectionodbc.cpp">
+      <Filter>connection</Filter>
+    </ClCompile>
+    <ClCompile Include="connectionref.cpp">
+      <Filter>connection</Filter>
+    </ClCompile>
+    <ClCompile Include="managerimpl.cpp">
+      <Filter>connection</Filter>
+    </ClCompile>
+    <ClCompile Include="connectionlist_iterator.cpp">
+      <Filter>connection\iterator</Filter>
+    </ClCompile>
+    <ClCompile Include="statement.cpp">
+      <Filter>statement</Filter>
+    </ClCompile>
+    <ClCompile Include="cics\statementcics.cpp">
+      <Filter>statement</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\statementinfx.cpp">
+      <Filter>statement</Filter>
+    </ClCompile>
+    <ClCompile Include="odbc\statementodbc.cpp">
+      <Filter>statement</Filter>
+    </ClCompile>
+    <ClCompile Include="statementref.cpp">
+      <Filter>statement</Filter>
+    </ClCompile>
+    <ClCompile Include="resultset.cpp">
+      <Filter>resultset</Filter>
+    </ClCompile>
+    <ClCompile Include="cics\resultsetcics.cpp">
+      <Filter>resultset</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\resultsetinfx.cpp">
+      <Filter>resultset</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\resultsetinfxmulti.cpp">
+      <Filter>resultset</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\resultsetinfxsingle.cpp">
+      <Filter>resultset</Filter>
+    </ClCompile>
+    <ClCompile Include="odbc\resultsetodbc.cpp">
+      <Filter>resultset</Filter>
+    </ClCompile>
+    <ClCompile Include="resultsetref.cpp">
+      <Filter>resultset</Filter>
+    </ClCompile>
+    <ClCompile Include="dbexception.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="cics\dbexceptioncics.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\dbexceptioninfx.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="odbc\dbexceptionodbc.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="sqldiagnostics.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="cics\sqldiagnosticscics.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\sqldiagnosticsinfx.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="odbc\sqldiagnosticsodbc.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="sqldiagnosticsref.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlexcepthandler.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="cics\sqlexcepthandlercics.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\sqlexcepthandlerinfx.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="odbc\sqlexcepthandlerodbc.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="insertset.cpp">
+      <Filter>insertset</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\insertsetinfx.cpp">
+      <Filter>insertset</Filter>
+    </ClCompile>
+    <ClCompile Include="insertsetref.cpp">
+      <Filter>insertset</Filter>
+    </ClCompile>
+    <ClCompile Include="preparedstatement.cpp">
+      <Filter>preparedstatement</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\preparedstatementinfx.cpp">
+      <Filter>preparedstatement</Filter>
+    </ClCompile>
+    <ClCompile Include="odbc\preparedstatementodbc.cpp">
+      <Filter>preparedstatement</Filter>
+    </ClCompile>
+    <ClCompile Include="preparedstatementref.cpp">
+      <Filter>preparedstatement</Filter>
+    </ClCompile>
+    <ClCompile Include="cics\cicsdefinitions.cpp">
+      <Filter>cics definitions</Filter>
+    </ClCompile>
+    <ClCompile Include="infx\infxstring.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasardbsql.cpp" />
+    <ClCompile Include="loggerpool.cpp" />
+    <ClCompile Include="sqloperative.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="database.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\dblocaleinfx.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbsql_databaseinfo.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\localeenvinfx.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\setenvinfx.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\sqlhostsinfx.h">
+      <Filter>database</Filter>
+    </ClInclude>
+    <ClInclude Include="connection.h">
+      <Filter>connection</Filter>
+    </ClInclude>
+    <ClInclude Include="cics\connectioncics.h">
+      <Filter>connection</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\connectioninfx.h">
+      <Filter>connection</Filter>
+    </ClInclude>
+    <ClInclude Include="odbc\connectionodbc.h">
+      <Filter>connection</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbsql_connectionref.h">
+      <Filter>connection</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbsql_manager.h">
+      <Filter>connection</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbsql_managerimpl.h">
+      <Filter>connection</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbsql_connectionlist_iterator.h">
+      <Filter>connection\iterator</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbsql_statementref.h">
+      <Filter>statement</Filter>
+    </ClInclude>
+    <ClInclude Include="statement.h">
+      <Filter>statement</Filter>
+    </ClInclude>
+    <ClInclude Include="cics\statementcics.h">
+      <Filter>statement</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\statementinfx.h">
+      <Filter>statement</Filter>
+    </ClInclude>
+    <ClInclude Include="odbc\statementodbc.h">
+      <Filter>statement</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbsql_resultsetref.h">
+      <Filter>resultset</Filter>
+    </ClInclude>
+    <ClInclude Include="resultset.h">
+      <Filter>resultset</Filter>
+    </ClInclude>
+    <ClInclude Include="cics\resultsetcics.h">
+      <Filter>resultset</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\resultsetinfx.h">
+      <Filter>resultset</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\resultsetinfxmulti.h">
+      <Filter>resultset</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\resultsetinfxsingle.h">
+      <Filter>resultset</Filter>
+    </ClInclude>
+    <ClInclude Include="odbc\resultsetodbc.h">
+      <Filter>resultset</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbsql_exceptions.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbsql_sqldiagnosticsref.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="sqldiagnostics.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="cics\sqldiagnosticscics.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\sqldiagnosticsinfx.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="odbc\sqldiagnosticsodbc.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlexcepthandler.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="cics\sqlexcepthandlercics.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\sqlexcepthandlerinfx.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="odbc\sqlexcepthandlerodbc.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="insertset.h">
+      <Filter>insertset</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\insertsetinfx.h">
+      <Filter>insertset</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbsql_insertsetref.h">
+      <Filter>insertset</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasardbsql_preparedstatementref.h">
+      <Filter>preparedstatement</Filter>
+    </ClInclude>
+    <ClInclude Include="preparedstatement.h">
+      <Filter>preparedstatement</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\preparedstatementinfx.h">
+      <Filter>preparedstatement</Filter>
+    </ClInclude>
+    <ClInclude Include="odbc\preparedstatementodbc.h">
+      <Filter>preparedstatement</Filter>
+    </ClInclude>
+    <ClInclude Include="cics\cicsdefinitions.h">
+      <Filter>cics definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="infx\infxstring.h" />
+    <ClInclude Include="libbasardbsql.h" />
+    <ClInclude Include="libbasardbsql_api.h" />
+    <ClInclude Include="libbasardbsql_definitions.h" />
+    <ClInclude Include="libbasardbsql_functions.h" />
+    <ClInclude Include="loggerpool.h" />
+    <ClInclude Include="sqloperative.h" />
+  </ItemGroup>
+</Project>

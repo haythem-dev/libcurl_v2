@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Source Files\UseCases">
+      <UniqueIdentifier>{13ada208-5fa2-479b-a915-034036bfbdb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DomainModules">
+      <UniqueIdentifier>{259c03df-7fac-4322-8893-01e257c51259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DomainModules\Repositories">
+      <UniqueIdentifier>{5c9bb2b5-9205-4d37-aeae-91ffc40bdae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DomainModules\Repositories\Accessoren">
+      <UniqueIdentifier>{f92e9e5a-6b3c-4452-9f84-e3f374abdd3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DomainModules\Factories">
+      <UniqueIdentifier>{a322b619-7ffe-4a42-be85-f3b0fa98ba8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DomainModules\Services">
+      <UniqueIdentifier>{243c1418-968e-4552-b965-736ca466d5d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\DomainModules\Services\Configuration">
+      <UniqueIdentifier>{415be169-c043-4ca8-a720-43d29c12964e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\config">
+      <UniqueIdentifier>{3fdd2ce1-7470-427d-98e3-e9c82a633493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Connection">
+      <UniqueIdentifier>{d7506065-2187-4230-b0a1-398edaa4cd0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Exceptions">
+      <UniqueIdentifier>{66583cf9-a645-47d8-9853-624044747e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{6642fe7d-11f8-46c0-848a-76f95c438e73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\log4cplus">
+      <UniqueIdentifier>{0fe7b994-9d55-4ea2-a846-8aefeb1a2d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mock">
+      <UniqueIdentifier>{3e7e732b-a88a-40e9-891d-3b8274c74880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc">
+      <UniqueIdentifier>{678076e9-dee7-4f60-93c6-79be0f19ecaf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="commonheader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dateinfo.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="definitions.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="transferbfarmappl.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="archivevouchersuc.h">
+      <Filter>Source Files\UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="crosscheckcontributionvouchersuc.h">
+      <Filter>Source Files\UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="transfertobfarmuc.h">
+      <Filter>Source Files\UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="usecasecontroler.h">
+      <Filter>Source Files\UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="bgabranch.h">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="bgabranchptr.h">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="bgafolder.h">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="bgafolderptr.h">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="coldmetadata.h">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="contributionvoucherentry.h">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="contributionvoucherentryptr.h">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="contributionvoucherfile.h">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="contributionvoucherfileptr.h">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="metadata.h">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="startenddatecalculator.h">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="bgabranchrepo.h">
+      <Filter>Source Files\DomainModules\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="bgafolderrepo.h">
+      <Filter>Source Files\DomainModules\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="contributionvoucherentryrepo.h">
+      <Filter>Source Files\DomainModules\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="repobase.h">
+      <Filter>Source Files\DomainModules\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="bgabranch_acc.h">
+      <Filter>Source Files\DomainModules\Repositories\Accessoren</Filter>
+    </ClInclude>
+    <ClInclude Include="voucherentry_acc.h">
+      <Filter>Source Files\DomainModules\Repositories\Accessoren</Filter>
+    </ClInclude>
+    <ClInclude Include="archivesvcfactory.h">
+      <Filter>Source Files\DomainModules\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="crosschecksvcfactory.h">
+      <Filter>Source Files\DomainModules\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="servicefactory.h">
+      <Filter>Source Files\DomainModules\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="archivesvc.h">
+      <Filter>Source Files\DomainModules\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="bfarmservice.h">
+      <Filter>Source Files\DomainModules\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="crosschecksvc.h">
+      <Filter>Source Files\DomainModules\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="serviceconfiguration.h">
+      <Filter>Source Files\DomainModules\Services\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="configuration.h">
+      <Filter>Source Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="iconfiguration.h">
+      <Filter>Source Files\config</Filter>
+    </ClInclude>
+    <ClInclude Include="infxconnection.h">
+      <Filter>Source Files\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="exbgabranchrepo.h">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="exbgafolder.h">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="exconfiguration.h">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="excrosschecksvc.h">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="excrosscheckuc.h">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="exservice.h">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="exstartdatecalculator.h">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="extransfer.h">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="exvoucherentryrepo.h">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="exvoucherfile.h">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="coldmetadatawriter.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="convert.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="metadatawriter.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="metadatawriterptr.h">
+      <Filter>Source Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="loggerpool.h">
+      <Filter>Source Files\log4cplus</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dateinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transferbfarmappl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="archivevouchersuc.cpp">
+      <Filter>Source Files\UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="crosscheckcontributionvouchersuc.cpp">
+      <Filter>Source Files\UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="transfertobfarmuc.cpp">
+      <Filter>Source Files\UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="usecasecontroler.cpp">
+      <Filter>Source Files\UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="bgabranch.cpp">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="bgafolder.cpp">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="coldmetadata.cpp">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="contributionvoucherentry.cpp">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="contributionvoucherfile.cpp">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="metadata.cpp">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="startenddatecalculator.cpp">
+      <Filter>Source Files\DomainModules</Filter>
+    </ClCompile>
+    <ClCompile Include="bgabranchrepo.cpp">
+      <Filter>Source Files\DomainModules\Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="bgafolderrepo.cpp">
+      <Filter>Source Files\DomainModules\Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="contributionvoucherentryrepo.cpp">
+      <Filter>Source Files\DomainModules\Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="bgabranch_acc.cpp">
+      <Filter>Source Files\DomainModules\Repositories\Accessoren</Filter>
+    </ClCompile>
+    <ClCompile Include="voucherentry_acc.cpp">
+      <Filter>Source Files\DomainModules\Repositories\Accessoren</Filter>
+    </ClCompile>
+    <ClCompile Include="archivesvcfactory.cpp">
+      <Filter>Source Files\DomainModules\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="crosschecksvcfactory.cpp">
+      <Filter>Source Files\DomainModules\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="servicefactory.cpp">
+      <Filter>Source Files\DomainModules\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="archivesvc.cpp">
+      <Filter>Source Files\DomainModules\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="bfarmservice.cpp">
+      <Filter>Source Files\DomainModules\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="crosschecksvc.cpp">
+      <Filter>Source Files\DomainModules\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="configuration.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="infxconnection.cpp">
+      <Filter>Source Files\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="exbgabranchrepo.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="exbgafolder.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="exconfiguration.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="excrosschecksvc.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="excrosscheckuc.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="exservice.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="exstartdatecalculator.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="extransfer.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="exvoucherentryrepo.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="exvoucherfile.cpp">
+      <Filter>Source Files\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="coldmetadatawriter.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="convert.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="metadatawriter.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerpool.cpp">
+      <Filter>Source Files\log4cplus</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="testtransfer.bat">
+      <Filter>Source Files\Mock</Filter>
+    </None>
+    <None Include="proc\transfer2bfarm.option">
+      <Filter>proc</Filter>
+    </None>
+    <None Include="proc\transfer2bfarm.sh">
+      <Filter>proc</Filter>
+    </None>
+  </ItemGroup>
+</Project>

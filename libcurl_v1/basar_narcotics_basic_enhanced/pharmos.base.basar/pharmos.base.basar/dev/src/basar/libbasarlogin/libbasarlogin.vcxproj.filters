@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="UseCase">
+      <UniqueIdentifier>{5a747623-6033-48cd-a66a-e76bc99f3d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UseCase\changePW">
+      <UniqueIdentifier>{1bde4d3c-115b-4a51-86d8-b821273f2766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UseCase\checkLogin">
+      <UniqueIdentifier>{8ffba0b7-c121-49b1-a24e-832a84d8ca29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UseCase\checkLogin\ADUserChecker">
+      <UniqueIdentifier>{0e77d0d3-fcc1-4dc3-abb8-6e8c0b94aa3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UseCase\checkLogin\ADUserChecker\ADUserCheckerWindows">
+      <UniqueIdentifier>{c18dc4e5-0d4f-4f4e-8b46-cc5639723a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UseCase\checkLogin\ADUserChecker\ADUserCheckerUnix">
+      <UniqueIdentifier>{eb38f726-ab2f-40da-aa8c-873e853bc9c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UseCase\checkLogin\CheckLoginUCFactory">
+      <UniqueIdentifier>{91437667-1a6d-445b-92c8-5933c64b243e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule">
+      <UniqueIdentifier>{f3d6a8e5-d1e6-43b2-8a33-a8aad67b7ad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\TextManagement">
+      <UniqueIdentifier>{118ded0c-ba71-4b75-85f0-71323c611a30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\TextManagement\TextAcc">
+      <UniqueIdentifier>{1494a1c2-bc9e-4682-98ec-fd7568859e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gui">
+      <UniqueIdentifier>{46c97f44-e453-4bff-b2b3-e2d4e1740555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gui\Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+    </Filter>
+    <Filter Include="Gui\Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{b8e2e1d2-aa2c-40cb-ba64-77219dd9b668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\win">
+      <UniqueIdentifier>{336d32b0-ae68-433a-9435-8dfaa1c7226e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\unix">
+      <UniqueIdentifier>{ec0f7503-9eb7-4d8c-aad4-a96f7051a6d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserType">
+      <UniqueIdentifier>{1ae693eb-62df-444c-adef-fbe6980aa1eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{ef176293-04eb-4dd2-a83b-10778ac9684e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{64c9a618-e41d-4bc5-b60c-d2d298dddd1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewConnector">
+      <UniqueIdentifier>{6d78c230-f573-4026-bd19-5e6420943de2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{040bcb67-5818-44c3-aba8-e6cb65be758b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\crypt">
+      <UniqueIdentifier>{b9c3eaf1-f964-4e41-a107-63dbb1b45186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connection">
+      <UniqueIdentifier>{d3535e38-c07f-40c9-bb31-ab16b577f9ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{42ba4b6f-481b-4174-9d43-8a903ad64afe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\User">
+      <UniqueIdentifier>{45101c6f-55f6-4345-905e-cd7130849dd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\User\UserManagement">
+      <UniqueIdentifier>{450e7576-d189-4ec2-aa48-4acfce6ad458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\User\UserManagement\UserAcc">
+      <UniqueIdentifier>{beefb144-a2d8-4fcc-972c-f94681a6ed42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\User\UserManagement\AppRightAcc">
+      <UniqueIdentifier>{c964e33c-b312-444f-bf96-881147832e14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\User\BaseUserMgmt">
+      <UniqueIdentifier>{8330d513-a9fd-4657-8b87-6653940cf924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\User\ADloginUserMgmt">
+      <UniqueIdentifier>{ca3fd129-25aa-43da-8477-afadb7da19e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\User\ADloginUserMgmt\ADLoginUserAcc">
+      <UniqueIdentifier>{99e2c74b-4fb9-4c9c-8f79-5feac7906d3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\User\ADloginUserMgmt\ADLoginAppRight">
+      <UniqueIdentifier>{f9112ebb-9197-4f84-8401-e9e10282f7eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\User\UserMgmtDMFactory">
+      <UniqueIdentifier>{e8f58415-3381-4ee8-a914-bbf849957d8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application">
+      <UniqueIdentifier>{1793fc54-02de-43e3-9793-d933b3587a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ApplManagement">
+      <UniqueIdentifier>{89a23d34-e157-4b37-bdd4-527b18915c46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ApplManagement\ApplAcc">
+      <UniqueIdentifier>{feb4bfce-5fc7-499c-beb7-55cc96dfe488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ApplManagement\LanguageAcc">
+      <UniqueIdentifier>{484954bc-6c0b-4a31-8640-7ed7f763cd1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ApplManagement\AreaAcc">
+      <UniqueIdentifier>{6146d25c-a6d9-4832-a125-4c7f38d63781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ApplManagement\PreviousAcc">
+      <UniqueIdentifier>{3cd45f4e-950f-48c4-8fab-908ad9d345be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ApplManagement\ParaAcc">
+      <UniqueIdentifier>{f93c2299-89c6-44e4-ae98-f80ee49c8a2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ApplMgmtDMFactory">
+      <UniqueIdentifier>{4bf43f3a-b933-41e5-aaf0-2187b8262ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\BaseApplMgmt">
+      <UniqueIdentifier>{13702bd8-b6da-46c8-a808-c46ba7aabba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ADloginApplMgmt">
+      <UniqueIdentifier>{ef79b32a-f7a5-4380-b489-c4a827b6e223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ADloginApplMgmt\ADloginApplAcc">
+      <UniqueIdentifier>{e7fd0703-5622-48f7-89e6-2cc39c419d9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ADloginApplMgmt\ADLoginLanguageAcc">
+      <UniqueIdentifier>{5347831f-0bd8-4064-822b-e1ebf2585fa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ADloginApplMgmt\ADLoginAreaAcc">
+      <UniqueIdentifier>{9b9453b7-5d20-4c49-be06-4666b1835626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ADloginApplMgmt\ADLoginPreviousAcc">
+      <UniqueIdentifier>{d16e92bb-89fc-4524-8f14-59af58163f48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModule\Application\ADloginApplMgmt\ADLoginParaAcc">
+      <UniqueIdentifier>{0dcf39fc-dbac-41f0-b00d-6c37bcc85217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gui\Generated Files\Debug">
+      <UniqueIdentifier>{5dc49954-a9e4-4905-9b94-41811e8a5967}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Gui\Generated Files\Release">
+      <UniqueIdentifier>{7421ff51-ecb2-41c9-9098-d837ed3d4f72}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Gui\Generated Files\Coverage">
+      <UniqueIdentifier>{22a2972b-5659-4b02-8132-0e928d236347}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="usecasecontroller.cpp">
+      <Filter>UseCase</Filter>
+    </ClCompile>
+    <ClCompile Include="changepwuc.cpp">
+      <Filter>UseCase\changePW</Filter>
+    </ClCompile>
+    <ClCompile Include="checkloginuc.cpp">
+      <Filter>UseCase\checkLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="usermanagementdm.cpp">
+      <Filter>DomainModule\User\UserManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_appright.cpp">
+      <Filter>DomainModule\User\UserManagement\AppRightAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="applmanagementdm.cpp">
+      <Filter>DomainModule\Application\ApplManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_appl.cpp">
+      <Filter>DomainModule\Application\ApplManagement\ApplAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_language.cpp">
+      <Filter>DomainModule\Application\ApplManagement\LanguageAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_area.cpp">
+      <Filter>DomainModule\Application\ApplManagement\AreaAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_previous.cpp">
+      <Filter>DomainModule\Application\ApplManagement\PreviousAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_para.cpp">
+      <Filter>DomainModule\Application\ApplManagement\ParaAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="textmanagementdm.cpp">
+      <Filter>DomainModule\TextManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_text.cpp">
+      <Filter>DomainModule\TextManagement\TextAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarlogin_manager.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="loginappl.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="logindata.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="win\loginapplwin.cpp">
+      <Filter>Application\win</Filter>
+    </ClCompile>
+    <ClCompile Include="unix\loginapplunix.cpp">
+      <Filter>Application\unix</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerpool.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="libbasarlogin.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="win\changepwdlgvc.cpp">
+      <Filter>ViewConnector</Filter>
+    </ClCompile>
+    <ClCompile Include="win\logindlgvc.cpp">
+      <Filter>ViewConnector</Filter>
+    </ClCompile>
+    <ClCompile Include="crypt.cpp">
+      <Filter>Util\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="connection.cpp">
+      <Filter>Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_user.cpp">
+      <Filter>DomainModule\User\UserManagement\UserAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="configuration.cpp">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="baseapplmgmtdm.cpp">
+      <Filter>DomainModule\Application\BaseApplMgmt</Filter>
+    </ClCompile>
+    <ClCompile Include="applmgmtdmfactory.cpp">
+      <Filter>DomainModule\Application\ApplMgmtDMFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="adloginapplmgmtdm.cpp">
+      <Filter>DomainModule\Application\ADloginApplMgmt</Filter>
+    </ClCompile>
+    <ClCompile Include="adloginapplacc.cpp">
+      <Filter>DomainModule\Application\ADloginApplMgmt\ADloginApplAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="adloginareaacc.cpp">
+      <Filter>DomainModule\Application\ADloginApplMgmt\ADLoginAreaAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="adloginlanguageacc.cpp">
+      <Filter>DomainModule\Application\ADloginApplMgmt\ADLoginLanguageAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="adloginparaacc.cpp">
+      <Filter>DomainModule\Application\ADloginApplMgmt\ADLoginParaAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="adloginpreviousacc.cpp">
+      <Filter>DomainModule\Application\ADloginApplMgmt\ADLoginPreviousAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="baseusermgmtdm.cpp">
+      <Filter>DomainModule\User\BaseUserMgmt</Filter>
+    </ClCompile>
+    <ClCompile Include="usermgmtdmfactory.cpp">
+      <Filter>DomainModule\User\UserMgmtDMFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="adloginusermgmtdm.cpp">
+      <Filter>DomainModule\User\ADloginUserMgmt</Filter>
+    </ClCompile>
+    <ClCompile Include="adloginapprightacc.cpp">
+      <Filter>DomainModule\User\ADloginUserMgmt\ADLoginAppRight</Filter>
+    </ClCompile>
+    <ClCompile Include="adloginuseracc.cpp">
+      <Filter>DomainModule\User\ADloginUserMgmt\ADLoginUserAcc</Filter>
+    </ClCompile>
+    <ClCompile Include="adusercheckerunix.cpp">
+      <Filter>UseCase\checkLogin\ADUserChecker\ADUserCheckerUnix</Filter>
+    </ClCompile>
+    <ClCompile Include="adusercheckerwindows.cpp">
+      <Filter>UseCase\checkLogin\ADUserChecker\ADUserCheckerWindows</Filter>
+    </ClCompile>
+    <ClCompile Include="checkloginucfactory.cpp">
+      <Filter>UseCase\checkLogin\CheckLoginUCFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="checkloginbaseuc.cpp">
+      <Filter>UseCase\checkLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="checkadloginuc.cpp">
+      <Filter>UseCase\checkLogin</Filter>
+    </ClCompile>
+    <ClCompile Include="win\GeneratedFiles\Debug\moc_changepwdlgvc.cpp">
+      <Filter>Gui\Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="win\GeneratedFiles\Release\moc_changepwdlgvc.cpp">
+      <Filter>Gui\Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="win\GeneratedFiles\Coverage\moc_changepwdlgvc.cpp">
+      <Filter>Gui\Generated Files\Coverage</Filter>
+    </ClCompile>
+    <ClCompile Include="win\GeneratedFiles\Debug\moc_logindlgvc.cpp">
+      <Filter>Gui\Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="win\GeneratedFiles\Release\moc_logindlgvc.cpp">
+      <Filter>Gui\Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="win\GeneratedFiles\Coverage\moc_logindlgvc.cpp">
+      <Filter>Gui\Generated Files\Coverage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="acc_appright.h">
+      <Filter>DomainModule\User\UserManagement\AppRightAcc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_language.h">
+      <Filter>DomainModule\Application\ApplManagement\LanguageAcc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_area.h">
+      <Filter>DomainModule\Application\ApplManagement\AreaAcc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_previous.h">
+      <Filter>DomainModule\Application\ApplManagement\PreviousAcc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_para.h">
+      <Filter>DomainModule\Application\ApplManagement\ParaAcc</Filter>
+    </ClInclude>
+    <ClInclude Include="win\generatedfiles\ui_changepwdlg.h">
+      <Filter>Gui\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win\generatedfiles\ui_logindlg.h">
+      <Filter>Gui\Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="loggerpool.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarlogin_exceptions.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarlogin_functions.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="loginusertype.h">
+      <Filter>Application\UserType</Filter>
+    </ClInclude>
+    <ClInclude Include="configuration.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="configurationptr.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="logintype.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="application_definitions.h">
+      <Filter>DomainModule\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="baseapplmgmtdm.h">
+      <Filter>DomainModule\Application\BaseApplMgmt</Filter>
+    </ClInclude>
+    <ClInclude Include="applmgmtdmfactory.h">
+      <Filter>DomainModule\Application\ApplMgmtDMFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="adloginapplmgmtdm.h">
+      <Filter>DomainModule\Application\ADloginApplMgmt</Filter>
+    </ClInclude>
+    <ClInclude Include="adloginapplacc.h">
+      <Filter>DomainModule\Application\ADloginApplMgmt\ADloginApplAcc</Filter>
+    </ClInclude>
+    <ClInclude Include="adloginareaacc.h">
+      <Filter>DomainModule\Application\ADloginApplMgmt\ADLoginAreaAcc</Filter>
+    </ClInclude>
+    <ClInclude Include="adloginlanguageacc.h">
+      <Filter>DomainModule\Application\ADloginApplMgmt\ADLoginLanguageAcc</Filter>
+    </ClInclude>
+    <ClInclude Include="adloginparaacc.h">
+      <Filter>DomainModule\Application\ADloginApplMgmt\ADLoginParaAcc</Filter>
+    </ClInclude>
+    <ClInclude Include="adloginpreviousacc.h">
+      <Filter>DomainModule\Application\ADloginApplMgmt\ADLoginPreviousAcc</Filter>
+    </ClInclude>
+    <ClInclude Include="baseusermgmtdm.h">
+      <Filter>DomainModule\User\BaseUserMgmt</Filter>
+    </ClInclude>
+    <ClInclude Include="usermgmt_definitions.h">
+      <Filter>DomainModule\User</Filter>
+    </ClInclude>
+    <ClInclude Include="usermgmtdmfactory.h">
+      <Filter>DomainModule\User\UserMgmtDMFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="adloginusermgmtdm.h">
+      <Filter>DomainModule\User\ADloginUserMgmt</Filter>
+    </ClInclude>
+    <ClInclude Include="adloginapprightacc.h">
+      <Filter>DomainModule\User\ADloginUserMgmt\ADLoginAppRight</Filter>
+    </ClInclude>
+    <ClInclude Include="adloginuseracc.h">
+      <Filter>DomainModule\User\ADloginUserMgmt\ADLoginUserAcc</Filter>
+    </ClInclude>
+    <ClInclude Include="adusercheckerunix.h">
+      <Filter>UseCase\checkLogin\ADUserChecker\ADUserCheckerUnix</Filter>
+    </ClInclude>
+    <ClInclude Include="adusercheckerwindows.h">
+      <Filter>UseCase\checkLogin\ADUserChecker\ADUserCheckerWindows</Filter>
+    </ClInclude>
+    <ClInclude Include="checkloginucfactory.h">
+      <Filter>UseCase\checkLogin\CheckLoginUCFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="checkloginbaseuc.h">
+      <Filter>UseCase\checkLogin</Filter>
+    </ClInclude>
+    <ClInclude Include="checkadloginuc.h">
+      <Filter>UseCase\checkLogin</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>Application\unix</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="usecasecontroller.h">
+      <Filter>UseCase</Filter>
+    </CustomBuild>
+    <CustomBuild Include="changepwuc.h">
+      <Filter>UseCase\changePW</Filter>
+    </CustomBuild>
+    <CustomBuild Include="checkloginuc.h">
+      <Filter>UseCase\checkLogin</Filter>
+    </CustomBuild>
+    <CustomBuild Include="usermanagementdm.h">
+      <Filter>DomainModule\User\UserManagement</Filter>
+    </CustomBuild>
+    <CustomBuild Include="acc_user.h">
+      <Filter>DomainModule\User\UserManagement\UserAcc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="applmanagementdm.h">
+      <Filter>DomainModule\Application\ApplManagement</Filter>
+    </CustomBuild>
+    <CustomBuild Include="acc_appl.h">
+      <Filter>DomainModule\Application\ApplManagement\ApplAcc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="textmanagementdm.h">
+      <Filter>DomainModule\TextManagement</Filter>
+    </CustomBuild>
+    <CustomBuild Include="acc_text.h">
+      <Filter>DomainModule\TextManagement\TextAcc</Filter>
+    </CustomBuild>
+    <CustomBuild Include="win\changepwdlg.ui">
+      <Filter>Gui\Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="win\logindlg.ui">
+      <Filter>Gui\Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarlogin_manager.h">
+      <Filter>Application</Filter>
+    </CustomBuild>
+    <CustomBuild Include="loginappl.h">
+      <Filter>Application</Filter>
+    </CustomBuild>
+    <CustomBuild Include="logindata.h">
+      <Filter>Application</Filter>
+    </CustomBuild>
+    <CustomBuild Include="win\loginapplwin.h">
+      <Filter>Application\win</Filter>
+    </CustomBuild>
+    <CustomBuild Include="unix\loginapplunix.h">
+      <Filter>Application\unix</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarlogin.h">
+      <Filter>Main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="libbasarlogin_definitions.h">
+      <Filter>Main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="win\changepwdlgvc.h">
+      <Filter>ViewConnector</Filter>
+    </CustomBuild>
+    <CustomBuild Include="win\logindlgvc.h">
+      <Filter>ViewConnector</Filter>
+    </CustomBuild>
+    <CustomBuild Include="crypt.h">
+      <Filter>Util\crypt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="connection.h">
+      <Filter>Connection</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

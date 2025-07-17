@@ -1,0 +1,729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53E0E057-2D75-4090-875E-7D3BC6A6EA9A}</ProjectGuid>
+    <RootNamespace>libbasarqtwidget</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)GeneratedFiles\$(Configuration);$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_EDITION=QT_EDITION_DESKTOP;QT_CORE_LIB;QDESIGNER_EXPORT_WIDGETS;QT_DLL;QT_PLUGIN;LIBBASARQTWIDGET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;Qt5Widgetsd.lib;Qt5Guid.lib;Qt5Designerd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)GeneratedFiles\$(Configuration);$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_EDITION=QT_EDITION_DESKTOP;QT_CORE_LIB;QDESIGNER_EXPORT_WIDGETS;QT_DLL;QT_PLUGIN;LIBBASARQTWIDGET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SDLCheck>true</SDLCheck>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmaind.lib;Qt5Widgetsd.lib;Qt5Guid.lib;Qt5Designerd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)GeneratedFiles\$(Configuration);$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;NDEBUG;QT_EDITION=QT_EDITION_DESKTOP;QT_CORE_LIB;QDESIGNER_EXPORT_WIDGETS;QT_DLL;QT_PLUGIN;LIBBASARQTWIDGET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <WarningLevel>Level4</WarningLevel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <EnablePREfast>false</EnablePREfast>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmain.lib;Qt5Widgets.lib;Qt5Gui.lib;Qt5Designer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)GeneratedFiles\$(Configuration);$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;NDEBUG;QT_EDITION=QT_EDITION_DESKTOP;QT_CORE_LIB;QDESIGNER_EXPORT_WIDGETS;QT_DLL;QT_PLUGIN;LIBBASARQTWIDGET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <WarningLevel>Level4</WarningLevel>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <EnablePREfast>false</EnablePREfast>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>qtmain.lib;Qt5Widgets.lib;Qt5Gui.lib;Qt5Designer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="libbasarqtwidget_tablewidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing libbasarqtwidget_tablewidget.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing libbasarqtwidget_tablewidget.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" %(FullPath) -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_tablewidget.cpp"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" %(FullPath) -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_tablewidget.cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_tablewidget.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_tablewidget.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing libbasarqtwidget_tablewidget.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing libbasarqtwidget_tablewidget.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -DNDEBUG -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_tablewidget.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_tablewidget.cpp"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -DNDEBUG -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_tablewidget.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_tablewidget.cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_tablewidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_tablewidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_tablewidget.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_tablewidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tablewidgetplugin.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing tablewidgetplugin.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing tablewidgetplugin.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing tablewidgetplugin.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing tablewidgetplugin.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_multicombobox.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing libbasarqtwidget_multicombobox.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing libbasarqtwidget_multicombobox.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_multicombobox.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_multicombobox.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_multicombobox.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_multicombobox.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_multicombobox.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_multicombobox.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_multicombobox.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_multicombobox.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing libbasarqtwidget_multicombobox.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing libbasarqtwidget_multicombobox.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_multicombobox.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_multicombobox.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_multicombobox.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_multicombobox.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_multicombobox.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_multicombobox.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_multicombobox.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_multicombobox.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="multicomboboxplugin.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing multicomboboxplugin.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing multicomboboxplugin.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing multicomboboxplugin.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing multicomboboxplugin.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_integersignalemitter.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing libbasarqtwidget_integersignalemitter.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing libbasarqtwidget_integersignalemitter.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_integersignalemitter.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_integersignalemitter.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_integersignalemitter.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_integersignalemitter.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_integersignalemitter.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_integersignalemitter.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_integersignalemitter.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_integersignalemitter.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing libbasarqtwidget_integersignalemitter.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing libbasarqtwidget_integersignalemitter.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_integersignalemitter.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_integersignalemitter.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_integersignalemitter.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_integersignalemitter.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_integersignalemitter.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_integersignalemitter.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_integersignalemitter.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_integersignalemitter.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_widgetpointer.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing libbasarqtwidget_widgetpointer.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing libbasarqtwidget_widgetpointer.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_widgetpointer.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_widgetpointer.cpp"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_widgetpointer.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_widgetpointer.cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_widgetpointer.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_widgetpointer.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_widgetpointer.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_widgetpointer.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing libbasarqtwidget_widgetpointer.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing libbasarqtwidget_widgetpointer.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe -DNDEBUG  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_widgetpointer.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_widgetpointer.cpp"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe -DNDEBUG  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_widgetpointer.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_widgetpointer.cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_widgetpointer.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_widgetpointer.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_widgetpointer.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_widgetpointer.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="libbasarqtwidget_i18n.h" />
+    <CustomBuild Include="basardateeditplugin.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing basardateeditplugin.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing basardateeditplugin.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing basardateeditplugin.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing basardateeditplugin.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="basardatetimeeditplugin.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing basardatetimeeditplugin.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing basardatetimeeditplugin.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing basardatetimeeditplugin.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing basardatetimeeditplugin.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="basartimeeditplugin.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing basartimeeditplugin.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing basartimeeditplugin.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing basartimeeditplugin.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing basartimeeditplugin.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -D_WINDLL "-I$(SolutionDir)." "-I$(LIBRARY_DIR)\include" "-I$(SolutionDir)\..\..\ext\Boost" "-I$(QTDIR)\include" "-I$(ProjectDir)GeneratedFiles\$(Configuration)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_dateedit.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing libbasarqtwidget_dateedit.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing libbasarqtwidget_dateedit.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_dateedit.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardateedit.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_dateedit.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardateedit.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_dateedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_dateedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardateedit.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardateedit.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing libbasarqtwidget_dateedit.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing libbasarqtwidget_dateedit.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_dateedit.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardateedit.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_dateedit.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardateedit.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_dateedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_dateedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardateedit.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardateedit.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_datetimeedit.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing libbasarqtwidget_datetimeedit.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing libbasarqtwidget_datetimeedit.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" %(FullPath) -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardatetimeedit.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" %(FullPath) -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardatetimeedit.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardatetimeedit.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardatetimeedit.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing libbasarqtwidget_datetimeedit.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing libbasarqtwidget_datetimeedit.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_datetimeedit.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardatetimeedit.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_datetimeedit.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardatetimeedit.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_datetimeedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_datetimeedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardatetimeedit.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basardatetimeedit.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_timeedit.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing libbasarqtwidget_timeedit.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing libbasarqtwidget_timeedit.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_timeedit.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basartimeedit.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_timeedit.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basartimeedit.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_timeedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_timeedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basartimeedit.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basartimeedit.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing libbasarqtwidget_timeedit.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing libbasarqtwidget_timeedit.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_timeedit.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basartimeedit.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_timeedit.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basartimeedit.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_timeedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_timeedit.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basartimeedit.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basartimeedit.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="libbasarqtwidget_basarwidgets.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing libbasarqtwidget_basarwidgets.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing libbasarqtwidget_basarwidgets.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_basarwidgets.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basarwidgets.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_basarwidgets.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basarwidgets.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_basarwidgets.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_basarwidgets.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basarwidgets.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basarwidgets.cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing libbasarqtwidget_basarwidgets.h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing libbasarqtwidget_basarwidgets.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_basarwidgets.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basarwidgets.cpp"
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DNDEBUG -DQT_EDITION=QT_EDITION_DESKTOP -DQT_CORE_LIB -DQDESIGNER_EXPORT_WIDGETS -DQT_DLL -DQT_PLUGIN -DLIBBASARQTWIDGET_EXPORTS -I"." -I".\GeneratedFiles" -I"$(SolutionDir)." -I"$(SolutionDir)library\include" -I"$(QTDIR)\include" ".\libbasarqtwidget_basarwidgets.h" -o "$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basarwidgets.cpp"
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_basarwidgets.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;.\libbasarqtwidget_basarwidgets.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basarwidgets.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)GeneratedFiles\$(Configuration)\moc_basarwidgets.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="libbasarqtwidget_functions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basardateedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basardateeditplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basardatetimeedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basardatetimeeditplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basartimeedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basartimeeditplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_basarwidgets.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_integersignalemitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_multicombobox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_multicomboboxplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_tablewidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_tablewidgetplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Coverage\moc_widgetpointer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basardateedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4481;4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4481;4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basardateeditplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basardatetimeedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4481;4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4481;4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basardatetimeeditplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basartimeedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4481</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4481</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basartimeeditplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basarwidgets.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_integersignalemitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_multicombobox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4481;4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4481;4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_multicomboboxplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tablewidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tablewidgetplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_widgetpointer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basardateedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4481;4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4481;4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basardateeditplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basardatetimeedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basardatetimeeditplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basartimeedit.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4481;4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4481;4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basartimeeditplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basarwidgets.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_integersignalemitter.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4127;4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4127;4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_multicombobox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4127;4481;4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4127;4481;4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_multicomboboxplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4512</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4512</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tablewidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4127</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4127</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tablewidgetplugin.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_widgetpointer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4127</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4127</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="tablewidget.cpp" />
+    <ClCompile Include="tablewidgetplugin.cpp" />
+    <ClCompile Include="multicombobox.cpp" />
+    <ClCompile Include="multicomboboxplugin.cpp" />
+    <ClCompile Include="integersignalemitter.cpp" />
+    <ClCompile Include="widgetpointer.cpp" />
+    <ClCompile Include="i18n.cpp" />
+    <ClCompile Include="basardateedit.cpp" />
+    <ClCompile Include="basardateeditplugin.cpp" />
+    <ClCompile Include="basardatetimeedit.cpp" />
+    <ClCompile Include="basardatetimeeditplugin.cpp" />
+    <ClCompile Include="basartimeedit.cpp" />
+    <ClCompile Include="basartimeeditplugin.cpp" />
+    <ClCompile Include="basarwidgets.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasarqtwidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libbasarcmnutil\libbasarcmnutil.vcxproj">
+      <Project>{bab32f85-55de-4e0b-b22c-303302184b98}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="basarwidgets.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

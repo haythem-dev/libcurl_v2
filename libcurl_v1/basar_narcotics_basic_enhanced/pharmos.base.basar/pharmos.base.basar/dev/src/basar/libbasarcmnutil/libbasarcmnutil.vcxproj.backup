@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BAB32F85-55DE-4E0B-B22C-303302184B98}</ProjectGuid>
+    <RootNamespace>libbasarcommonutilities</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\esql.user.props" />
+    <Import Project="$(SolutionDir)props\ghostscript.user.props" />
+    <Import Project="$(SolutionDir)props\libssh2.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\esql.user.props" />
+    <Import Project="$(SolutionDir)props\ghostscript.user.props" />
+    <Import Project="$(SolutionDir)props\libssh2.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\esql.user.props" />
+    <Import Project="$(SolutionDir)props\ghostscript.user.props" />
+    <Import Project="$(SolutionDir)props\libssh2.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\esql.user.props" />
+    <Import Project="$(SolutionDir)props\ghostscript.user.props" />
+    <Import Project="$(SolutionDir)props\libssh2.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;_USRDLL;LIBBASARCMNUTIL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <SDLCheck>true</SDLCheck>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;_USRDLL;LIBBASARCMNUTIL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <SDLCheck>true</SDLCheck>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;_USRDLL;LIBBASARCMNUTIL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;_USRDLL;LIBBASARCMNUTIL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="attachment.cpp" />
+    <ClCompile Include="getlibpath.cpp" />
+    <ClCompile Include="libbasarcmnutil_cmdline.cpp" />
+    <ClCompile Include="libbasarcmnutil_credentialbase.cpp" />
+    <ClCompile Include="libbasarcmnutil_credentialsref.cpp" />
+    <ClCompile Include="libbasarcmnutil_exceptions.cpp" />
+    <ClCompile Include="libbasarcmnutil_parameterlist.cpp" />
+    <ClCompile Include="libbasarcmnutil_parameterlist_iterator.cpp" />
+    <ClCompile Include="libbasarcmnutil_remotetaskref.cpp" />
+    <ClCompile Include="libbasarcmnutil_remotetaskresultref.cpp" />
+    <ClCompile Include="libbasarcmnutil_remotetasksubmitterbase.cpp" />
+    <ClCompile Include="libbasarcmnutil_userpasscredential.cpp" />
+    <ClCompile Include="mailhelper.cpp" />
+    <ClCompile Include="ps\collargs.cpp" />
+    <ClCompile Include="ps\encodedargs.cpp" />
+    <ClCompile Include="ps\interpretprint.cpp" />
+    <ClCompile Include="lpr.cpp" />
+    <ClCompile Include="portprint.cpp" />
+    <ClCompile Include="printtools.cpp" />
+    <ClCompile Include="ps\psinterpreter.cpp" />
+    <ClCompile Include="rawprint.cpp" />
+    <ClCompile Include="rawprintprocdataprov.cpp" />
+    <ClCompile Include="pipe.cpp" />
+    <ClCompile Include="pipedprocess.cpp" />
+    <ClCompile Include="remoteendpoint.cpp" />
+    <ClCompile Include="remotetask.cpp" />
+    <ClCompile Include="remotetaskexecution.cpp" />
+    <ClCompile Include="remotetaskexitstatus.cpp" />
+    <ClCompile Include="remotetaskresult.cpp" />
+    <ClCompile Include="remotetasksubmitterimpl.cpp" />
+    <ClCompile Include="sshchannel.cpp" />
+    <ClCompile Include="sshsession.cpp" />
+    <ClCompile Include="tcpsocket.cpp" />
+    <ClCompile Include="mailmessage.cpp" />
+    <ClCompile Include="smtp.cpp" />
+    <ClCompile Include="base64.cpp" />
+    <ClCompile Include="mimechar.cpp" />
+    <ClCompile Include="quotedprint.cpp" />
+    <ClCompile Include="libbasarcmnutil_bstring.cpp" />
+    <ClCompile Include="libbasarcmnutil_decimal.cpp" />
+    <ClCompile Include="libbasarcmnutil_i18nstring.cpp" />
+    <ClCompile Include="libbasarcmnutil_locale.cpp" />
+    <ClCompile Include="libbasarcmnutil_date.cpp" />
+    <ClCompile Include="libbasarcmnutil_datetime.cpp" />
+    <ClCompile Include="libbasarcmnutil_datetimetools.cpp" />
+    <ClCompile Include="libbasarcmnutil_timespan.cpp" />
+    <ClCompile Include="timestamp.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="libbasarcmnutil_logging.cpp" />
+    <ClCompile Include="loggerpool.cpp" />
+    <ClCompile Include="getexecname.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasarcmnutil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="attachmentptr.h" />
+    <ClInclude Include="getlibpath.h" />
+    <ClInclude Include="iattachment.h" />
+    <ClInclude Include="iremotetask.h" />
+    <ClInclude Include="iremotetaskresult.h" />
+    <ClInclude Include="iremotetasksubmitter.h" />
+    <ClInclude Include="libbasarcmnutil_attachment.h" />
+    <ClInclude Include="libbasarcmnutil_cmdline.h" />
+    <ClInclude Include="libbasarcmnutil_credentialbase.h" />
+    <ClInclude Include="libbasarcmnutil_credentialbaseptr.h" />
+    <ClInclude Include="libbasarcmnutil_credentialsref.h" />
+    <ClInclude Include="libbasarcmnutil_iattachment.h" />
+    <ClInclude Include="libbasarcmnutil_iattachmentptr.h" />
+    <ClInclude Include="libbasarcmnutil_pattern.h" />
+    <ClInclude Include="libbasarcmnutil_datetimeexception.h" />
+    <ClInclude Include="libbasarcmnutil_exceptions.h" />
+    <ClInclude Include="libbasarcmnutil_parameterlist.h" />
+    <ClInclude Include="iprintsubmit.h" />
+    <ClInclude Include="libbasarcmnutil_print.h" />
+    <ClInclude Include="libbasarcmnutil_remote.h" />
+    <ClInclude Include="libbasarcmnutil_remoteendpoint.h" />
+    <ClInclude Include="libbasarcmnutil_remotetaskexceptions.h" />
+    <ClInclude Include="libbasarcmnutil_remotetaskref.h" />
+    <ClInclude Include="libbasarcmnutil_remotetaskresultref.h" />
+    <ClInclude Include="libbasarcmnutil_remotetasksubmitter.h" />
+    <ClInclude Include="libbasarcmnutil_remotetasksubmitterbase.h" />
+    <ClInclude Include="libbasarcmnutil_sshsessionptr.h" />
+    <ClInclude Include="libbasarcmnutil_userpasscredential.h" />
+    <ClInclude Include="lpr.h" />
+    <ClInclude Include="mailhelper.h" />
+    <ClInclude Include="portprint.h" />
+    <ClInclude Include="ps\collargs.h" />
+    <ClInclude Include="ps\encodedargs.h" />
+    <ClInclude Include="ps\psinterpreter.h" />
+    <ClInclude Include="rawprintprocdataprov.h" />
+    <ClInclude Include="libbasarcmnutil_pipedprocess.h" />
+    <ClInclude Include="pipe.h" />
+    <ClInclude Include="libbasarcmnutil_socket.h" />
+    <ClInclude Include="libbasarcmnutil_email.h" />
+    <ClInclude Include="libbasarcmnutil_codec.h" />
+    <ClInclude Include="libbasarcmnutil_bstring.h" />
+    <ClInclude Include="libbasarcmnutil_decimal.h" />
+    <ClInclude Include="libbasarcmnutil_i18nstring.h" />
+    <ClInclude Include="libbasarcmnutil_locale.h" />
+    <ClInclude Include="libbasarcmnutil_date.h" />
+    <ClInclude Include="libbasarcmnutil_datetime.h" />
+    <ClInclude Include="libbasarcmnutil_datetimetools.h" />
+    <ClInclude Include="libbasarcmnutil_datetypes_common.h" />
+    <ClInclude Include="libbasarcmnutil_timespan.h" />
+    <ClInclude Include="remotetask.h" />
+    <ClInclude Include="remotetaskexecution.h" />
+    <ClInclude Include="remotetaskexitstatus.h" />
+    <ClInclude Include="remotetaskptr.h" />
+    <ClInclude Include="remotetaskresult.h" />
+    <ClInclude Include="remotetaskresultptr.h" />
+    <ClInclude Include="remotetasksubmitterimpl.h" />
+    <ClInclude Include="sshchannel.h" />
+    <ClInclude Include="sshsession.h" />
+    <ClInclude Include="tcpsocketsharedptr.h" />
+    <ClInclude Include="timestamp.h" />
+    <ClInclude Include="libbasarcmnutil_config.h" />
+    <ClInclude Include="libbasarcmnutil_logging.h" />
+    <ClInclude Include="loggerpool.h" />
+    <ClInclude Include="getexecname.h" />
+    <ClInclude Include="libbasarcmnutil.h" />
+    <ClInclude Include="libbasarcmnutil_definitions.h" />
+    <ClInclude Include="libbasarcmnutil_functions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libbasardebug\libbasardebug.vcxproj">
+      <Project>{bab32f85-55de-4e0b-b22c-303302184b99}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

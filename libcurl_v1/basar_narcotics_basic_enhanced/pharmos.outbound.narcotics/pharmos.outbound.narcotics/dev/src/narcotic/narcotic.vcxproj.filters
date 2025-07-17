@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{9dc6e5a4-1904-41d6-be99-784cbfd87364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="ViewConnectors">
+      <UniqueIdentifier>{dbc0a4c5-e49a-4502-b915-863898a5ddc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewConnectors\Transformer">
+      <UniqueIdentifier>{dc13b771-0114-4176-a52d-14a76381c7ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewConnectors\Validator">
+      <UniqueIdentifier>{af3b9b17-7b34-4e93-a6cb-3cf2757151bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewConnectors\Eventfilter">
+      <UniqueIdentifier>{b01e64be-0faf-4b40-933b-5bf0cfc331cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ViewConnectors\Helper">
+      <UniqueIdentifier>{5b825e7a-3dcc-4751-8385-8d9c4ff5b7c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UseCases">
+      <UniqueIdentifier>{f7b26457-91f7-437d-baf2-84117a1fd2d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UseCases\Services">
+      <UniqueIdentifier>{42a71900-893f-4fd7-8f64-c73dce5fa552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log4cplus">
+      <UniqueIdentifier>{24ec8c99-a0bc-43a7-ab64-6825c9796e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Print">
+      <UniqueIdentifier>{7914298a-5798-42ee-9479-2b66f1a7551f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connection">
+      <UniqueIdentifier>{c8141e9f-f6a7-44b6-b12a-c29f38bbc94a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules">
+      <UniqueIdentifier>{26323a82-cf96-4918-b222-d880939b6e26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\NarcoticsDM">
+      <UniqueIdentifier>{66fd1c2c-45a8-4c35-a5a0-cf786fb74c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\NarcoticsDM\Acc">
+      <UniqueIdentifier>{b98a07cd-c102-4e90-b9da-d0a49650d093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\LogDM">
+      <UniqueIdentifier>{095a3ff9-d6f0-468d-8936-3604896c33a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\LogDM\Acc">
+      <UniqueIdentifier>{dbe9d7ca-f654-495b-a8e3-2bf1c2724ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\OriginalDM">
+      <UniqueIdentifier>{748de341-3798-4f08-9c4e-85e9515baeb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\OriginalDM\Acc">
+      <UniqueIdentifier>{c70af8dc-3d76-46cb-97ee-a10cc0ded1de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\NarcoticsGroupDM">
+      <UniqueIdentifier>{9966fe2e-ecb3-4570-a716-c06796315215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\NarcoticsGroupDM\Acc">
+      <UniqueIdentifier>{b2b4ff8c-2f4b-4658-978e-a1ef2fe25101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\ArticleDM">
+      <UniqueIdentifier>{649b942c-f757-475e-9ce1-7b5304a52a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\ArticleDM\Acc">
+      <UniqueIdentifier>{aa9e23dc-38b4-442f-bda3-1dbc396395c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\CustomerDM">
+      <UniqueIdentifier>{c6565c58-884c-454b-9708-d26c0da45c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\CustomerDM\Acc">
+      <UniqueIdentifier>{bea4599d-ce63-422f-81b7-aa55dbab1bbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\BranchDM">
+      <UniqueIdentifier>{16f2ccc9-3210-4ac9-b219-2a00961643c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\BranchDM\Acc">
+      <UniqueIdentifier>{36419841-1c7e-45e0-b859-1d8fc23ae55f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\ContributionVoucherDM">
+      <UniqueIdentifier>{5dda2190-e0ff-4264-b346-24e9d0d29f2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\ContributionVoucherDM\Acc">
+      <UniqueIdentifier>{ba6a997a-9a20-4ef4-a9d2-4e79402003d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\SearchDM">
+      <UniqueIdentifier>{b13de79f-1bfd-4111-9824-eb3f04e3678c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\SearchDM\Acc">
+      <UniqueIdentifier>{7a61e6c5-237d-4f7a-8738-fbd893ed8981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\OpenOrderDM">
+      <UniqueIdentifier>{2bcea620-512a-4f62-8615-ea03dbe0415c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\OpenOrderDM\Acc">
+      <UniqueIdentifier>{1d6c71c2-6cbe-4918-9432-19304da5c273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\FTPTransfer">
+      <UniqueIdentifier>{24f3fbda-c8c7-437e-8ada-c4b2f65a709a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\FTPTransfer\exceptions">
+      <UniqueIdentifier>{77d9e77f-f69a-45cc-9051-7224172f6dfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\OrderDM">
+      <UniqueIdentifier>{f0ca1d7a-466e-4db0-8b77-bf6c41830860}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\OrderDM\Acc">
+      <UniqueIdentifier>{e4a73af4-ec55-41c6-acdf-33ba0fdaaa04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\SupplierDM">
+      <UniqueIdentifier>{f2ceaf9b-f1a6-4523-be28-776402555c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DomainModules\SupplierDM\Acc">
+      <UniqueIdentifier>{4c8dfddb-783f-4588-bf94-b2f04ee90be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="DataAccess">
+      <UniqueIdentifier>{f8c37d86-8840-4cba-8297-77e973a24fcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Infrastructure">
+      <UniqueIdentifier>{d7bf0c23-582b-4216-95ba-2b8b03ae71c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Infrastructure\Services">
+      <UniqueIdentifier>{ea1a3bbb-eb07-42ef-ac25-57bdf00a6859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Infrastructure\Interfaces">
+      <UniqueIdentifier>{da9c0eee-10ae-4cce-95fb-620b01772b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{accfb27f-82f2-4439-b229-a832ea77f32e}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{e634cfeb-7bd3-42bf-838e-3601de9bfa8c}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="commonheader.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="definitions.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="executereturntype.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="narcoticsappl.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="resultsetdefines.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="version.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="weekcalculator.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_comparebookingsvc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_contributionvoucherscanvc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_contributionvouchervc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_createprocessnarcoticsbooking.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_deletedbookingvc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_differenceinstockvc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_halfyearlyreportvc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_incominggoodsoverview.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_incomingreturngoods.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_inputdatevc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_loginvc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_na18deliverynotecopyvc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_narcoticbook.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_narcoticcategory.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_narcoticsprotocolvc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_orderdetails.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_orderoverview.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_resolveprintingerrors.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_resultsetoverview.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generatedfiles\ui_transactiondatavc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="acknowledgementstatustransformer.h">
+      <Filter>ViewConnectors\Transformer</Filter>
+    </ClInclude>
+    <ClInclude Include="checkboxtabletransformer.h">
+      <Filter>ViewConnectors\Transformer</Filter>
+    </ClInclude>
+    <ClInclude Include="narcoticstransformer.h">
+      <Filter>ViewConnectors\Transformer</Filter>
+    </ClInclude>
+    <ClInclude Include="valuerowcolortransformer.hpp">
+      <Filter>ViewConnectors\Transformer</Filter>
+    </ClInclude>
+    <ClInclude Include="qvalidatoritemdelegate.h">
+      <Filter>ViewConnectors\Validator</Filter>
+    </ClInclude>
+    <ClInclude Include="contrvouchernoacknowledgement.h">
+      <Filter>ViewConnectors\Eventfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="deliverynotecopyenter.h">
+      <Filter>ViewConnectors\Eventfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="bookingcatalog.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="comparebookings.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="contributionvoucher.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="contributionvoucherscan.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="deletedbookings.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="diffqtyinstockuc.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="goodstransaction.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="halfyearlyreportuc.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="narcoticscategory.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="narcoticsprotocol.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="orderoverviewuc.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="reportprint.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="resolveprintingerrors.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="resultsetsearch.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="usecasecontroller.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="iprerequisitedatasource.h">
+      <Filter>UseCases\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="prerequisiteschecker.h">
+      <Filter>UseCases\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="printfolderlocator.h">
+      <Filter>UseCases\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="loggerpool.h">
+      <Filter>log4cplus</Filter>
+    </ClInclude>
+    <ClInclude Include="acknowledgementlistprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="contributionvoucherprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="deliverynotecopyprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="deliverynoteprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="dissolvereceiptprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="inventoryprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="manualcontributionvoucherprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="narcbookprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="openorderprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="printdatabase.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="protocolprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="receiptnoticeprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="selloffprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="transactarticleprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="transactcustsupplprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+    <ClInclude Include="connection.h">
+      <Filter>Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="accessor_definitions.h">
+      <Filter>DomainModules</Filter>
+    </ClInclude>
+    <ClInclude Include="narcoticsmodule.h">
+      <Filter>DomainModules\NarcoticsDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_bookingcatalog.h">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_bookingscontrol.h">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_diffqtyinstock.h">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_locknarcbooking.h">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_narcoticssupplier.h">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_numberincominggoods.h">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_numberreturngoods.h">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="logmodule.h">
+      <Filter>DomainModules\LogDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_narcoticsprotocol.h">
+      <Filter>DomainModules\LogDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="originalmodule.h">
+      <Filter>DomainModules\OriginalDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_originalcatalog.h">
+      <Filter>DomainModules\OriginalDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="narcoticsgroupmodule.h">
+      <Filter>DomainModules\NarcoticsGroupDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_narcoticsgroup.h">
+      <Filter>DomainModules\NarcoticsGroupDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="articlemodule.h">
+      <Filter>DomainModules\ArticleDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_centralarticle.h">
+      <Filter>DomainModules\ArticleDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="customermodule.h">
+      <Filter>DomainModules\CustomerDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_customer.h">
+      <Filter>DomainModules\CustomerDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="branchmodule.h">
+      <Filter>DomainModules\BranchDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_filiale.h">
+      <Filter>DomainModules\BranchDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="contributionvouchermodule.h">
+      <Filter>DomainModules\ContributionVoucherDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_contributionvoucher.h">
+      <Filter>DomainModules\ContributionVoucherDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_customersupplier.h">
+      <Filter>DomainModules\ContributionVoucherDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="searchmodule.h">
+      <Filter>DomainModules\SearchDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_search.h">
+      <Filter>DomainModules\SearchDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="openordermodule.h">
+      <Filter>DomainModules\OpenOrderDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_openorder.h">
+      <Filter>DomainModules\OpenOrderDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="deliverynotecopyftptransfer.h">
+      <Filter>DomainModules\FTPTransfer</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpexception.h">
+      <Filter>DomainModules\FTPTransfer\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpfilealreadyexistsexception.h">
+      <Filter>DomainModules\FTPTransfer\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="orderdm.h">
+      <Filter>DomainModules\OrderDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_order.h">
+      <Filter>DomainModules\OrderDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_orderpositions.h">
+      <Filter>DomainModules\OrderDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="suppliermodule.h">
+      <Filter>DomainModules\SupplierDM</Filter>
+    </ClInclude>
+    <ClInclude Include="acc_supplier.h">
+      <Filter>DomainModules\SupplierDM\Acc</Filter>
+    </ClInclude>
+    <ClInclude Include="postscriptfilesource.h">
+      <Filter>DataAccess</Filter>
+    </ClInclude>
+    <ClInclude Include="contributionvoucherhelper.h">
+      <Filter>Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="missingdataforprintingexception.h">
+      <Filter>Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="missingdependencyinjectionexception.h">
+      <Filter>Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="servicelocator.h">
+      <Filter>Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="servicelocatorptr.h">
+      <Filter>Infrastructure</Filter>
+    </ClInclude>
+    <ClInclude Include="customerandsuppliersearcher.h">
+      <Filter>Infrastructure\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpservice.h">
+      <Filter>Infrastructure\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="iftpserviceptr.h">
+      <Filter>Infrastructure\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="iprintcontributionvoucherptr.h">
+      <Filter>Infrastructure\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="iprintdeliverynoteptr.h">
+      <Filter>Infrastructure\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="printcontributionvoucher.h">
+      <Filter>Infrastructure\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="printdeliverynote.h">
+      <Filter>Infrastructure\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="iftpservice.h">
+      <Filter>Infrastructure\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="iprintcontributionvoucher.h">
+      <Filter>Infrastructure\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="iprintdeliverynote.h">
+      <Filter>Infrastructure\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="iservice.h">
+      <Filter>Infrastructure\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="customermappinguc.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_customermappingvc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_customermappingdetailsvc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="incominggoodsuc.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="halfyearperiodhelper.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="checkprinterconnectionuc.h">
+      <Filter>UseCases</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_checkprinterconnectionvc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testreceiptnoticeprintdata.h">
+      <Filter>Print</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="executereturntype.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="functions.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="narcoticsappl.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="printthread.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="weekcalculator.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="comparebookingsvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="contributionvoucherscanvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="contributionvouchervc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="createprocessnarcoticsbooking.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="deletedbookingvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="differenceinstockvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="halfyearlyreportvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="inputdatevc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="loginvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="na18deliverynotecopyvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="narcoticbook.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="narcoticcategory.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="narcoticsprotocolvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="orderdetailsvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="orderoverviewvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="resolveprintingerrorsvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="resultsetoverview.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="transactiondatavc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="acknowledgementstatustransformer.cpp">
+      <Filter>ViewConnectors\Transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="checkboxtabletransformer.cpp">
+      <Filter>ViewConnectors\Transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="narcoticstransformer.cpp">
+      <Filter>ViewConnectors\Transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="qvalidatoritemdelegate.cpp">
+      <Filter>ViewConnectors\Validator</Filter>
+    </ClCompile>
+    <ClCompile Include="contrvouchernoacknowledgement.cpp">
+      <Filter>ViewConnectors\Eventfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="deliverynotecopyenter.cpp">
+      <Filter>ViewConnectors\Eventfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="noreturnmessagebox.cpp">
+      <Filter>ViewConnectors\Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="bookingcatalog.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="comparebookings.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="contributionvoucher.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="contributionvoucherscan.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="deletedbookings.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="diffqtyinstock.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="goodstransaction.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="halfyearlyreportuc.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="narcoticscategory.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="narcoticsprotocol.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="orderoverviewuc.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="reportprint.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="resolveprintingerrors.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="resultsetsearch.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="usecasecontroller.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="iprerequisitedatasource.cpp">
+      <Filter>UseCases\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="prerequisiteschecker.cpp">
+      <Filter>UseCases\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="printfolderlocator.cpp">
+      <Filter>UseCases\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerpool.cpp">
+      <Filter>log4cplus</Filter>
+    </ClCompile>
+    <ClCompile Include="acknowledgementlistprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="contributionvoucherprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="deliverynotecopyprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="deliverynoteprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="dissolvereceiptprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="inventoryprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="manualcontributionvoucherprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="narcbookprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="openorderprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="printdatabase.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="protocolprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="receiptnoticeprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="selloffprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="transactarticleprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="transactcustsupplprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="connection.cpp">
+      <Filter>Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="narcoticsmodule.cpp">
+      <Filter>DomainModules\NarcoticsDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_bookingcatalog.cpp">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_bookingscontrol.cpp">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_diffqtyinstock.cpp">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_locknarcbooking.cpp">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_narcoticssupplier.cpp">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_numberincominggoods.cpp">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_numberreturngoods.cpp">
+      <Filter>DomainModules\NarcoticsDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="logmodule.cpp">
+      <Filter>DomainModules\LogDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_narcoticsprotocol.cpp">
+      <Filter>DomainModules\LogDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="originalmodule.cpp">
+      <Filter>DomainModules\OriginalDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_originalcatalog.cpp">
+      <Filter>DomainModules\OriginalDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="narcoticsgroupmodule.cpp">
+      <Filter>DomainModules\NarcoticsGroupDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_narcoticsgroup.cpp">
+      <Filter>DomainModules\NarcoticsGroupDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="articlemodule.cpp">
+      <Filter>DomainModules\ArticleDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_centralarticle.cpp">
+      <Filter>DomainModules\ArticleDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="customermodule.cpp">
+      <Filter>DomainModules\CustomerDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_customer.cpp">
+      <Filter>DomainModules\CustomerDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="branchmodule.cpp">
+      <Filter>DomainModules\BranchDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_filiale.cpp">
+      <Filter>DomainModules\BranchDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="contributionvouchermodule.cpp">
+      <Filter>DomainModules\ContributionVoucherDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_contributionvoucher.cpp">
+      <Filter>DomainModules\ContributionVoucherDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_customersupplier.cpp">
+      <Filter>DomainModules\ContributionVoucherDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="searchmodule.cpp">
+      <Filter>DomainModules\SearchDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_search.cpp">
+      <Filter>DomainModules\SearchDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="openordermodule.cpp">
+      <Filter>DomainModules\OpenOrderDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_openorder.cpp">
+      <Filter>DomainModules\OpenOrderDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="contributionvoucherftptransfer.cpp">
+      <Filter>DomainModules\FTPTransfer</Filter>
+    </ClCompile>
+    <ClCompile Include="deliverynotecopyftptransfer.cpp">
+      <Filter>DomainModules\FTPTransfer</Filter>
+    </ClCompile>
+    <ClCompile Include="narcoticsftpfiletransfer.cpp">
+      <Filter>DomainModules\FTPTransfer</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpexception.cpp">
+      <Filter>DomainModules\FTPTransfer\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpfilealreadyexistsexception.cpp">
+      <Filter>DomainModules\FTPTransfer\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="orderdm.cpp">
+      <Filter>DomainModules\OrderDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_order.cpp">
+      <Filter>DomainModules\OrderDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_orderpositions.cpp">
+      <Filter>DomainModules\OrderDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="suppliermodule.cpp">
+      <Filter>DomainModules\SupplierDM</Filter>
+    </ClCompile>
+    <ClCompile Include="acc_supplier.cpp">
+      <Filter>DomainModules\SupplierDM\Acc</Filter>
+    </ClCompile>
+    <ClCompile Include="postscriptfilesource.cpp">
+      <Filter>DataAccess</Filter>
+    </ClCompile>
+    <ClCompile Include="missingdataforprintingexception.cpp">
+      <Filter>Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="missingdependencyinjectionexception.cpp">
+      <Filter>Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="servicelocator.cpp">
+      <Filter>Infrastructure</Filter>
+    </ClCompile>
+    <ClCompile Include="customerandsuppliersearcher.cpp">
+      <Filter>Infrastructure\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpservice.cpp">
+      <Filter>Infrastructure\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="printcontributionvoucher.cpp">
+      <Filter>Infrastructure\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="printdeliverynote.cpp">
+      <Filter>Infrastructure\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="customermappinguc.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="customermappingvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="customermappingdetailsvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_transactiondatavc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_transactiondatavc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_resultsetoverview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_resultsetoverview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_resolveprintingerrorsvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_resolveprintingerrorsvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_printthread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_printthread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_orderoverviewvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_orderoverviewvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_orderdetailsvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_orderdetailsvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_noreturnmessagebox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_noreturnmessagebox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_narcoticsprotocolvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_narcoticsprotocolvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_narcoticsftpfiletransfer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_narcoticsftpfiletransfer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_narcoticcategory.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_narcoticcategory.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_narcoticbook.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_narcoticbook.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_na18deliverynotecopyvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_na18deliverynotecopyvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainwindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainwindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_loginvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_loginvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_inputdatevc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_inputdatevc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_halfyearlyreportvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_halfyearlyreportvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_differenceinstockvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_differenceinstockvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_deletedbookingvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_deletedbookingvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_customermappingvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_customermappingvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_customermappingdetailsvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_customermappingdetailsvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_createprocessnarcoticsbooking.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_createprocessnarcoticsbooking.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_contributionvouchervc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_contributionvouchervc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_contributionvoucherscanvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_contributionvoucherscanvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_contributionvoucherftptransfer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_contributionvoucherftptransfer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_comparebookingsvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_comparebookingsvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="incominggoodsuc.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="na01incominggoodsoverviewvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_na01incominggoodsoverviewvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_na01incominggoodsoverviewvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="halfyearperiodhelper.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="na02incomingreturngoodsvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_na02incomingreturngoodsvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_na02incomingreturngoodsvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="contributionvoucherhelper.cpp">
+      <Filter>Infrastructure\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="checkprinterconnectionuc.cpp">
+      <Filter>UseCases</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_checkprinterconnectionvc.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_checkprinterconnectionvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="testreceiptnoticeprintdata.cpp">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="checkprinterconnectionvc.cpp">
+      <Filter>ViewConnectors</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="printthread.h">
+      <Filter>main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="comparebookingsvc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contributionvoucherscanvc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contributionvouchervc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="createprocessnarcoticsbooking.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="deletedbookingvc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="differenceinstockvc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="halfyearlyreportvc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="incominggoodsoverview.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="incomingreturngoods.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="inputdatevc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="loginvc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="na18deliverynotecopyvc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="narcoticbook.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="narcoticcategory.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="narcoticsprotocolvc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="orderdetails.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="orderoverview.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resolveprintingerrors.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resultsetoverview.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="transactiondatavc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="comparebookingsvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contributionvoucherscanvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contributionvouchervc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="createprocessnarcoticsbooking.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="deletedbookingvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="differenceinstockvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="halfyearlyreportvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="inputdatevc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="loginvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="na18deliverynotecopyvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="narcoticbook.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="narcoticcategory.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="narcoticsprotocolvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="orderdetailsvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="orderoverviewvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resolveprintingerrorsvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="resultsetoverview.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="transactiondatavc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="noreturnmessagebox.h">
+      <Filter>ViewConnectors\Helper</Filter>
+    </CustomBuild>
+    <CustomBuild Include="narcotic.cfg">
+      <Filter>log4cplus</Filter>
+    </CustomBuild>
+    <CustomBuild Include="contributionvoucherftptransfer.h">
+      <Filter>DomainModules\FTPTransfer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="narcoticsftpfiletransfer.h">
+      <Filter>DomainModules\FTPTransfer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="multilang\narcotic_de.ts">
+      <Filter>Translation Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="customermappingvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="customermappingvc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="customermappingdetailsvc.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="customermappingdetailsvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="na01incominggoodsoverviewvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="na02incomingreturngoodsvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="checkprinterconnection.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="checkprinterconnectionvc.h">
+      <Filter>ViewConnectors</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

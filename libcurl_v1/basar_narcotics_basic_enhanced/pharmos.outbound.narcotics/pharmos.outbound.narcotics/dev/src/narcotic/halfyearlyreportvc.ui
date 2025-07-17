@@ -1,0 +1,222 @@
+<ui version="4.0" >
+ <class>HalfYearlyReportClass</class>
+ <widget class="QDialog" name="HalfYearlyReportClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>732</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>HalfYearlyReportVC</string>
+  </property>
+  <widget class="QPushButton" name="btnClose" >
+   <property name="geometry" >
+    <rect>
+     <x>650</x>
+     <y>520</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>close</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="grpSearchCriteria" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>711</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>search criteria</string>
+   </property>
+   <widget class="QPushButton" name="btnSearch" >
+    <property name="geometry" >
+     <rect>
+      <x>620</x>
+      <y>26</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>search</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="fraReportType" >
+    <property name="geometry" >
+     <rect>
+      <x>340</x>
+      <y>19</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QRadioButton" name="obtC1" >
+     <property name="geometry" >
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>81</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>C1 report</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="obtC2" >
+     <property name="geometry" >
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>81</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>C2 report</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="obtC4" >
+     <property name="geometry" >
+      <rect>
+       <x>160</x>
+       <y>10</y>
+       <width>81</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>C4 report</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="cbReportPeriod" >
+    <property name="geometry" >
+     <rect>
+      <x>80</x>
+      <y>28</y>
+      <width>251</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="whatsThis" >
+     <string>Possibility to select one of the given period of time items.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbReportPeriod" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>31</y>
+      <width>63</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>report period</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>731</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="BasarTableWidget" name="tableWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>12</y>
+      <width>711</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="selectionMode" >
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior" >
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="rowCount" >
+     <number>12</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnDelete" >
+   <property name="geometry" >
+    <rect>
+     <x>100</x>
+     <y>520</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="whatsThis" >
+    <string>Only if the option C4 is selected a open delivery can be deleted.</string>
+   </property>
+   <property name="text" >
+    <string>delete</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnPrint" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>print</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>BasarTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>libbasarqtwidget_tablewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

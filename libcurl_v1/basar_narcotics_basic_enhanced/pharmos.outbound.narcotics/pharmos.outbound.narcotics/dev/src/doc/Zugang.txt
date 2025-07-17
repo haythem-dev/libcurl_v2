@@ -1,0 +1,16 @@
+Zugang per SFTP oder SCP
+
+DNS-Name: btmabgabe.bfarm.de
+IP-Adresse: 192.124.251.203
+Dienst: SCP und SFTP
+Port: TCP #22
+
+
+BN:	phoenix
+PW:	$phoenix510$
+
+
+zugang cold test archiv
+
+10.158.154.4->phoenix\svc.ftpcold->$Phoenix237$
+

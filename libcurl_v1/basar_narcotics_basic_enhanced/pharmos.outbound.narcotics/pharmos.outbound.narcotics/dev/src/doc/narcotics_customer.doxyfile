@@ -1,0 +1,11 @@
+@INCLUDE               = narcotics.doxyfile
+
+PROJECT_NAME           = "BTM Versionshistorie"
+OUTPUT_DIRECTORY       = ./codedocu/customer
+OUTPUT_LANGUAGE        = German
+INTERNAL_DOCS          = NO
+INPUT                  = ../narcotic/version.h
+GENERATE_TODOLIST      = NO
+SHOW_FILES             = NO
+SHOW_NAMESPACES        = NO
+ENABLED_SECTIONS       = customer

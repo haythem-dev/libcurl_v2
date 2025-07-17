@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <INFORMIXDIR Condition="'$(Platform)' == 'x64'">$(INFORMIXDIR)</INFORMIXDIR>
+    <INFORMIXDIR Condition="'$(Platform)' == 'Win32'">C:\Program Files (x86)\IBM Informix Client SDK</INFORMIXDIR>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(INFORMIXDIR)\incl\esql;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(INFORMIXDIR)\lib\isqlt09a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Message>Using INFORMIXDIR = $(INFORMIXDIR)</Message>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+xcopy /Y /D $(INFORMIXDIR)\bin\isqlt09a.dll $(SolutionDir)..\sharedlib\$(Configuration)\
+xcopy /Y /D $(INFORMIXDIR)\bin\igl4n304.dll $(SolutionDir)..\sharedlib\$(Configuration)\
+xcopy /Y /D $(INFORMIXDIR)\bin\iregt07b.dll $(SolutionDir)..\sharedlib\$(Configuration)\
+xcopy /Y /D $(INFORMIXDIR)\bin\irrgt09a.dll $(SolutionDir)..\sharedlib\$(Configuration)\
+xcopy /Y /D $(INFORMIXDIR)\bin\esqlauth.dll $(SolutionDir)..\sharedlib\$(Configuration)\
+      </Command>
+      <Message>Copying INFORMIX Dlls</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="INFORMIXDIR">
+      <Value>$(INFORMIXDIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

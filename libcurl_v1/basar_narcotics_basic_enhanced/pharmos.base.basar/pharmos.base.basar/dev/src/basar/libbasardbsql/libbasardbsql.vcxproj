@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A5077620-AD24-4189-911E-27E8DFA16C77}</ProjectGuid>
+    <RootNamespace>libbasarinformix</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\esql.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\tcaccess.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\esql.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\tcaccess.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\esql.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\tcaccess.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(SolutionDir)props\boost.user.props" />
+    <Import Project="$(SolutionDir)props\esql.user.props" />
+    <Import Project="$(SolutionDir)props\library.user.props" />
+    <Import Project="$(SolutionDir)props\log4cplus.user.props" />
+    <Import Project="$(SolutionDir)props\tcaccess.user.props" />
+    <Import Project="$(SolutionDir)props\qt5.user.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)esqlc;$(ProjectDir)infx;$(ProjectDir)cics;$(ProjectDir)odbc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;_USRDLL;LIBBASARDBSQL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasardbsqlinf.lib;Qt5Sqld.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>isqlt09a.dll;Qt5Cored.dll;Qt5Sqld.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)esqlc;$(ProjectDir)infx;$(ProjectDir)cics;$(ProjectDir)odbc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;_USRDLL;LIBBASARDBSQL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <StringPooling>true</StringPooling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SDLCheck>true</SDLCheck>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasardbsqlinf.lib;Qt5Sqld.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>isqlt09a.dll;Qt5Cored.dll;Qt5Sqld.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)esqlc;$(ProjectDir)infx;$(ProjectDir)cics;$(ProjectDir)odbc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;_USRDLL;LIBBASARDBSQL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasardbsqlinf.lib;Qt5Sql.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>isqlt09a.dll;Qt5Core.dll;Qt5Sql.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)esqlc;$(ProjectDir)infx;$(ProjectDir)cics;$(ProjectDir)odbc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;_USRDLL;LIBBASARDBSQL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libbasardbsqlinf.lib;Qt5Sql.lib;delayimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>isqlt09a.dll;Qt5Core.dll;Qt5Sql.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>call $(SolutionDir)proc\copy-postbuild.bat $(ProjectName) $(Platform) $(Configuration) $(SolutionDir) $(OutDir) $(QTDIR)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="databaseinfo.cpp" />
+    <ClCompile Include="infx\dblocaleinfx.cpp" />
+    <ClCompile Include="infx\localeenvinfx.cpp" />
+    <ClCompile Include="infx\setenvinfx.cpp" />
+    <ClCompile Include="infx\sqlhostsinfx.cpp" />
+    <ClCompile Include="connection.cpp" />
+    <ClCompile Include="cics\connectioncics.cpp" />
+    <ClCompile Include="infx\connectioninfx.cpp" />
+    <ClCompile Include="odbc\connectionodbc.cpp" />
+    <ClCompile Include="connectionref.cpp" />
+    <ClCompile Include="managerimpl.cpp" />
+    <ClCompile Include="connectionlist_iterator.cpp" />
+    <ClCompile Include="statement.cpp" />
+    <ClCompile Include="cics\statementcics.cpp" />
+    <ClCompile Include="infx\statementinfx.cpp" />
+    <ClCompile Include="odbc\statementodbc.cpp" />
+    <ClCompile Include="statementref.cpp" />
+    <ClCompile Include="resultset.cpp" />
+    <ClCompile Include="cics\resultsetcics.cpp" />
+    <ClCompile Include="infx\resultsetinfx.cpp" />
+    <ClCompile Include="infx\resultsetinfxmulti.cpp" />
+    <ClCompile Include="infx\resultsetinfxsingle.cpp" />
+    <ClCompile Include="odbc\resultsetodbc.cpp" />
+    <ClCompile Include="resultsetref.cpp" />
+    <ClCompile Include="dbexception.cpp" />
+    <ClCompile Include="cics\dbexceptioncics.cpp" />
+    <ClCompile Include="infx\dbexceptioninfx.cpp" />
+    <ClCompile Include="odbc\dbexceptionodbc.cpp" />
+    <ClCompile Include="sqldiagnostics.cpp" />
+    <ClCompile Include="cics\sqldiagnosticscics.cpp" />
+    <ClCompile Include="infx\sqldiagnosticsinfx.cpp" />
+    <ClCompile Include="odbc\sqldiagnosticsodbc.cpp" />
+    <ClCompile Include="sqldiagnosticsref.cpp" />
+    <ClCompile Include="sqlexcepthandler.cpp" />
+    <ClCompile Include="cics\sqlexcepthandlercics.cpp" />
+    <ClCompile Include="infx\sqlexcepthandlerinfx.cpp" />
+    <ClCompile Include="odbc\sqlexcepthandlerodbc.cpp" />
+    <ClCompile Include="insertset.cpp" />
+    <ClCompile Include="infx\insertsetinfx.cpp" />
+    <ClCompile Include="insertsetref.cpp" />
+    <ClCompile Include="preparedstatement.cpp" />
+    <ClCompile Include="infx\preparedstatementinfx.cpp" />
+    <ClCompile Include="odbc\preparedstatementodbc.cpp" />
+    <ClCompile Include="preparedstatementref.cpp" />
+    <ClCompile Include="cics\cicsdefinitions.cpp" />
+    <ClCompile Include="infx\infxstring.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasardbsql.cpp" />
+    <ClCompile Include="loggerpool.cpp" />
+    <ClCompile Include="sqloperative.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="database.h" />
+    <ClInclude Include="infx\dblocaleinfx.h" />
+    <ClInclude Include="libbasardbsql_databaseinfo.h" />
+    <ClInclude Include="infx\localeenvinfx.h" />
+    <ClInclude Include="infx\setenvinfx.h" />
+    <ClInclude Include="infx\sqlhostsinfx.h" />
+    <ClInclude Include="connection.h" />
+    <ClInclude Include="cics\connectioncics.h" />
+    <ClInclude Include="infx\connectioninfx.h" />
+    <ClInclude Include="odbc\connectionodbc.h" />
+    <ClInclude Include="libbasardbsql_connectionref.h" />
+    <ClInclude Include="libbasardbsql_manager.h" />
+    <ClInclude Include="libbasardbsql_managerimpl.h" />
+    <ClInclude Include="libbasardbsql_connectionlist_iterator.h" />
+    <ClInclude Include="libbasardbsql_statementref.h" />
+    <ClInclude Include="statement.h" />
+    <ClInclude Include="cics\statementcics.h" />
+    <ClInclude Include="infx\statementinfx.h" />
+    <ClInclude Include="odbc\statementodbc.h" />
+    <ClInclude Include="libbasardbsql_resultsetref.h" />
+    <ClInclude Include="resultset.h" />
+    <ClInclude Include="cics\resultsetcics.h" />
+    <ClInclude Include="infx\resultsetinfx.h" />
+    <ClInclude Include="infx\resultsetinfxmulti.h" />
+    <ClInclude Include="infx\resultsetinfxsingle.h" />
+    <ClInclude Include="odbc\resultsetodbc.h" />
+    <ClInclude Include="libbasardbsql_exceptions.h" />
+    <ClInclude Include="libbasardbsql_sqldiagnosticsref.h" />
+    <ClInclude Include="sqldiagnostics.h" />
+    <ClInclude Include="cics\sqldiagnosticscics.h" />
+    <ClInclude Include="infx\sqldiagnosticsinfx.h" />
+    <ClInclude Include="odbc\sqldiagnosticsodbc.h" />
+    <ClInclude Include="sqlexcepthandler.h" />
+    <ClInclude Include="cics\sqlexcepthandlercics.h" />
+    <ClInclude Include="infx\sqlexcepthandlerinfx.h" />
+    <ClInclude Include="odbc\sqlexcepthandlerodbc.h" />
+    <ClInclude Include="insertset.h" />
+    <ClInclude Include="infx\insertsetinfx.h" />
+    <ClInclude Include="libbasardbsql_insertsetref.h" />
+    <ClInclude Include="libbasardbsql_preparedstatementref.h" />
+    <ClInclude Include="preparedstatement.h" />
+    <ClInclude Include="infx\preparedstatementinfx.h" />
+    <ClInclude Include="odbc\preparedstatementodbc.h" />
+    <ClInclude Include="cics\cicsdefinitions.h" />
+    <ClInclude Include="infx\infxstring.h" />
+    <ClInclude Include="libbasardbsql.h" />
+    <ClInclude Include="libbasardbsql_api.h" />
+    <ClInclude Include="libbasardbsql_definitions.h" />
+    <ClInclude Include="libbasardbsql_functions.h" />
+    <ClInclude Include="loggerpool.h" />
+    <ClInclude Include="sqloperative.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libbasarcmnutil\libbasarcmnutil.vcxproj">
+      <Project>{bab32f85-55de-4e0b-b22c-303302184b98}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="esqlc\esqlc.vcxproj">
+      <Project>{d1320e1a-3ac3-4ccd-8afa-a035352b4e74}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

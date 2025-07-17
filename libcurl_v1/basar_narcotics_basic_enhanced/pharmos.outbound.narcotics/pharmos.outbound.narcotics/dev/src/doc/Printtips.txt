@@ -1,0 +1,3 @@
+Um das dritte fach ansprechen zu können, muss in PlanetPress die passende PPD ( hpc3015s_angepasst3Fach.ppd) verwendet werden.  
+
+Die leeren Meldungen müssen speziell erstellt werden: An eine leere Datendatei binden und die leeren Unterschriften im ps File unten anhängen. Mit bestehender Datei vergleichen..

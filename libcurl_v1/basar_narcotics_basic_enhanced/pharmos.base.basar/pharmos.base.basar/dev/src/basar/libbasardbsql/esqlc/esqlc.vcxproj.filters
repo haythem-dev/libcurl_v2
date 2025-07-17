@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win">
+      <UniqueIdentifier>{787c8857-a686-418e-aadc-9f3838258de4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile">
+      <Filter>win</Filter>
+    </None>
+    <None Include="connect.ec" />
+    <None Include="cursor.ec" />
+    <None Include="descriptor.ec" />
+    <None Include="exception.ec" />
+    <None Include="profiling.ec" />
+    <None Include="statement.ec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="esqlc.h" />
+    <ClInclude Include="profiling.h" />
+  </ItemGroup>
+</Project>

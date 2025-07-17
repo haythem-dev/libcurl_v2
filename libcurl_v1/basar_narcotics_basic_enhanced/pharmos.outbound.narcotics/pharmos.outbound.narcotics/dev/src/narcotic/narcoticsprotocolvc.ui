@@ -1,0 +1,315 @@
+<ui version="4.0" >
+ <class>narcoticsprotocolvcClass</class>
+ <widget class="QDialog" name="narcoticsprotocolvcClass" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>991</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>NA07 Protocol for Narcotic Changes</string>
+  </property>
+  <widget class="QGroupBox" name="grpSearchData" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>971</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Search:</string>
+   </property>
+   <widget class="QLineEdit" name="txtArticleNoSearch" >
+    <property name="geometry" >
+     <rect>
+      <x>70</x>
+      <y>28</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblFromSearch" >
+    <property name="geometry" >
+     <rect>
+      <x>180</x>
+      <y>30</y>
+      <width>23</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>from:</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dtFromSearch" >
+    <property name="geometry" >
+     <rect>
+      <x>210</x>
+      <y>26</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblToSearch" >
+    <property name="geometry" >
+     <rect>
+      <x>350</x>
+      <y>30</y>
+      <width>16</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>to:</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dtToSearch" >
+    <property name="geometry" >
+     <rect>
+      <x>370</x>
+      <y>26</y>
+      <width>110</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtAttributeSearch" >
+    <property name="geometry" >
+     <rect>
+      <x>750</x>
+      <y>26</y>
+      <width>113</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblArticleNoSearch" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>31</y>
+      <width>46</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>ArticleNo:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtUserSearch" >
+    <property name="geometry" >
+     <rect>
+      <x>550</x>
+      <y>26</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblChangedAttribute" >
+    <property name="geometry" >
+     <rect>
+      <x>696</x>
+      <y>29</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Attribute:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser" >
+    <property name="geometry" >
+     <rect>
+      <x>490</x>
+      <y>27</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>User:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSearch" >
+    <property name="geometry" >
+     <rect>
+      <x>880</x>
+      <y>20</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Search</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpTransCatData" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>971</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Narcotic Bookings:</string>
+   </property>
+   <widget class="BasarTableWidget" name="twCatalog" >
+    <property name="geometry" >
+     <rect>
+      <x>34</x>
+      <y>30</y>
+      <width>921</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="whatsThis" >
+     <string>One row illustrates one narcotic booking.</string>
+    </property>
+    <property name="editTriggers" >
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="tabKeyNavigation" >
+     <bool>false</bool>
+    </property>
+    <property name="selectionMode" >
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior" >
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="rowCount" >
+     <number>4</number>
+    </property>
+    <property name="columnCount" >
+     <number>9</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="grpNarcoticsProtocolData" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>971</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Logged Changes of Narcotic Bookings:</string>
+   </property>
+   <widget class="BasarTableWidget" name="twProtocol" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>941</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="whatsThis" >
+     <string>All logged, existing changes of the selected narcotic booking.</string>
+    </property>
+    <property name="editTriggers" >
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="tabKeyNavigation" >
+     <bool>false</bool>
+    </property>
+    <property name="selectionMode" >
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior" >
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="rowCount" >
+     <number>3</number>
+    </property>
+    <property name="columnCount" >
+     <number>7</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+    <column/>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btnPrint" >
+   <property name="geometry" >
+    <rect>
+     <x>780</x>
+     <y>520</y>
+     <width>101</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Print</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnClose" >
+   <property name="geometry" >
+    <rect>
+     <x>880</x>
+     <y>520</y>
+     <width>101</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Close</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>BasarTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>libbasarqtwidget_tablewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>txtArticleNoSearch</tabstop>
+  <tabstop>dtFromSearch</tabstop>
+  <tabstop>dtToSearch</tabstop>
+  <tabstop>txtUserSearch</tabstop>
+  <tabstop>txtAttributeSearch</tabstop>
+  <tabstop>btnSearch</tabstop>
+  <tabstop>twCatalog</tabstop>
+  <tabstop>twProtocol</tabstop>
+  <tabstop>btnClose</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

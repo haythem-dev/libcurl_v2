@@ -1,0 +1,4 @@
+zdev21_shm              onipcshm        localhost     zdev21_shm
+cdrtest21               group           -             -          i=1
+zdev21_tcp              onsoctcp        denu0uazdev21 53004      g=cdrtest21
+zdev21_tcp_invalid      onsoctcp        denu0uaznbs21 2222

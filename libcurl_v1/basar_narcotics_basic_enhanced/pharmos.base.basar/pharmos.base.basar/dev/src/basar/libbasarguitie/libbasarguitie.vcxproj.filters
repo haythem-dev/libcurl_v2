@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="manager">
+      <UniqueIdentifier>{2fd69af8-0eeb-400b-a2fc-09f4cdec8b69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="matcher">
+      <UniqueIdentifier>{30034828-8b87-41fb-8b1c-3cee7b06fa62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="propertytable">
+      <UniqueIdentifier>{89f45f8f-84be-46ad-b89a-faaf73d6dd18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transformer">
+      <UniqueIdentifier>{dbdc8abc-7f2e-4054-9277-fbd9af8c5bc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transformer\number">
+      <UniqueIdentifier>{530ffdf8-423d-4852-b980-7ea4f375c5af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transformer\datetime">
+      <UniqueIdentifier>{24b5390d-dd10-402b-963c-8b45332fd6c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="eventhandlercomposite">
+      <UniqueIdentifier>{76b967d6-e7af-43f2-a251-4fe9e18c69dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="messageboxes">
+      <UniqueIdentifier>{a839a240-e3c2-4dbc-adac-5a041b8f61c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewconnectorptr">
+      <UniqueIdentifier>{2fbcc6b6-aad6-46e2-bc60-6c7dbc9e5fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="widgetbehaviour">
+      <UniqueIdentifier>{3aba84f2-83a3-45b3-a105-9657e44a06eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="widgetbehaviour\Qt">
+      <UniqueIdentifier>{15c3d0d6-6649-4e65-844d-9718b3d682c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="widgetbehaviour\basar">
+      <UniqueIdentifier>{094c5661-1d73-47a3-b17a-77e21d37292b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="qtmessagehandler">
+      <UniqueIdentifier>{6c428017-56da-40c7-9390-2350b33af22c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exceptionhandler">
+      <UniqueIdentifier>{cf2a0f71-bb57-40b3-ab40-17c609dbbef7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libbasarguitie_manager.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="managerimpl.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_matcher.h">
+      <Filter>matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher.h">
+      <Filter>matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="guipropertytable.h">
+      <Filter>propertytable</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_propertytable.h">
+      <Filter>propertytable</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_transformer.h">
+      <Filter>transformer</Filter>
+    </ClInclude>
+    <ClInclude Include="eventhandlercomposite.h">
+      <Filter>eventhandlercomposite</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_msgboxes.h">
+      <Filter>messageboxes</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_iviewconnector.h">
+      <Filter>viewconnectorptr</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_spdeleterforqobjects.hpp">
+      <Filter>viewconnectorptr</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_viewconnptr.hpp">
+      <Filter>viewconnectorptr</Filter>
+    </ClInclude>
+    <ClInclude Include="controlbehavour.h">
+      <Filter>widgetbehaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="checkboxbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="comboboxbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="dateeditbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="datetimeeditbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="groupboxbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="labelbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="lineeditbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="listwidgetbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="pushbuttonbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="radiobuttonbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="tablewidgetbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="texteditbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="timeeditbehavour.h">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClInclude>
+    <ClInclude Include="basardateeditbehaviour.h">
+      <Filter>widgetbehaviour\basar</Filter>
+    </ClInclude>
+    <ClInclude Include="basardatetimeeditbehaviour.h">
+      <Filter>widgetbehaviour\basar</Filter>
+    </ClInclude>
+    <ClInclude Include="basartablewidgetbehavour.h">
+      <Filter>widgetbehaviour\basar</Filter>
+    </ClInclude>
+    <ClInclude Include="basartimeeditbehaviour.h">
+      <Filter>widgetbehaviour\basar</Filter>
+    </ClInclude>
+    <ClInclude Include="multicomboboxbehavour.h">
+      <Filter>widgetbehaviour\basar</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_qtmessagehandler.h">
+      <Filter>qtmessagehandler</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_defaultexceptionhandler.h">
+      <Filter>exceptionhandler</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_exceptionhandler.h">
+      <Filter>exceptionhandler</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_exceptionhandlermacros.h">
+      <Filter>exceptionhandler</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_exceptionhandlermanager.h">
+      <Filter>exceptionhandler</Filter>
+    </ClInclude>
+    <ClInclude Include="libbasarguitie_exceptionhandlerref.h">
+      <Filter>exceptionhandler</Filter>
+    </ClInclude>
+    <ClInclude Include="helper.h" />
+    <ClInclude Include="libbasarguitie.h" />
+    <ClInclude Include="libbasarguitie_definitions.h" />
+    <ClInclude Include="libbasarguitie_exceptions.h" />
+    <ClInclude Include="libbasarguitie_functions.h" />
+    <ClInclude Include="loggerpool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="manager.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="managerimpl.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="matcher.cpp">
+      <Filter>matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcherref.cpp">
+      <Filter>matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="guipropertytable.cpp">
+      <Filter>propertytable</Filter>
+    </ClCompile>
+    <ClCompile Include="guipropertytable_xiterator.cpp">
+      <Filter>propertytable</Filter>
+    </ClCompile>
+    <ClCompile Include="guipropertytable_yiterator.cpp">
+      <Filter>propertytable</Filter>
+    </ClCompile>
+    <ClCompile Include="guipropertytableref.cpp">
+      <Filter>propertytable</Filter>
+    </ClCompile>
+    <ClCompile Include="checkboxtransformer.cpp">
+      <Filter>transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="currentlisttransformer.cpp">
+      <Filter>transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="propertynametransformer.cpp">
+      <Filter>transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="radiobuttontransformer.cpp">
+      <Filter>transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="statetransformer.cpp">
+      <Filter>transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="transformer.cpp">
+      <Filter>transformer</Filter>
+    </ClCompile>
+    <ClCompile Include="decimaltransformer.cpp">
+      <Filter>transformer\number</Filter>
+    </ClCompile>
+    <ClCompile Include="inttransformer.cpp">
+      <Filter>transformer\number</Filter>
+    </ClCompile>
+    <ClCompile Include="datetimetransformer.cpp">
+      <Filter>transformer\datetime</Filter>
+    </ClCompile>
+    <ClCompile Include="datetransformer.cpp">
+      <Filter>transformer\datetime</Filter>
+    </ClCompile>
+    <ClCompile Include="timetransformer.cpp">
+      <Filter>transformer\datetime</Filter>
+    </ClCompile>
+    <ClCompile Include="eventhandlercomposite.cpp">
+      <Filter>eventhandlercomposite</Filter>
+    </ClCompile>
+    <ClCompile Include="msgboxes.cpp">
+      <Filter>messageboxes</Filter>
+    </ClCompile>
+    <ClCompile Include="iviewconnector.cpp">
+      <Filter>viewconnectorptr</Filter>
+    </ClCompile>
+    <ClCompile Include="controlbehavour.cpp">
+      <Filter>widgetbehaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="checkboxbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="comboboxbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="dateeditbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="datetimeeditbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="groupboxbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="labelbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="lineeditbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="listwidgetbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="pushbuttonbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="radiobuttonbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="tablewidgetbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="texteditbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="timeeditbehavour.cpp">
+      <Filter>widgetbehaviour\Qt</Filter>
+    </ClCompile>
+    <ClCompile Include="basardateeditbehaviour.cpp">
+      <Filter>widgetbehaviour\basar</Filter>
+    </ClCompile>
+    <ClCompile Include="basardatetimeeditbehaviour.cpp">
+      <Filter>widgetbehaviour\basar</Filter>
+    </ClCompile>
+    <ClCompile Include="basartablewidgetbehavour.cpp">
+      <Filter>widgetbehaviour\basar</Filter>
+    </ClCompile>
+    <ClCompile Include="basartimeeditbehaviour.cpp">
+      <Filter>widgetbehaviour\basar</Filter>
+    </ClCompile>
+    <ClCompile Include="multicomboboxbehavour.cpp">
+      <Filter>widgetbehaviour\basar</Filter>
+    </ClCompile>
+    <ClCompile Include="qtmessagehandler.cpp">
+      <Filter>qtmessagehandler</Filter>
+    </ClCompile>
+    <ClCompile Include="defaultexceptionhandler.cpp">
+      <Filter>exceptionhandler</Filter>
+    </ClCompile>
+    <ClCompile Include="exceptionhandlermanager.cpp">
+      <Filter>exceptionhandler</Filter>
+    </ClCompile>
+    <ClCompile Include="exceptionhandlerref.cpp">
+      <Filter>exceptionhandler</Filter>
+    </ClCompile>
+    <ClCompile Include="helper.cpp" />
+    <ClCompile Include="init.cpp" />
+    <ClCompile Include="libbasarguitie.cpp" />
+    <ClCompile Include="loggerpool.cpp" />
+    <ClCompile Include="timespantransformer.cpp">
+      <Filter>transformer\datetime</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lockmanager">
+      <UniqueIdentifier>{aff52ace-529a-4c39-8265-fe6e40f19619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NumberAssignmentDM">
+      <UniqueIdentifier>{955eb29e-ce38-4739-b41d-4e541efc862e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LoggerPool">
+      <UniqueIdentifier>{4e68f5f0-eeef-47ff-8c9b-43d25842e592}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lockmanager\branchlockmanager.cpp">
+      <Filter>lockmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="lockmanager\lockmanager.cpp">
+      <Filter>lockmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="lockmanager\statements.cpp">
+      <Filter>lockmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="numberassignmentdm\numberacc.cpp">
+      <Filter>NumberAssignmentDM</Filter>
+    </ClCompile>
+    <ClCompile Include="numberassignmentdm\numberassignmentdm.cpp">
+      <Filter>NumberAssignmentDM</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerpool\loggerpool.cpp">
+      <Filter>LoggerPool</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lockmanager\branchlockmanager.h">
+      <Filter>lockmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="lockmanager\istatements.h">
+      <Filter>lockmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="lockmanager\lockmanager.h">
+      <Filter>lockmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="lockmanager\statements.h">
+      <Filter>lockmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="commonheader.h" />
+    <ClInclude Include="numberassignmentdm\numberacc.h">
+      <Filter>NumberAssignmentDM</Filter>
+    </ClInclude>
+    <ClInclude Include="numberassignmentdm\numberassignmentdm.h">
+      <Filter>NumberAssignmentDM</Filter>
+    </ClInclude>
+    <ClInclude Include="numberassignmentdm\numberassignmentdm_definitions.h">
+      <Filter>NumberAssignmentDM</Filter>
+    </ClInclude>
+    <ClInclude Include="loggerpool\loggerpool.h">
+      <Filter>LoggerPool</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

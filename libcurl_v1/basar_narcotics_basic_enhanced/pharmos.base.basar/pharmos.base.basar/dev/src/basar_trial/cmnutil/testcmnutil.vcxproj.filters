@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="unix">
+      <UniqueIdentifier>{6c3f8131-8ed5-4c0e-b650-508f03ba1b90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="print">
+      <UniqueIdentifier>{e71566f2-579f-4eee-bbdc-3995034b00f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="print\forms">
+      <UniqueIdentifier>{3a923b93-6474-4e95-b6a6-8621a4a8e0f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="print\data">
+      <UniqueIdentifier>{4fdaa2cf-0a19-4997-ac0a-9739c9d0d713}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbx.cmd">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="makefile">
+      <Filter>unix</Filter>
+    </None>
+    <None Include="print\colourswin.ps">
+      <Filter>print\forms</Filter>
+    </None>
+    <None Include="print\NarcoticsBook.ps">
+      <Filter>print\forms</Filter>
+    </None>
+    <None Include="print\oceformular.ps">
+      <Filter>print\forms</Filter>
+    </None>
+    <None Include="print\a.data">
+      <Filter>print\data</Filter>
+    </None>
+    <None Include="print\bookdata.txt">
+      <Filter>print\data</Filter>
+    </None>
+    <None Include="print\oceformular.data">
+      <Filter>print\data</Filter>
+    </None>
+    <None Include="print\oceformular.trigger">
+      <Filter>print\data</Filter>
+    </None>
+    <None Include="testcmnutil.cfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ps\gsprint.cpp">
+      <Filter>print</Filter>
+    </ClCompile>
+    <ClCompile Include="print.cpp">
+      <Filter>print</Filter>
+    </ClCompile>
+    <ClCompile Include="printdata.cpp">
+      <Filter>print</Filter>
+    </ClCompile>
+    <ClCompile Include="ps\screenprint.cpp">
+      <Filter>print</Filter>
+    </ClCompile>
+    <ClCompile Include="codec.cpp" />
+    <ClCompile Include="datetime.cpp" />
+    <ClCompile Include="decimal.cpp" />
+    <ClCompile Include="email.cpp" />
+    <ClCompile Include="exception.cpp" />
+    <ClCompile Include="logging.cpp" />
+    <ClCompile Include="parameterlist.cpp" />
+    <ClCompile Include="process.cpp" />
+    <ClCompile Include="string.cpp" />
+    <ClCompile Include="testcmnutil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ps\gsprint.h">
+      <Filter>print</Filter>
+    </ClInclude>
+    <ClInclude Include="printdata.h">
+      <Filter>print</Filter>
+    </ClInclude>
+    <ClInclude Include="ps\screenprint.h">
+      <Filter>print</Filter>
+    </ClInclude>
+    <ClInclude Include="testcmnutil.h" />
+  </ItemGroup>
+</Project>

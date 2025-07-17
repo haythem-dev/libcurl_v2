@@ -1,0 +1,205 @@
+<ui version="4.0" >
+ <class>TableWidgetAbsoluteHeaderTestFrame1Class</class>
+ <widget class="QFrame" name="TableWidgetAbsoluteHeaderTestFrame1Class" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>596</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>TableWidgetAbsoluteHeaderTestFrame1</string>
+  </property>
+  <widget class="BasarTableWidget" name="tableWidget" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>561</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="accessibleName" >
+    <string>tw_user</string>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Raised</enum>
+   </property>
+   <property name="autoScroll" >
+    <bool>false</bool>
+   </property>
+   <property name="gridStyle" >
+    <enum>Qt::SolidLine</enum>
+   </property>
+   <property name="rowCount" >
+    <number>1</number>
+   </property>
+   <property name="columnCount" >
+    <number>1</number>
+   </property>
+   <row/>
+   <column/>
+  </widget>
+  <widget class="QGroupBox" name="groupBox" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>551</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>TableWidget</string>
+   </property>
+   <widget class="QPushButton" name="pb_tableWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>141</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="accessibleName" >
+     <string>pb_TableWidget</string>
+    </property>
+    <property name="text" >
+     <string>Select in TableWidget</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pb_rows" >
+    <property name="geometry" >
+     <rect>
+      <x>180</x>
+      <y>20</y>
+      <width>141</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>change Number of Rows</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>551</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>vertical Header</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_4" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>241</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>change Vertical Header Lables</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_useABC_2" >
+    <property name="geometry" >
+     <rect>
+      <x>280</x>
+      <y>70</y>
+      <width>241</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>use ABC (window Contence)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>121</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Absolute Header on</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3" >
+    <property name="geometry" >
+     <rect>
+      <x>134</x>
+      <y>30</y>
+      <width>131</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Absolute Header off</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_useABC" >
+    <property name="geometry" >
+     <rect>
+      <x>280</x>
+      <y>30</y>
+      <width>241</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>use ABC (widget Context)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton" >
+    <property name="geometry" >
+     <rect>
+      <x>280</x>
+      <y>110</y>
+      <width>241</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>use Shortcuts 1,3,5,7,9 (widget Context)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>241</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>use Shortcuts (shift-A)</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>BasarTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>libbasarqtwidget_tablewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

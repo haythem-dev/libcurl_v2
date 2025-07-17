@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="tests">
+      <UniqueIdentifier>{70a16867-2e24-4b64-94cd-b3689b7adf8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{a12b24f8-d2d9-47c4-901e-9b1fe5e0ab38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{79b82357-87ef-4315-b054-0ab95784a54f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="datetime.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="i18n.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="integersignalemitter.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="widgetpointer.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="loggerpool.cpp">
+      <Filter>helper</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="loggerpool.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="utqtwidget.cfg">
+      <Filter>helper</Filter>
+    </None>
+    <None Include="data\utqtwidget.cfg">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+</Project>
